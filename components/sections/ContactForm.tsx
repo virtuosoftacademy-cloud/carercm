@@ -102,33 +102,29 @@ export default function ContactForm() {
     <section className="w-full bg-[#f3f4f6] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Section */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
-            <h2 className="text-[#0a3d8f] font-semibold text-[22px] sm:text-[30px] lg:text-[36px] leading-tight">
+            <h1 className="h1 leading-tight">
               Join Us in Making a Difference!
-            </h2>
+            </h1>
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
           </div>
-          <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-4xl mx-auto">
+          <p className="text-gray text-xs max-w-3xl mx-auto">
             Get a free, no-obligation RCM audit in 48 hours. We'll review your denial rates, 
             AR aging and coding patterns and show you the dollar gap in black and white.
           </p>
         </div>
 
-        {/* Success Message */}
         {submitSuccess && (
           <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-4xl text-center">
             Form submitted successfully! Thank you for contacting us.
           </div>
         )}
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="rounded-2xl p-6 sm:p-8 md:p-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
             
-            {/* Full Name */}
             <div className="col-span-1">
               <input
                 type="text"
@@ -145,7 +141,6 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* Email Address */}
             <div className="col-span-1">
               <input
                 type="email"
@@ -162,7 +157,6 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* Phone Number */}
             <div className="col-span-1">
               <input
                 type="tel"
@@ -179,7 +173,6 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* State */}
             <div className="col-span-1">
               <input
                 type="text"
@@ -196,7 +189,6 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* City */}
             <div className="col-span-1">
               <input
                 type="text"
@@ -213,7 +205,6 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* Zip Code */}
             <div className="col-span-1">
               <input
                 type="text"
@@ -230,7 +221,6 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* Message - Full Width */}
             <div className="col-span-1 md:col-span-2">
               <textarea
                 name="message"
@@ -242,9 +232,8 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Age Radio Buttons */}
-            <div className="col-span-1 md:col-span-2">
-              <label className="block text-gray-700 font-semibold mb-3 text-sm sm:text-base">
+            <div className="grid grid-cols-3 items-center gap-4 col-span-1 md:col-span-2">
+              <label className="block text-gray mb-3 text-xs">
                 Are you 18 years of age or older? <span className="text-red-500">*</span>
               </label>
               <div className="flex gap-6">
@@ -257,7 +246,7 @@ export default function ContactForm() {
                     onChange={handleRadioChange}
                     className="w-4 h-4 text-[#19a9e5] focus:ring-[#19a9e5]"
                   />
-                  <span className="text-gray-700">Yes</span>
+                  <span className="text-gray text-xs">Yes</span>
                 </label>
                 <label className="flex items-center gap-2 cursor-pointer">
                   <input
@@ -268,7 +257,7 @@ export default function ContactForm() {
                     onChange={handleRadioChange}
                     className="w-4 h-4 text-[#19a9e5] focus:ring-[#19a9e5]"
                   />
-                  <span className="text-gray-700">No</span>
+                  <span className="text-gray text-xs">No</span>
                 </label>
               </div>
               {errors.ageAbove18 && (
@@ -278,12 +267,11 @@ export default function ContactForm() {
 
           </div>
 
-          {/* Submit Button */}
           <div className="mt-8 text-center justify-end flex">
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-[#19a9e5] hover:bg-[#1098d2] text-white font-semibold text-base sm:text-lg px-12 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105 ${
+              className={`btn !px-12 ${
                 isSubmitting ? "opacity-70 cursor-not-allowed" : ""
               }`}
             >

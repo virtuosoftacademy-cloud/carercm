@@ -10,14 +10,13 @@ export default function Specialty() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between">
             
-            {/* Left Content - Vertically Centered with same height */}
             <div className="flex-1 flex items-center py-12 sm:py-16 lg:py-20">
               <div>
-                <h2 className="text-white font-semibold text-[26px] sm:text-[36px] lg:text-[40px] leading-tight mb-4">
+                <h1 className="text-white h1 mb-4">
                   We Understand Your Specialty
-                </h2>
+                </h1>
                 
-                <p className="text-white text-sm sm:text-base leading-relaxed max-w-2xl">
+                <p className="text-white text-sm ">
                   Billing rules, payer contracts and denial triggers are different for every specialty.
                   A mental health practice gets denied for different reasons than an orthopedic surgeon.
                   Generic RCM gets you generic results and lost revenue you'll never see.
@@ -27,7 +26,6 @@ export default function Specialty() {
               </div>
             </div>
 
-            {/* Right Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="relative w-[350px] sm:w-[400px] md:w-[480px] lg:w-[500px] h-[280px] sm:h-[330px] md:h-[380px] lg:h-[420px]">
                 <Image
