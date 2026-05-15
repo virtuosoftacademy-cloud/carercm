@@ -80,7 +80,7 @@ export default function HeroSection() {
 
           {/* FLOATING CARD - Exactly matching right image height with same top/bottom spacing */}
           <div 
-            className="absolute z-[50] flex flex-col gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7"
+            className="absolute flex flex-col gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7"
             style={{ 
               top: "0px",
               bottom: "0px",
