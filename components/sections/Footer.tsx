@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#0a3d8f]">
@@ -44,23 +45,12 @@ export default function Footer() {
             <div className="flex justify-center md:justify-start md:pr-8 lg:pr-12 xl:pr-16">
               <div className="text-center md:text-left">
                 <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
-                  <svg
-                    width="45"
-                    height="45"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 33C20 33 7 24.5 7 15.5C7 11.4 10.4 8 14.5 8C16.8 8 18.9 9.1 20 10.9C21.1 9.1 23.2 8 25.5 8C29.6 8 33 11.4 33 15.5C33 24.5 20 33 20 33Z"
-                      fill="white"
-                    />
-                    <circle cx="14.5" cy="8" r="3.5" fill="white" />
-                    <circle cx="25.5" cy="8" r="3.5" fill="white" />
-                  </svg>
-                  <span className="text-white font-bold text-2xl tracking-wide">
-                    CareRCM
-                  </span>
+                  <Image
+                    src="/CareRCM, Logo (Horizontal) 2 (2).png"
+                    alt="CareRCM Logo"
+                    width={200}
+                    height={200}
+                  />
                 </div>
 
                 <p className="text-white text-sm leading-relaxed max-w-md mx-auto md:mx-0">
