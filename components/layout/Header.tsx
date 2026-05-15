@@ -3,16 +3,32 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Solution", path: "/solution" },
+    { name: "Pricing", path: "/pricing" },
+    { name: "Company", path: "/company" },
+    { name: "Resources", path: "/resources" },
+  ];
+
+  const isActiveLink = (path: string) => {
+    if (path === "/") {
+      return pathname === path;
+    }
+    return pathname?.startsWith(path);
+  };
 
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           
-          {/* Logo - Left Side */}
           <div className="flex-shrink-0">
             <Link href="/">
               <Image  
@@ -26,46 +42,27 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex md:items-center md:gap-6 lg:gap-8">
-            <Link 
-              href="/" 
-              className="text-sm lg:text-base text-gray-700 transition-colors font-medium"
-            >
-              Home
-            </Link>
-            <Link 
-              href="#" 
-              className="text-sm lg:text-base text-gray-700 transition-colors font-medium"
-            >
-              Solution
-            </Link>
-            <Link 
-              href="#" 
-              className="text-sm lg:text-base text-gray-700 transition-colors font-medium"
-            >
-              Pricing
-            </Link>
-            <Link 
-              href="#" 
-              className="text-sm lg:text-base text-gray-700 transition-colors font-medium"
-            >
-              Company
-            </Link>
-            <Link 
-              href="#" 
-              className="text-sm lg:text-base text-gray-700 transition-colors font-medium"
-            >
-              Resources
-            </Link>
+            {navItems.map((item) => (
+              <Link 
+                key={item.name}
+                href={item.path} 
+                className={`text-sm font-light transition-all duration-300 hover:!text-[#00427F] ${
+                  isActiveLink(item.path) 
+                    ? "text-[#00427F] font-normal underline underline-offset-12" 
+                    : "text-black hover:text-[#00427F]"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
             <button 
-              className="text-sm rounded-4xl bg-[#0AADE4] p-2 px-6 lg:text-base text-white transition-colors font-medium"
+              className="btn"
             >
               Contact Us
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -91,47 +88,26 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4">
             <nav className="flex flex-col space-y-3">
-              <Link
-                href="/"
-                className="text-gray-700 transition-colors py-2 text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-700 transition-colors py-2 text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Solution
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-700 transition-colors py-2 text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Pricing
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-700 transition-colors py-2 text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Company
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-700 transition-colors py-2 text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Resources
-              </Link>
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.path}
+                  className={`text-sm font-light transition-all duration-300 hover:text-![#00427F] ${
+                    isActiveLink(item.path)
+                      ? "text-[#00427F] font-normal underline underline-offset-12" 
+                      : "text-black hover:text-[#00427F]"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
               <button 
-                className="text-sm rounded-4xl bg-[#0AADE4] p-2 px-6 lg:text-base text-white transition-colors font-medium"
+                className="btn"
+                onClick={() => setIsOpen(false)}
               >
                 Contact Us
               </button>

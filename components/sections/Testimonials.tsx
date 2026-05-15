@@ -25,38 +25,32 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="w-full bg-white py-8 px-4 sm:px-8 lg:px-16">
-      {/* Full width container - NO max-w constraint */}
-      <div className="w-full">
+    <section>
+      <div className="w-full bg-white p-12">
 
-        {/* ── HEADER ── */}
         <div className="text-center mb-10 sm:mb-14">
 
-          {/* Title with dashes */}
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
-            <h2 className="text-[#0a3d8f] font-semibold text-[22px] sm:text-[30px] lg:text-[36px] leading-tight">
+            <h1 className="h1">
               Real Practices. Real Recovered Revenue.
-            </h2>
+            </h1>
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
           </div>
 
-          {/* Subtitle */}
-          <p className="text-gray-500 text-[13px] sm:text-[15px] max-w-4xl mx-auto">
+          <p className="text-gray text-xs max-w-4xl mx-auto">
             We don't just promise to find your missing money—we prove it. Discover how physicians
             across the country rely on our end-to-end billing execution to eliminate AR bottlenecks
             and consistently add tens of thousands to their monthly collections.
           </p>
         </div>
 
-        {/* ── DOCTOR CARDS - Full Width Grid ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 mb-10 sm:mb-12">
           {testimonials.map((doctor) => (
             <div
               key={doctor.id}
-              className="group bg-white rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-all duration-300 overflow-hidden hover:-translate-y-1"
+              className="group bg-white rounded-xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
             >
-              {/* Doctor Photo — full width, rectangular */}
               <div className="relative w-full h-[240px] sm:h-[260px] lg:h-[280px] overflow-hidden">
                 <Image
                   src={doctor.image}
@@ -66,12 +60,11 @@ export default function Testimonials() {
                 />
               </div>
 
-              {/* Card Info */}
-              <div className="px-5 pb-5 pt-4 text-center">
-                <h3 className="text-[#1a1a2e] font-bold text-[16px] sm:text-[18px] mb-1 group-hover:text-[#19a9e5] transition-colors">
+              <div className="px-5 pb-5 pt-4 text-center bg-[#F2F5F8]">
+                <h3 className="text-[#0F0F0F] font-semibold text-[16px] sm:text-[18px] mb-2">
                   {doctor.name}
                 </h3>
-                <p className="text-gray-400 text-[12.5px] sm:text-[13.5px]">
+                <p className="text-gray text-xs mb-4">
                   {doctor.clinic}
                 </p>
               </div>
@@ -79,9 +72,8 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* ── SEE MORE BUTTON ── */}
         <div className="flex justify-center">
-          <button className="bg-[#19a9e5] hover:bg-[#1098d2] text-white font-semibold text-[14px] sm:text-[15px] px-8 sm:px-12 md:px-14 py-3 sm:py-3.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md transform hover:scale-105 inline-flex items-center gap-2">
+          <button className="btn !px-12">
             See More
           </button>
         </div>
