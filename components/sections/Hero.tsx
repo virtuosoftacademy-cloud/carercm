@@ -11,10 +11,9 @@ export default function HeroSection() {
               alt="Doctor consulting with patient"
               fill
               priority
-              className="object-cover object-center"
-              sizes="100vw"
+              className="object-containe object-center"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
           </div>
 
           <div className="flex flex-col gap-4 px-2">
@@ -46,33 +45,24 @@ export default function HeroSection() {
         </div>
 
         <div className="hidden xl:block">
-          <div className="relative w-full h-[340px] md:h-[420px] lg:h-[480px] xl:h-[520px]">
-
-            <div className="absolute top-0 right-0 bottom-0 w-[60%] md:w-[58%] lg:w-[55%] rounded-r-2xl overflow-hidden">
+          <div className="relative w-full h-[450px]">
+            <div className="absolute top-0 right-0 w-[50%] h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px] rounded-r-2xl overflow-hidden">
               <Image
                 src="/Mask Group (1).png"
                 alt="Doctor consulting with patient"
                 fill
                 priority
                 className="object-cover object-center"
-                sizes="(max-width: 768px) 60vw, 55vw"
+                sizes="50vw"
               />
             </div>
 
             <div
-              className="absolute"
+              className="absolute flex flex-col gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px]"
               style={{
-                background: "rgba(180,220,245,0.15)",
-              }}
-            />
-
-            <div
-              className="absolute flex flex-col gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7"
-              style={{
-                top: "0px",
-                bottom: "0px",
+                top: "40px",
                 left: "16px",
-                width: "50%",
+                width: "60%",
                 background: "rgba(180,220,245,0.15)",
                 backdropFilter: "blur(8px)",
                 WebkitBackdropFilter: "blur(8px)",
@@ -80,7 +70,6 @@ export default function HeroSection() {
                 border: "1px solid rgba(25, 169, 229, 0.15)"
               }}
             >
-
               <p className="text-gray text-sm font-medium leading-snug tracking-wide">
                 Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
               </p>
@@ -90,7 +79,7 @@ export default function HeroSection() {
                 on the Table Every Year
               </h1>
 
-              <p className="text-gray text-xs leading-relaxed">
+              <p className="text-gray text-xs leading-relaxed max-w-3xl">
                 Most private practices lose thousands monthly to claim denials,
                 slow AR and coding errors and never find out until it's too late.
                 We handle your entire revenue cycle so you collect every dollar
@@ -106,7 +95,6 @@ export default function HeroSection() {
                 </button>
               </div>
             </div>
-
           </div>
         </div>
       </div>
