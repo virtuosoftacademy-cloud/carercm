@@ -60,11 +60,11 @@ export default function Testimonials() {
                 />
               </div>
 
-              <div className="px-5 pb-5 pt-4 text-center bg-[#F2F5F8]">
-                <h3 className="text-[#0F0F0F] font-semibold text-[16px] sm:text-[18px] mb-2">
+              <div className="px-5 pb-5 pt-4 text-center bg-[#F2F5F8] transition-colors duration-300 group-hover:bg-[#00427F]">
+                <h3 className="text-[#0F0F0F] font-semibold text-[16px] sm:text-[18px] mb-2 transition-colors duration-300 group-hover:text-white">
                   {doctor.name}
                 </h3>
-                <p className="text-gray text-xs mb-4">
+                <p className="text-gray text-xs mb-4 transition-colors duration-300 group-hover:!text-white">
                   {doctor.clinic}
                 </p>
               </div>

@@ -72,7 +72,7 @@ export default function Services() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group bg-[#f5fcfe] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 sm:p-7 md:p-8 border border-gray-100 hover:border-transparent hover:-translate-y-1"
+                className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 group-hover:scale-110 transition-transform duration-300 relative">
                   <Image
