@@ -49,9 +49,9 @@ export default function Testimonials() {
           {testimonials.map((doctor) => (
             <div
               key={doctor.id}
-              className="group bg-white rounded-xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
+              className="group bg-white rounded-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 flex flex-col h-full"
             >
-              <div className="relative w-full h-[240px] sm:h-[260px] lg:h-[280px] overflow-hidden">
+              <div className="relative w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[4/3] lg:aspect-[4/3] overflow-hidden flex-shrink-0">
                 <Image
                   src={doctor.image}
                   alt={doctor.name}
@@ -60,11 +60,11 @@ export default function Testimonials() {
                 />
               </div>
 
-              <div className="px-5 pb-5 pt-4 text-center bg-[#F2F5F8] transition-colors duration-300 group-hover:bg-[#00427F]">
+              <div className="px-5 pb-5 pt-4 text-center bg-[#F2F5F8] transition-colors duration-300 group-hover:bg-[#00427F] flex-grow flex flex-col justify-center">
                 <h3 className="text-[#0F0F0F] font-semibold text-[16px] sm:text-[18px] mb-2 transition-colors duration-300 group-hover:text-white">
                   {doctor.name}
                 </h3>
-                <p className="text-gray text-xs mb-4 transition-colors duration-300 group-hover:!text-white">
+                <p className="text-gray text-xs sm:text-sm transition-colors duration-300 group-hover:!text-white">
                   {doctor.clinic}
                 </p>
               </div>

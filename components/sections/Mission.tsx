@@ -42,7 +42,7 @@ export default function MissionVision() {
                 <h1 className="h1 text-white mb-4">
                   Our Mission
                 </h1>
-                <p className="text-white text-sm">
+                <p className="text-white text-sm sm:text-base">
                   To take the weight of medical records, coding, and insurance claims
                   off the shoulders of doctors and hospital leaders, handled with
                   precision, integrity, and accountability, so clinicians can give
@@ -53,13 +53,12 @@ export default function MissionVision() {
           </div>
 
           <div className="flex flex-col lg:flex-row w-full">
-
             <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-center px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14 py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 order-2 lg:order-1">
               <div className="max-w-xl">
                 <h1 className="text-white h1 mb-4">
                   Our Vision
                 </h1>
-                <p className="text-white text-sm">
+                <p className="text-white text-sm sm:text-base">
                   A healthcare system where every hour of a clinician's day is spent
                   healing, not chasing paperwork. CareRCM exists to be the trusted
                   back-office partner that makes that possible, through quality
@@ -69,7 +68,7 @@ export default function MissionVision() {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 h-[250px] xs:h-[280px] sm:h-[320px] md:h-[380px] lg:h-[420px] xl:h-[480px] overflow-hidden bg-gradient-to-br from-green-100 to-teal-100 relative order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 h-auto min-h-[250px] xs:min-h-[280px] sm:min-h-[320px] md:min-h-[380px] overflow-hidden bg-gradient-to-br from-green-100 to-teal-100 relative order-1 lg:order-2">
               {!img2Error ? (
                 <Image
                   src="/Rectangle 5 (1).png"
