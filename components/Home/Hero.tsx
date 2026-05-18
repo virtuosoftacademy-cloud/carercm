@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className="block xl:hidden">
           <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
             <Image
-              src="/Mask Group (1).png"
+              src="/mask-group-1.png"
               alt="Doctor consulting with patient"
               fill
               priority
