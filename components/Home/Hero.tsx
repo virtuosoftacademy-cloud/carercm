@@ -7,14 +7,23 @@ export default function HeroSection() {
       <div className="bg-white p-8">
         <div className="block xl:hidden">
           <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
-            <Image
+            {/* <Image
               src="/mask-group-1.png"
               alt="Doctor consulting with patient"
               fill
               priority
               className="object-center"
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
-            />
+            /> */}
+             <Image
+                              src="/Rectangle 5.png"
+                              alt="Medical team discussing patient care"
+                              fill
+                              className="object-cover object-center"
+                              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                              priority
+                              // onError={() => setImg1Error(true)}
+                            />
           </div>
 
           <div className="flex flex-col gap-4 px-2">
