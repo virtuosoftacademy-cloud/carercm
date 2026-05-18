@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -49,7 +48,7 @@ export default function HeroSection() {
           <div className="relative w-full h-[450px]">
             <div className="absolute top-0 right-0 w-[50%] h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px] rounded-r-2xl overflow-hidden">
               <Image
-                src="/Mask group.png"
+                src="/mask-group-1.png"
                 alt="Doctor consulting with patient"
                 fill
                 priority
