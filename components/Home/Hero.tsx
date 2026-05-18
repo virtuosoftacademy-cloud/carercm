@@ -12,7 +12,7 @@ export default function HeroSection() {
               alt="Doctor consulting with patient"
               fill
               priority
-              className="object-containe object-center"
+              className="object-center"
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
             />
           </div>
