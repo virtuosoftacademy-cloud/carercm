@@ -11,10 +11,9 @@ export default function Header() {
 
   const navItems = [
     { name: "Home", path: "/" },
+    { name: "About Us", path: "/About" },
     { name: "Solution", path: "/solution" },
     { name: "Pricing", path: "/pricing" },
-    { name: "Company", path: "/company" },
-    { name: "Resources", path: "/resources" },
   ];
 
   const isActiveLink = (path: string) => {
