@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="max-w-[1600px]">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="text-center md:text-left flex-1">
-              <h2 className="h1 mb-4 !text-white">
+              <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight mb-4 !text-white">
                 Together, Let's Make a Difference!
               </h2>
               <p className="text-white text-xs max-w-2xl mx-auto md:mx-0">
@@ -59,7 +59,7 @@ export default function Footer() {
 
             <div className="flex justify-center md:px-8 lg:px-12 xl:px-16">
               <div className="text-center md:text-left">
-                <h2 className="h2 !text-white mb-3">
+                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight !text-white mb-3">
                   Quick Links
                 </h2>
 
@@ -80,7 +80,7 @@ export default function Footer() {
 
             <div className="flex justify-center md:justify-end md:pl-8 lg:pl-12 xl:pl-16">
               <div className="text-center md:text-left">
-                <h2 className="h2 !text-white mb-3">
+                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight !text-white mb-3">
                   Follow Us:
                 </h2>
 

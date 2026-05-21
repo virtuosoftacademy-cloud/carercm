@@ -100,7 +100,7 @@ export default function HeroSection() {
               Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
             </p>
 
-            <h1 className="h1">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
               Stop Leaving $100K–$250K<br />
               on the Table Every Year
             </h1>
@@ -153,7 +153,7 @@ export default function HeroSection() {
                 Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
               </p>
 
-              <h1 className="h1">
+              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
                 Stop Leaving $100K–$250K<br />
                 on the Table Every Year
               </h1>
@@ -209,7 +209,7 @@ export default function HeroSection() {
 
             <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-center px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14 py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16">
               <div className="max-w-xl">
-                <h1 className="h1 text-white mb-4">
+                <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight !text-white mb-4">
                   Our Mission
                 </h1>
                 <p className="text-white text-sm sm:text-base">
@@ -225,7 +225,7 @@ export default function HeroSection() {
           <div className="flex flex-col lg:flex-row w-full">
             <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-center px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14 py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 order-2 lg:order-1">
               <div className="max-w-xl">
-                <h1 className="text-white h1 mb-4">
+                <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight !text-white mb-4">
                   Our Vision
                 </h1>
                 <p className="text-white text-sm sm:text-base">
@@ -271,11 +271,11 @@ export default function HeroSection() {
 
             <div className="flex-1 flex items-center py-12 sm:py-16 lg:py-20">
               <div>
-                <h1 className="text-white h1 mb-4">
+                <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight !text-white mb-4">
                   We Understand Your Specialty
                 </h1>
 
-                <p className="text-white text-sm ">
+                <p className="text-white text-xs leading-relaxed">
                   Billing rules, payer contracts and denial triggers are different for every specialty.
                   A mental health practice gets denied for different reasons than an orthopedic surgeon.
                   Generic RCM gets you generic results and lost revenue you'll never see.
@@ -305,10 +305,10 @@ export default function HeroSection() {
 
         <div>
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
-            <h1 className="h1">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
               All That Your Practice Needs.
             </h1>
-            <h1 className="h1 mb-4">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-4">
               Nothing You Have to Figure Out Alone.
             </h1>
             <p className="text-gray text-xs max-w-3xl mx-auto">
@@ -334,7 +334,7 @@ export default function HeroSection() {
                   />
                 </div>
 
-                <h2 className="h2 leading-tight mb-4">
+                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight text-[#003f7a] mb-4">
                   {service.title}
                 </h2>
 
@@ -370,7 +370,7 @@ export default function HeroSection() {
 
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
-            <h1 className="h1">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
               Real Practices. Real Recovered Revenue.
             </h1>
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
@@ -423,7 +423,7 @@ export default function HeroSection() {
         <div className="max-w-7xl mx-auto">
 
           <div className="text-center mb-6">
-            <h1 className="h1">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
               Recognized by the Industry. Trusted by Physicians <br />
               Who Can't Afford to Get Billing Wrong.
             </h1>

@@ -105,7 +105,7 @@ export default function ContactForm() {
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
-            <h1 className="h1 leading-tight">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">
               Join Us in Making a Difference!
             </h1>
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />

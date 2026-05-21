@@ -1,5 +1,6 @@
-
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
 const testimonials = [
   {
@@ -21,7 +22,35 @@ const testimonials = [
     image: "/image 2 (1).png",
   },
 ];
+
+
 const About = () => {
+
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const workflows = [
+    {
+      title: "Pre-Registration & Charge Capture",
+      content: "Every encounter gets captured and coded correctly — before it ever touches a payer. We eliminate the upstream errors that cause 40% of downstream denials before they happen."
+    },
+    {
+      title: "Clean Claims Submission",
+      content: "We submit accurate, payer-specific claims the first time. That means 20-day payments — not 90-day AR nightmares. Your cash flow stops being a guessing game."
+    },
+    {
+      title: "Denial Management",
+      content: "Most practices quietly write off 65% of denied claims. We don't. We chase every denial, identify root causes, and appeal aggressively — turning written-off revenue back into collected cash."
+    },
+    {
+      title: "Payment Posting & Underpayment Recovery",
+      content: "We audit every payment against your contracted fee schedule. Routine payer underpayments go unchallenged at most practices — we catch them and recover them."
+    },
+    {
+      title: "Real-Time Reporting Dashboard",
+      content: "You'll always know your denial rate, AR aging, and collection rate. No surprises. No reactive fire-fighting. Just the clarity to make proactive decisions about your practice."
+    }
+  ];
+
   return (
     <>
       <div className="card w-full p-12 bg-gray-50">
@@ -42,7 +71,7 @@ const About = () => {
               Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
             </p>
 
-            <h1 className="h1">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
               Stop Leaving $100K–$250K<br />
               on the Table Every Year
             </h1>
@@ -95,7 +124,7 @@ const About = () => {
                 Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
               </p>
 
-              <h1 className="h1">
+              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
                 Stop Leaving $100K–$250K<br />
                 on the Table Every Year
               </h1>
@@ -123,7 +152,7 @@ const About = () => {
 
       <div className="w-full p-12 bg-white flex justify-center">
         <div className="flex flex-col items-center justify-center max-w-5xl text-center">
-          <h1 className="h1 mb-6">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
+          <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
           <p className="text-xs text-gray leading-relaxed">Most private practices unknowingly surrender 20–30% of their revenue to a system that's rigged against them — payers who delay, deny, and underpay on purpose. We built CareRCM to fight back. Our mission is simple: handle every dollar of your revenue cycle with obsessive precision so you can focus entirely on your patients, not your payer contracts. No billing stress. No lost revenue. No guesswork. Just clean claims, recovered denials, and a practice that runs at its full financial potential.</p>
         </div>
       </div>
@@ -158,7 +187,7 @@ const About = () => {
 
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
-            <h1 className="h1">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
               Real Practices. Real Recovered Revenue.
             </h1>
             <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
@@ -204,6 +233,100 @@ const About = () => {
           </button>
         </div>
 
+      </div>
+
+
+
+      <div className="min-h-screen bg-[#f9fafb] flex items-center justify-center p-6">
+        <div className="w-full max-w-[70%]">
+
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
+              <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
+
+              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+                We Don't Advise. We Execute.
+              </h1>
+
+              <span className="block w-10 sm:w-16 h-[2px] bg-[#0a3d8f]" />
+            </div>
+
+            <p className="text-gray text-xs leading-relaxed">
+              From the moment a patient walks in to the day your payment posts,
+              <br />
+              CareRCM owns every stage of your revenue cycle.
+            </p>
+          </div>
+
+          <div className="bg-blue-50 rounded-[30px] overflow-hidden shadow-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                {workflows.map((item, index) => (
+                  <div
+                    key={index}
+                    className="border-b border-[#d7deea]"
+                  >
+                    <button
+                      onClick={() =>
+                        setOpenIndex(openIndex === index ? -1 : index)
+                      }
+                      className="w-full py-6 flex items-center justify-between text-left"
+                    >
+                      <h3 className="text-[#00427F] text-[18px] md:text-[20px] font-semibold max-w-[85%]">
+                        {item.title}
+                      </h3>
+
+                      <span
+                        className={`text-[#00427F] transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                          }`}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+
+                    <div
+                      className={`grid transition-all duration-500 ease-in-out ${openIndex === index
+                          ? "grid-rows-[1fr] opacity-100"
+                          : "grid-rows-[0fr] opacity-0"
+                        }`}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="text-gray text-xs leading-relaxed pr-5 pb-6">
+                          {item.content}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="relative min-h-[500px]">
+                <Image
+                  src="/Frame 115.png"
+                  alt="Frame 115"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
