@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#0a3d8f]">
-      <div className="bg-[#19a9e5] py-8 sm:py-10 px-4 sm:px-6 lg:px-16">
+      {/* <div className="bg-[#19a9e5] py-8 sm:py-10 px-4 sm:px-6 lg:px-16">
         <div className="max-w-[1600px]">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="text-center md:text-left flex-1">
@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="px-4 sm:px-6 lg:px-16 py-10 sm:py-12 pb-4">
         <div className="max-w-[1600px]">
@@ -47,12 +47,15 @@ export default function Footer() {
                 </div>
 
                 <p className="text-white text-xs max-w-md mx-auto md:mx-0">
-                  Lorem ipsum dolor sit amet consectetur. A felis non viverra
-                  commodo laoreet leo elementum.
+                  End-to-end RCM. Zero revenue left behind.
                 </p>
 
                 <p className="text-white text-xs mt-3">
-                  EIN Number: 12 – 3456789
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-white inline-block mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>
+
+                  +1 812 991 8056
                 </p>
               </div>
             </div>
@@ -64,7 +67,7 @@ export default function Footer() {
                 </h2>
 
                 <ul className="space-y-2">
-                  {["Home", "Solutions", "Pricing", "Company", "Resources"].map((link) => (
+                  {["Home", "How It Works", "About Us", "Contact Us", "Privacy Policy"].map((link) => (
                     <li key={link}>
                       <a
                         href="#"
@@ -128,21 +131,21 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center items-center gap-3 mt-6 pt-4 border-t border-white/40 pb-0">
-            <p className="text-white text-xs leading-none m-0 text-center">
+          <div className="flex flex-col md:flex-row md:justify-center md:items-center items-center gap-3 mt-6 pt-4 border-t border-white/40 pb-0">
+            {/* <p className="text-white text-xs leading-none m-0 text-center">
               EIN Number: 12 – 3456789
-            </p>
+            </p> */}
 
             <p className="text-white text-xs text-center leading-none m-0">
               Copyright © 2026 CareRCM All rights reserved.
             </p>
 
-            <a
+            {/* <a
               href="#"
               className="text-white text-xs leading-none transition-colors m-0 text-center"
             >
               Privacy Policy
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
