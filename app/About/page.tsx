@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const testimonials = [
   {
@@ -27,6 +28,10 @@ const testimonials = [
 const About = () => {
 
   const [openIndex, setOpenIndex] = useState(0);
+    const routter = useRouter();
+    const navigate = (path: string) => {
+      routter.push(path);
+    }
 
   const workflows = [
     {
@@ -125,11 +130,13 @@ const About = () => {
               CareRCM is a specialized end-to-end Revenue Cycle Management firm built on certified trained RCM specialists so your revenue stops leaking through denied claims, slow AR, and coding errors. We handle the entire billing, coding, and collections process — No in-house billing team needed, no dollar left behind.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 mt-2">
-              <button className="btn">
+            <div className="flex flex-col gap-3 mt-2">
+              <button className="btn w-full sm:w-auto">
                 Get My Free RCM Audit
               </button>
-              <button className="btn2">
+              <button className="btn2 w-full sm:w-auto"
+                onClick={() => navigate("/mechanism")}
+              >
                 See How It Works
               </button>
             </div>
@@ -174,7 +181,9 @@ const About = () => {
                 <button className="btn">
                   Get My Free RCM Audit
                 </button>
-                <button className="btn2">
+                <button className="btn2"
+                  onClick={() => navigate("/mechanism")}
+                >
                   See How It Works
                 </button>
               </div>
@@ -339,8 +348,8 @@ const About = () => {
           ))}
         </div>
 
-        <div className="flex justify-center">
-          <button className="btn !px-12">
+        <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+          <button className="btn w-full sm:w-[180px] px-12">
             See More
           </button>
         </div>

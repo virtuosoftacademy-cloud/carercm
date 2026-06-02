@@ -4,15 +4,21 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const routter = useRouter();
+  const navigate = (path: string) => {
+    routter.push(path);
+    setIsOpen(false);
+  }
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "How It Works", path: "/How-it-works" },
-    { name: "About Us", path: "/About" },
+    { name: "How It Works", path: "/mechanism" },
+    { name: "About Us", path: "/about" },
   ];
 
   const isActiveLink = (path: string) => {
@@ -56,6 +62,7 @@ export default function Header() {
             ))}
             <button 
               className="btn"
+              onClick={() => navigate("/contact")}
             >
               Contact Us
             </button>
@@ -105,7 +112,7 @@ export default function Header() {
               ))}
               <button 
                 className="btn"
-                onClick={() => setIsOpen(false)}
+                onClick={() => navigate("/contact")}
               >
                 Contact Us
               </button>
