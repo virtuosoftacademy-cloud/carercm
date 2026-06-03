@@ -16,6 +16,10 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
+  // 🔴 YAHAN APNI GOOGLE SHEETS WEB APP URL LAGAYEIN 🔴
+  // Google Sheets Script Editor se deploy karne ke baad yeh URL yahan paste karein
+  const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbxsxLUF2UWVbgoS4U3LvdCDI2Kta5O-IyvF6Y39jhrPqBAQqzl7sdcmcWSd8qGvx4LqfQ/exec";
+
   // Handle Input Change
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -44,23 +48,27 @@ export default function ContactForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Handle Submit
-  const handleSubmit = (e: React.FormEvent) => {
+  // Handle Submit - Data Google Sheet mein save hoga
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (validateForm()) {
       setIsSubmitting(true);
 
-      console.log("=== Form Submitted ===");
-      console.log("Your Name:", formData.yourName);
-      console.log("Practice Name:", formData.practiceName);
-      console.log("Medical Specialty:", formData.medicalSpecialty);
-      console.log("Monthly Claims Volume:", formData.monthlyClaimsVolume);
-      console.log("Email:", formData.email);
-      console.log("Phone Number:", formData.phoneNumber);
-      console.log("======================");
+      try {
+        // Google Sheets API call
+        const response = await fetch(GOOGLE_SHEETS_URL, {
+          method: "POST",
+          mode: "no-cors", // Important for Google Sheets
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
 
-      setTimeout(() => {
+        console.log("Form submitted to Google Sheets:", formData);
+        
+        // Reset form
         setFormData({
           yourName: "",
           practiceName: "",
@@ -69,11 +77,19 @@ export default function ContactForm() {
           email: "",
           phoneNumber: "",
         });
+        
         setSubmitSuccess(true);
+        
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 3000);
+        
+      } catch (error) {
+        console.error("Submit error:", error);
+        alert("Error submitting form. Please try again.");
+      } finally {
         setIsSubmitting(false);
-
-        setTimeout(() => setSubmitSuccess(false), 3000);
-      }, 500);
+      }
     }
   };
 
@@ -113,7 +129,7 @@ export default function ContactForm() {
 
         {submitSuccess && (
           <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-xl text-center">
-            ✅ Form submitted successfully! We'll contact you within 48 hours.
+            ✅ Form submitted successfully! Your information has been saved. We'll contact you within 48 hours.
           </div>
         )}
 
@@ -155,11 +171,11 @@ export default function ContactForm() {
                 name="medicalSpecialty"
                 value={formData.medicalSpecialty}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border text-[#aaaaaa] rounded-2xl bg-white focus:outline-none focus:ring-2 focus:ring-[#19a9e5] transition ${errors.medicalSpecialty ? "border-red-500" : "border-gray-300"
+                className={`w-full px-4 py-3 border text-[#666] rounded-2xl bg-white focus:outline-none focus:ring-2 focus:ring-[#19a9e5] transition ${errors.medicalSpecialty ? "border-red-500" : "border-gray-300"
                   }`}
               >
                 {specialties.map((specialty, index) => (
-                  <option key={index} value={specialty === "Medical Specialty" ? "" : specialty} className="rounded-xl text-gray">
+                  <option key={index} value={specialty === "Medical Specialty" ? "" : specialty}>
                     {specialty}
                   </option>
                 ))}
