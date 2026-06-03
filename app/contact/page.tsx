@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="block xl:hidden">
                     <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
                         <Image
-                            src="/mask-group-1.png"
+                            src="/ladies-doctor.png"
                             alt="Doctor consulting with patient"
                             fill
                             priority
@@ -54,12 +54,12 @@ const Contact = () => {
                     <div className="relative w-full h-[450px]">
                         <div className="absolute top-0 right-0 w-[50%] h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px] rounded-r-2xl overflow-hidden">
                             <Image
-                                src="/mask-group-1.png"
+                                src="/ladies-doctor.png"
                                 alt="Doctor consulting with patient"
                                 fill
                                 priority
                                 className="object-cover object-center"
-                                sizes="50vw"
+                                sizes="100vw"
                             />
                         </div>
 
