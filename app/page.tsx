@@ -1,9 +1,5 @@
-import Hero from "@/app/home/page";
+import HomeContent from "@/app/home/page";
 
 export default function Home() {
-  return (
-    <main>
-      <Hero />
-    </main>
-  );
+  return <HomeContent />;  
 }
