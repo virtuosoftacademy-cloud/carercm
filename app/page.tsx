@@ -1,4 +1,4 @@
-import Hero from "@/app/home/page";
+import Hero from "@/app/Home/page";
 // import ContactForm from "@/components/ContactForm/page";
 // import Footer from "@/components/ContactForm/Footer";
 
