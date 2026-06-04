@@ -110,11 +110,11 @@ const Mechanism = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+            <h1 className="text-[36px] font-semibold leading-tight text-[#00427F]">
               We Plug Into Your Practice and Own Every Stage of Your Revenue Cycle
             </h1>
 
-            <p className="text-gray text-xs leading-relaxed">
+            <p className="text-gray text-xs font-normal leading-relaxed">
               CareRCM takes over the billing, coding, and collections process from day one. Pre-registration to payment posting — every step executed by specialists who know your specialty's codes, your payers' quirks, and exactly where practices like yours are bleeding revenue. You practice medicine the best you can. And we collect every dollar you deserve.
             </p>
 
@@ -132,7 +132,7 @@ const Mechanism = () => {
         <div className="hidden xl:block">
           {/* Desktop version unchanged */}
           <div className="relative w-full h-[450px]">
-            <div className="absolute top-0 right-0 w-[50%] h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px] rounded-r-2xl overflow-hidden">
+            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
               <Image
                 src="/mature-doctor.png"
                 alt="Doctor consulting with patient"
@@ -144,7 +144,7 @@ const Mechanism = () => {
             </div>
 
             <div
-              className="absolute flex flex-col gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px]"
+              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
               style={{
                 top: "40px",
                 left: "16px",
@@ -157,11 +157,11 @@ const Mechanism = () => {
               }}
             >
 
-              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+              <h1 className="text-[36px] font-semibold leading-tight text-[#003f7a] max-w-2xl">
                 We Plug Into Your Practice and Own Every Stage of Your Revenue Cycle
               </h1>
 
-              <p className="text-gray text-xs leading-relaxed max-w-3xl">
+              <p className="text-gray text-xs font-normal max-w-3xl">
                 CareRCM takes over the billing, coding, and collections process from day one. Pre-registration to payment posting — every step executed by specialists who know your specialty's codes, your payers' quirks, and exactly where practices like yours are bleeding revenue. You practice medicine the best you can. And we collect every dollar you deserve.
               </p>
 
@@ -178,18 +178,18 @@ const Mechanism = () => {
         </div>
       </div>
 
-      <div className="w-full p-4 sm:p-12 bg-white flex justify-center">
+      <div className="w-full p-12 mt-20 bg-white flex justify-center">
         <div className="flex flex-col items-center justify-center max-w-4xl text-center">
-          <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">Six Stages. No Dollars Left Behind.</h1>
-          <p className="text-xs text-gray font-medium max-w-3xl">
+          <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Six Stages. No Dollars Left Behind.</h1>
+          <p className="text-xs text-gray font-normal max-w-3xl">
             Most practices lose 20–30% of their revenue somewhere between the patient visit and the payment hitting their account. CareRCM locks down every one of those leakage points — so the money you've earned actually makes it to you.          </p>
         </div>
       </div>
 
       <div className="w-full p-4 sm:p-12 bg-white flex justify-center">
         <div className="flex flex-col items-center justify-center max-w-4xl text-center">
-          <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">Where Other Billing Services Stop, CareRCM Starts.</h1>
-          <p className="text-xs text-gray font-medium max-w-3xl">
+          <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Where Other Billing Services Stop, CareRCM Starts.</h1>
+          <p className="text-xs text-gray font-normal max-w-3xl">
             Most practices lose money at every step of the revenue cycle without realizing it. We plug into your existing setup and own every stage from the moment a patient walks in to when you get paid.
           </p>
         </div>
@@ -211,110 +211,116 @@ const Mechanism = () => {
                   className="object-contain"
                 />
               </div>
-              <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight text-[#003f7a] mb-4">
+              <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
                 {service.title}
               </h2>
-              <p className="text-gray text-xs mb-12">
+              <p className="text-gray text-xs font-normal mb-12">
                 {service.description}
               </p>
             </div>
           ))}
         </div>
-        <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
           <button className="btn w-full sm:w-[180px] px-12">
             View All
           </button>
-        </div>
+        </div> */}
       </div>
 
 
       {/* Leadership Section - Only padding and flex direction changed */}
-      <div className="relative py-16 lg:py-24 bg-[#F5F8FB] overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">
-              Institutional-Grade Financial Rigor. Built by
-              Globally Recognized Healthcare Leaders.
-            </h1>
-            <p className="text-gray text-xs max-w-3xl mx-auto">
-              Your revenue cycle isn't managed by generic billers. CareRCM is
-              backed by leadership with decades of experience at the highest
-              levels of global finance and healthcare administration.
-            </p>
-          </div>
+      <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
+        <div className="relative py-16 lg:py-24 bg-[#F2FBFDF0] overflow-hidden">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
+                Institutional-Grade Financial Rigor. Built by
+                Globally Recognized Healthcare Leaders.
+              </h1>
+              <p className="text-gray text-xs font-normal max-w-3xl mx-auto">
+                Your revenue cycle isn't managed by generic billers. CareRCM is
+                backed by leadership with decades of experience at the highest
+                levels of global finance and healthcare administration.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 gap-5">
-            {leadershipData.map((item) => (
-              <div key={item.id} className="bg-white border border-[#19A9E5] rounded-[18px] p-6 md:p-7">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 relative mt-1">
-                    <Image src={item.icon} alt={item.title} fill className="object-contain" />
-                  </div>
-                  <div>
-                    <h3 className="text-[24px] font-medium text-gray leading-tight">
-                      {item.title}
-                    </h3>
-                    <p className="text-[14px] font-semibold text-gray mt-1">
-                      {item.subtitle}
-                    </p>
-                    <p className="text-xs text-gray leading-relaxed mt-3">
-                      {item.description}
-                    </p>
+            <div className="grid md:grid-cols-2 gap-5">
+              {leadershipData.map((item) => (
+                <div key={item.id} className="bg-white border border-[#19A9E5] rounded-[18px] p-6 md:p-7">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 relative mt-1">
+                      <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-[20px] font-normal text-gray leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs font-semibold text-gray mt-1">
+                        {item.subtitle}
+                      </p>
+                      <p className="text-xs text-gray leading-relaxed mt-3">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          <div className="max-w-5xl mx-auto text-center mt-12">
-            <p className="text-xs text-gray leading-relaxed">
-              Former <strong>CEO of Aman Healthcare</strong> — Pakistan's largest
-              telehealth provider, with 700+ trained paramedics — and founding
-              team member of <strong>Evercare Health</strong>, operating hospitals
-              across four countries. The same investment frameworks and process
-              excellence built for large hospital systems are now working for your
-              practice.
-            </p>
+            <div className="max-w-5xl mx-auto text-center mt-12">
+              <p className="text-xs text-gray font-normal leading-relaxed">
+                Former <strong>CEO of Aman Healthcare</strong> — Pakistan's largest
+                telehealth provider, with 700+ trained paramedics — and founding
+                team member of <strong>Evercare Health</strong>, operating hospitals
+                across four countries. The same investment frameworks and process
+                excellence built for large hospital systems are now working for your
+                practice.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
+      {/* Stats Section - Grid is already responsive */}
       <div className="bg-white py-20">
-        <div className="relative overflow-hidden">
-          <div
-            className="relative py-16 sm:py-20 lg:py-28"
-            style={{
-              backgroundImage: "url('/bg-room.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 bg-[#004A8F]/90"></div>
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-5xl mx-auto">
-                {statsData.map((item, index) => (
-                  <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 text-center shadow-lg">
-                    <h2 className="text-[#17A9E6] text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight">
-                      {item.value}
-                    </h2>
-                    <p className="mt-4 text-gray text-xs sm:text-base leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
+        <div className="bg-[url('/bg-image-2.png')] bg-no-repeat bg-right-top bg-cover">
+          <div className="relative overflow-hidden">
+            <div
+              className="relative py-16 sm:py-20 lg:py-28"
+              style={{
+                backgroundImage: "url('/bg-room.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="absolute inset-0 bg-[#004A8F]/90"></div>
+              <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-6xl mx-auto">
+                  {statsData.map((item, index) => (
+                    <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 text-center shadow-lg">
+                      <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
+                        {item.value}
+                      </h2>
+                      <p className="mt-4 text-gray text-xs sm:text-base leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Footer Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[#F7F9FB] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6">
               Institutional-grade financial rigor. In your corner.
             </h1>
-            <p className="max-w-3xl mx-auto text-gray text-xs sm:text-sm font-medium">
+            <p className="max-w-4xl mx-auto text-gray text-xs font-normal">
               CareRCM was built by a leader who developed healthcare workforce
               of nurses and care workers, and restructured hospital-level
               healthcare systems — and directed that experience for efficiency
@@ -322,13 +328,13 @@ const Mechanism = () => {
             </p>
           </div>
 
-          <div className="mt-10 bg-blue-50 rounded-2xl p-6 md:p-8">
+          <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
             <div className="flex gap-4">
               <div className="text-[#004A8F] text-5xl font-bold leading-none mt-2">
                 <Image src="/cotection.png" alt="cotection icon" width={50} height={50} />
               </div>
               <div>
-                <p className="text-gray text-xs sm:text-sm font-medium">
+                <p className="text-gray text-xs font-normal leading-relaxed">
                   "Private practice physicians deserve the same process
                   orientation and systems that large hospitals pay billions for.
                   That's not a product gap — it's a justice gap. CareRCM was
@@ -343,23 +349,23 @@ const Mechanism = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6 mt-6">
-            <div className="bg-blue-50 rounded-2xl p-6 md:p-8">
-              <h3 className="text-[#19A9E5] font-semibold text-md">
+            <div className="bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
+              <h3 className="text-[#19A9E5] font-semibold text-[24px]">
                 Malik Ahmad Jalal
               </h3>
-              <p className="text-gray text-xs sm:text-sm font-medium mt-2">
+              <p className="text-gray text-xs font-normal mt-2">
                 Founder & CEO — Harvard Kennedy School · Former CEO,
                 Aman Healthcare · Founder, Evercare Health · ICAEW Chartered
                 Accountant
               </p>
-              <p className="text-gray text-xs sm:text-sm font-medium mt-6">
+              <p className="text-gray text-xs font-normal mt-6">
                 Malik brings a combination: the financial discipline and process
                 orientation of Goldman Sachs and Deloitte, the systems-thinking
                 of Harvard, and the on-the-ground healthcare workforce
                 development and restructuring experience of Aman Healthcare —
                 one of South Asia's largest integrated health networks.
               </p>
-              <p className="text-gray text-xs sm:text-sm font-medium mt-4">
+              <p className="text-gray text-xs font-normal mt-4">
                 He built CareRCM because he has seen, firsthand, what happens
                 when the financial infrastructure fails physicians. He's spent
                 his career fixing it. Now he's bringing that capability
@@ -369,16 +375,16 @@ const Mechanism = () => {
 
             <div className="space-y-3">
               {credentials.map((item, index) => (
-                <div key={index} className="bg-blue-50 rounded-2xl px-6 py-5">
+                <div key={index} className="bg-[#0AADE40D] rounded-2xl px-6 py-5">
                   <div className="flex items-center gap-4">
                     <div className="relative w-9 h-9 flex-shrink-0">
                       <Image src={item.icon} alt={item.title} fill className="object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-[24px] font-medium text-gray leading-tight">
+                      <h3 className="text-[20px] font-normal text-gray leading-tight">
                         {item.title}
                       </h3>
-                      <p className="text-[14px] font-semibold text-gray mt-1">
+                      <p className="text-xs font-semibold text-gray mt-1">
                         {item.subtitle}
                       </p>
                     </div>
@@ -389,10 +395,10 @@ const Mechanism = () => {
           </div>
 
           <div className="mt-20 text-center">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
               Why it matters beyond your practice
             </h1>
-            <p className="max-w-4xl mx-auto mt-6 text-gray text-xs sm:text-sm font-medium">
+            <p className="max-w-4xl mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
               Independent private practices are the backbone of public health in
               America. When a practice faces financial difficulties — or cuts
               services because cash flow can't sustain it — real patients lose

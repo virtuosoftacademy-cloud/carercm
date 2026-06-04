@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
 
 
-            <div className="bg-[#fff] p-12 mt-20">
+            <div className="bg-[#fff] px-0 sm:px-8 lg:p-12 my-20">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {contactInfo.map((item) => (
                         <div
