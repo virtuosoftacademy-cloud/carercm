@@ -193,7 +193,7 @@ const HomePage = () => {
         <div className="hidden xl:block">
           {/* Desktop version unchanged */}
           <div className="relative w-full h-[450px]">
-            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-r-2xl overflow-hidden">
+            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
               <Image
                 src="/mask-group-1.png"
                 alt="Doctor consulting with patient"
@@ -246,7 +246,7 @@ const HomePage = () => {
       </div>
 
       {/* Mission/Vision Section - Only padding changed */}
-      <div className="bg-white p-12">
+      <div className="bg-white px-4 sm:px-4 lg:p-12">
         <div className="w-full">
           <div className="text-center mx-auto max-w-5xl mt-20 mb-12">
             <h1 className="text-[44px] leading-[1.2] font-semibold tracking-wide text-[#004275] mb-3 sm:mb-4">

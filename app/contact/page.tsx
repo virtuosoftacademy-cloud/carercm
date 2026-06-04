@@ -25,7 +25,7 @@ const Contact = () => {
     ];
     return (
         <>
-            <div className="bg-white p-4 sm:p-8">
+            <div className="bg-[#2166AF0D] p-8 xl:min-h-[650px]">
                 <div className="block xl:hidden">
                     <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
                         <Image
@@ -39,11 +39,11 @@ const Contact = () => {
                     </div>
 
                     <div className="flex flex-col gap-4">
-                        <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+                        <h1 className="text-[36px] font-semibold leading-tight text-[#00427F]">
                             Your Revenue Is Waiting. Let's Talk.
                         </h1>
 
-                        <p className="text-gray text-xs leading-relaxed">
+                        <p className="text-gray text-xs font-normal leading-relaxed">
                             CareRCM helps medical practices recover lost revenue, reduce denials, and streamline billing operations with fast, accountable RCM support. Whether you need a full revenue cycle audit, credentialing assistance, compliance guidance, or ongoing billing support, our nationwide team is ready to respond quickly and help your practice maximize every dollar earned.
                         </p>
                     </div>
@@ -52,23 +52,22 @@ const Contact = () => {
                 <div className="hidden xl:block">
                     {/* Desktop version unchanged */}
                     <div className="relative w-full h-[450px]">
-                        <div className="absolute top-0 right-0 w-[50%] h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px] rounded-r-2xl overflow-hidden">
+                        <div className="absolute top-0 right-0 w-[45%] h-[420px] md:h-[450px] lg:h-[500px] xl:h-[520px] rounded-r-2xl overflow-hidden">
                             <Image
                                 src="/ladies-doctor.png"
                                 alt="Doctor consulting with patient"
                                 fill
                                 priority
-                                className="object-cover object-center"
-                                sizes="100vw"
+                                className="object-center object-contain"
                             />
                         </div>
 
                         <div
-                            className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px]"
+                            className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
                             style={{
                                 top: "40px",
                                 left: "16px",
-                                width: "60%",
+                                width: "65%",
                                 background: "rgba(180,220,245,0.15)",
                                 backdropFilter: "blur(8px)",
                                 WebkitBackdropFilter: "blur(8px)",
@@ -77,11 +76,11 @@ const Contact = () => {
                             }}
                         >
 
-                            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+                            <h1 className="text-[36px] font-semibold leading-tight text-[#00427F]">
                                 Your Revenue Is Waiting. Let's Talk.
                             </h1>
 
-                            <p className="text-gray text-xs leading-relaxed max-w-3xl">
+                            <p className="text-gray text-xs font-normal leading-relaxed max-w-3xl">
                                 CareRCM helps medical practices recover lost revenue, reduce denials, and streamline billing operations with fast, accountable RCM support. Whether you need a full revenue cycle audit, credentialing assistance, compliance guidance, or ongoing billing support, our nationwide team is ready to respond quickly and help your practice maximize every dollar earned.
                             </p>
                         </div>
@@ -90,7 +89,7 @@ const Contact = () => {
             </div>
 
 
-            <div className="bg-[#fff] p-4 sm:p-12">
+            <div className="bg-[#fff] px-0 sm:px-8 lg:p-12 my-20">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {contactInfo.map((item) => (
                         <div
@@ -104,10 +103,10 @@ const Contact = () => {
                                 height={40}
                                 className="mb-8"
                             />
-                            <p className="text-gray text-xs leading-relaxed mb-2">
+                            <p className="text-gray text-xs font-normal leading-relaxed mb-2">
                                 {item.label}
                             </p>
-                            <p className="text-black text-sm leading-relaxed font-semibold">
+                            <p className="text-gray text-sm leading-relaxed font-semibold">
                                 {item.value}
                             </p>
                         </div>

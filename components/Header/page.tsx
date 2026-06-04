@@ -51,10 +51,10 @@ export default function Header() {
               <Link 
                 key={item.name}
                 href={item.path} 
-                className={`text-sm font-light transition-all duration-300 hover:!text-[#00427F] ${
+                className={`text-xs font-normal transition-all duration-300 hover:!text-[#00427F] ${
                   isActiveLink(item.path) 
                     ? "text-[#00427F] font-normal underline underline-offset-12" 
-                    : "text-black hover:text-[#00427F]"
+                    : "text-gray hover:text-[#00427F]"
                 }`}
               >
                 {item.name}
