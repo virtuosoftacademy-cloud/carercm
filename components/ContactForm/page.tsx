@@ -119,16 +119,16 @@ export default function ContactForm() {
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-white mb-3 sm:mb-4">
+          <h1 className="text-[44px] font-semibold leading-tight text-white mb-3 sm:mb-4">
             Find out exactly how much your practice is <br className="hidden sm:block" />leaving on the table
           </h1>
-          <p className="text-white text-xs sm:text-sm max-w-2xl mx-auto px-2 sm:px-0">
+          <p className="text-white text-xs font-normal max-w-2xl mx-auto px-2 sm:px-0">
             We'll audit your denial rates, AR aging and coding patterns - and show you the dollar gap in black and white. No pitch, Just numbers.
           </p>
         </div>
 
         {submitSuccess && (
-          <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-xl text-center">
+          <div className="mb-6 p-4 bg-green-100 text-xs border border-green-400 text-green-700 rounded-xl text-center">
             ✅ Form submitted successfully! Your information has been saved. We'll contact you within 48 hours.
           </div>
         )}
@@ -233,13 +233,13 @@ export default function ContactForm() {
           </div>
 
           <div className="mt-6 sm:mt-8 text-center">
-            <p className="text-white text-xs sm:text-sm font-medium mb-4 px-2 sm:px-0">
+            <p className="text-white text-[20px] font-600 mb-4 px-2 sm:px-0">
               See exactly how much revenue your practice is leaving on the table. <br className="hidden sm:block" /> We'll show you in black and white — free, in 48 hours.
             </p>
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-[#003f7a] hover:bg-[#002a5a] text-white font-medium py-3 px-6 sm:px-10 rounded-2xl transition duration-300 w-full sm:w-auto ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+              className={`bg-[#00427F] text-white font-normal text-xs py-3 px-6 sm:px-10 rounded-2xl transition duration-300 w-full sm:w-auto ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                 }`}
             >
               {isSubmitting ? "Submitting..." : "Get my free RCM audit"}

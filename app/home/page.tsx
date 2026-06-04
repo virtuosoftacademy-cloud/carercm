@@ -163,15 +163,15 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="text-gray text-sm font-medium leading-snug">
+            <p className="text-[#4E4E4E] text-sm font-normal leading-snug">
               Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
             </p>
 
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+            <h1 className="text-[54px] font-semibold leading-tight text-[#00427F]">
               Stop Leaving $100K–$250K on the Table Every Year
             </h1>
 
-            <p className="text-gray text-xs leading-relaxed">
+            <p className="text-gray text-xs font-normal leading-relaxed">
               Most private practices lose thousands monthly to claim denials,
               slow AR and coding errors and never find out until it's too late.
               We handle your entire revenue cycle so you collect every dollar
@@ -193,19 +193,18 @@ const HomePage = () => {
         <div className="hidden xl:block">
           {/* Desktop version unchanged */}
           <div className="relative w-full h-[450px]">
-            <div className="absolute top-0 right-0 w-[50%] h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px] rounded-r-2xl overflow-hidden">
+            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-r-2xl overflow-hidden">
               <Image
                 src="/mask-group-1.png"
                 alt="Doctor consulting with patient"
                 fill
                 priority
                 className="object-cover object-center"
-                sizes="50vw"
               />
             </div>
 
             <div
-              className="absolute flex flex-col gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px]"
+              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[500px]"
               style={{
                 top: "40px",
                 left: "16px",
@@ -217,15 +216,15 @@ const HomePage = () => {
                 border: "1px solid rgba(25, 169, 229, 0.15)"
               }}
             >
-              <p className="text-gray text-sm font-medium leading-snug tracking-wide">
+              <p className="text-[#4E4E4E] text-sm font-normal leading-snug tracking-wide">
                 Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
               </p>
 
-              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+              <h1 className="text-[54px] leading-[1.2] font-semibold tracking-wide text-[#00427F] max-w-3xl">
                 Stop Leaving $100K–$250K on the Table Every Year
               </h1>
 
-              <p className="text-gray text-xs leading-relaxed max-w-3xl">
+              <p className="text-gray text-xs font-normal leading-relaxed max-w-2xl">
                 Most private practices lose thousands monthly to claim denials,
                 slow AR and coding errors and never find out until it's too late.
                 We handle your entire revenue cycle so you collect every dollar
@@ -247,19 +246,19 @@ const HomePage = () => {
       </div>
 
       {/* Mission/Vision Section - Only padding changed */}
-      <div className="bg-white p-4 sm:p-12">
+      <div className="bg-white p-12">
         <div className="w-full">
-          <div className="text-center mx-auto max-w-3xl mb-6">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-3 sm:mb-4">
+          <div className="text-center mx-auto max-w-5xl mt-20 mb-12">
+            <h1 className="text-[44px] leading-[1.2] font-semibold tracking-wide text-[#004275] mb-3 sm:mb-4">
               We built a financial infrastructure for independent physicians
             </h1>
-            <p className="text-gray text-xs sm:text-sm font-medium">
+            <p className="text-gray text-xs font-normal max-w-3xl mx-auto">
               Most RCM vendors run claims. We recover money. There's a critical difference — and it starts with who is sitting at the helm. Experience at the highest levels of global finance and healthcare administration.
             </p>
           </div>
 
           <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden">
-            <div className="w-full lg:w-1/2 relative h-[220px] xs:h-[240px] sm:h-[280px] md:h-[300px] lg:h-[330px] xl:h-[350px] bg-gradient-to-br from-blue-100 to-cyan-100">
+            <div className="w-full lg:w-1/2 relative h-[250px] xs:h-[270px] sm:h-[320px] md:h-[350px] lg:h-[370px] xl:h-[400px] bg-gradient-to-br from-blue-100 to-cyan-100">
               <Image
                 src="/Rectangle5.png"
                 alt="Medical team discussing patient care"
@@ -271,10 +270,10 @@ const HomePage = () => {
 
             <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-start px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10">
               <div className="max-w-xl">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight !text-white mb-4">
+                <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
                   Our Mission
                 </h2>
-                <p className="text-white text-xs sm:text-base">
+                <p className="text-white text-[18px] font-normal leading-relaxed">
                   Handle every dollar of the revenue cycle so you focus entirely on patient care.<br />
                   No billing stress. No dollar lost. No guesswork.
                 </p>
@@ -285,16 +284,16 @@ const HomePage = () => {
           <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden">
             <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10 order-2 lg:order-1">
               <div className="max-w-xl">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight !text-white mb-4">
+                <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
                   Our Vision
                 </h2>
-                <p className="text-white text-xs sm:text-base">
+                <p className="text-white text-[18px] font-normal leading-relaxed">
                   Every independent practice runs at its full potential of quality care and achieves its financial objectives — where no physician loses sleep over cash flow, and no earned dollar goes uncollected.
                 </p>
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 relative h-[220px] xs:h-[240px] sm:h-[280px] md:h-[300px] lg:h-[330px] xl:h-[350px] bg-gradient-to-br from-green-100 to-teal-100 order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 relative h-[250px] xs:h-[270px] sm:h-[320px] md:h-[350px] lg:h-[370px] xl:h-[400px] bg-gradient-to-br from-green-100 to-teal-100 order-1 lg:order-2">
               <Image
                 src="/Rectangle5-1.png"
                 alt="Healthcare team analyzing data"
@@ -311,12 +310,12 @@ const HomePage = () => {
       <div className="relative bg-[#17A9DF] overflow-hidden mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between">
-            <div className="flex-1 flex items-center py-12 sm:py-16 lg:py-20">
+            <div className="flex-2 flex items-center py-12 sm:py-16 lg:py-20">
               <div>
-                <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight !text-white mb-4">
+                <h1 className="text-[44px] font-semibold !text-white mb-4">
                   We Understand Your Specialty
                 </h1>
-                <p className="text-white text-xs leading-relaxed">
+                <p className="text-white text-xs leading-relaxed font-normal">
                   Billing rules, payer contracts and denial triggers are different for every specialty.
                   A mental health practice gets denied for different reasons than an orthopedic surgeon.
                   Generic RCM gets you generic results and lost revenue you'll never see.
@@ -345,10 +344,10 @@ const HomePage = () => {
       <div className="bg-white p-4 sm:p-12">
         <div>
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
               All That Your Practice Needs.
             </h1>
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-4">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-4">
               Nothing You Have to Figure Out Alone.
             </h1>
             <p className="text-gray text-xs max-w-3xl mx-auto">
@@ -372,13 +371,13 @@ const HomePage = () => {
                     className="object-contain"
                   />
                 </div>
-                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight text-[#003f7a] mb-4">
+                <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
                   {service.title}
                 </h2>
-                <p className="text-gray text-xs mb-12">
+                <p className="text-gray text-xs font-normal mb-12">
                   {service.description}
                 </p>
-                <a
+                {/* <a
                   href={service.link}
                   className="inline-flex items-center gap-2 text-[#4e4e4e] font-normal text-xs transition-colors group/link"
                 >
@@ -396,26 +395,26 @@ const HomePage = () => {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </a>
+                </a> */}
               </div>
             ))}
           </div>
 
-          <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+          {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
             <button className="btn w-full sm:w-[180px] px-12">
               View All
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Testimonials Section - Only padding changed */}
       <div className="w-full bg-white p-4 sm:p-12">
         <div className="text-center mb-10 sm:mb-14">
-          <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+          <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
             Real Practices. Real Recovered Revenue.
           </h1>
-          <p className="text-gray text-xs max-w-4xl mx-auto mt-4">
+          <p className="text-gray text-xs font-normal max-w-4xl mx-auto mt-4">
             We don't just promise to find your missing money—we prove it. Discover how physicians
             across the country rely on our end-to-end billing execution to eliminate AR bottlenecks
             and consistently add tens of thousands to their monthly collections.
@@ -437,10 +436,10 @@ const HomePage = () => {
                 />
               </div>
               <div className="px-5 pb-5 pt-4 text-center bg-[#F2F5F8] transition-colors duration-300 group-hover:bg-[#00427F] flex-grow flex flex-col justify-center">
-                <h3 className="text-[#0F0F0F] font-semibold text-[16px] sm:text-[18px] mb-2 transition-colors duration-300 group-hover:text-white">
+                <h3 className="text-[#0F0F0F] font-semibold text-[24px] mb-2 transition-colors duration-300 group-hover:text-white">
                   {doctor.name}
                 </h3>
-                <p className="text-gray text-xs sm:text-sm transition-colors duration-300 group-hover:!text-white">
+                <p className="text-gray text-xs font-normal transition-colors duration-300 group-hover:!text-white">
                   {doctor.clinic}
                 </p>
               </div>
@@ -448,88 +447,92 @@ const HomePage = () => {
           ))}
         </div>
 
-        <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
           <button className="btn w-full sm:w-[180px] px-12">
             See More
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Leadership Section - Only padding and flex direction changed */}
-      <div className="relative py-16 lg:py-24 bg-[#F5F8FB] overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">
-              Institutional-Grade Financial Rigor. Built by
-              Globally Recognized Healthcare Leaders.
-            </h1>
-            <p className="text-gray text-xs max-w-3xl mx-auto">
-              Your revenue cycle isn't managed by generic billers. CareRCM is
-              backed by leadership with decades of experience at the highest
-              levels of global finance and healthcare administration.
-            </p>
-          </div>
+      <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
+        <div className="relative py-16 lg:py-24 bg-[#F2FBFDF0] overflow-hidden">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
+                Institutional-Grade Financial Rigor. Built by
+                Globally Recognized Healthcare Leaders.
+              </h1>
+              <p className="text-gray text-xs font-normal max-w-3xl mx-auto">
+                Your revenue cycle isn't managed by generic billers. CareRCM is
+                backed by leadership with decades of experience at the highest
+                levels of global finance and healthcare administration.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 gap-5">
-            {leadershipData.map((item) => (
-              <div key={item.id} className="bg-white border border-[#19A9E5] rounded-[18px] p-6 md:p-7">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 relative mt-1">
-                    <Image src={item.icon} alt={item.title} fill className="object-contain" />
-                  </div>
-                  <div>
-                    <h3 className="text-[24px] font-medium text-gray leading-tight">
-                      {item.title}
-                    </h3>
-                    <p className="text-[14px] font-semibold text-gray mt-1">
-                      {item.subtitle}
-                    </p>
-                    <p className="text-xs text-gray leading-relaxed mt-3">
-                      {item.description}
-                    </p>
+            <div className="grid md:grid-cols-2 gap-5">
+              {leadershipData.map((item) => (
+                <div key={item.id} className="bg-white border border-[#19A9E5] rounded-[18px] p-6 md:p-7">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 relative mt-1">
+                      <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-[20px] font-normal text-gray leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs font-semibold text-gray mt-1">
+                        {item.subtitle}
+                      </p>
+                      <p className="text-xs text-gray leading-relaxed mt-3">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          <div className="max-w-5xl mx-auto text-center mt-12">
-            <p className="text-xs text-gray leading-relaxed">
-              Former <strong>CEO of Aman Healthcare</strong> — Pakistan's largest
-              telehealth provider, with 700+ trained paramedics — and founding
-              team member of <strong>Evercare Health</strong>, operating hospitals
-              across four countries. The same investment frameworks and process
-              excellence built for large hospital systems are now working for your
-              practice.
-            </p>
+            <div className="max-w-5xl mx-auto text-center mt-12">
+              <p className="text-xs text-gray font-normal leading-relaxed">
+                Former <strong>CEO of Aman Healthcare</strong> — Pakistan's largest
+                telehealth provider, with 700+ trained paramedics — and founding
+                team member of <strong>Evercare Health</strong>, operating hospitals
+                across four countries. The same investment frameworks and process
+                excellence built for large hospital systems are now working for your
+                practice.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Stats Section - Grid is already responsive */}
       <div className="bg-white py-20">
-        <div className="relative overflow-hidden">
-          <div
-            className="relative py-16 sm:py-20 lg:py-28"
-            style={{
-              backgroundImage: "url('/bg-room.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 bg-[#004A8F]/90"></div>
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-5xl mx-auto">
-                {statsData.map((item, index) => (
-                  <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 text-center shadow-lg">
-                    <h2 className="text-[#17A9E6] text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight">
-                      {item.value}
-                    </h2>
-                    <p className="mt-4 text-gray text-xs sm:text-base leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
+        <div className="bg-[url('/bg-image-2.png')] bg-no-repeat bg-right-top bg-cover">
+          <div className="relative overflow-hidden">
+            <div
+              className="relative py-16 sm:py-20 lg:py-28"
+              style={{
+                backgroundImage: "url('/bg-room.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="absolute inset-0 bg-[#004A8F]/90"></div>
+              <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-6xl mx-auto">
+                  {statsData.map((item, index) => (
+                    <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 text-center shadow-lg">
+                      <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
+                        {item.value}
+                      </h2>
+                      <p className="mt-4 text-gray text-xs sm:text-base leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -538,12 +541,12 @@ const HomePage = () => {
 
       {/* Footer Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[#F7F9FB] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6">
               Institutional-grade financial rigor. In your corner.
             </h1>
-            <p className="max-w-3xl mx-auto text-gray text-xs sm:text-sm font-medium">
+            <p className="max-w-4xl mx-auto text-gray text-xs font-normal">
               CareRCM was built by a leader who developed healthcare workforce
               of nurses and care workers, and restructured hospital-level
               healthcare systems — and directed that experience for efficiency
@@ -551,13 +554,13 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="mt-10 bg-blue-50 rounded-2xl p-6 md:p-8">
+          <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
             <div className="flex gap-4">
               <div className="text-[#004A8F] text-5xl font-bold leading-none mt-2">
                 <Image src="/cotection.png" alt="cotection icon" width={50} height={50} />
               </div>
               <div>
-                <p className="text-gray text-xs sm:text-sm font-medium">
+                <p className="text-gray text-xs font-normal leading-relaxed">
                   "Private practice physicians deserve the same process
                   orientation and systems that large hospitals pay billions for.
                   That's not a product gap — it's a justice gap. CareRCM was
@@ -572,23 +575,23 @@ const HomePage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6 mt-6">
-            <div className="bg-blue-50 rounded-2xl p-6 md:p-8">
-              <h3 className="text-[#19A9E5] font-semibold text-md">
+            <div className="bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
+              <h3 className="text-[#19A9E5] font-semibold text-[24px]">
                 Malik Ahmad Jalal
               </h3>
-              <p className="text-gray text-xs sm:text-sm font-medium mt-2">
+              <p className="text-gray text-xs font-normal mt-2">
                 Founder & CEO — Harvard Kennedy School · Former CEO,
                 Aman Healthcare · Founder, Evercare Health · ICAEW Chartered
                 Accountant
               </p>
-              <p className="text-gray text-xs sm:text-sm font-medium mt-6">
+              <p className="text-gray text-xs font-normal mt-6">
                 Malik brings a combination: the financial discipline and process
                 orientation of Goldman Sachs and Deloitte, the systems-thinking
                 of Harvard, and the on-the-ground healthcare workforce
                 development and restructuring experience of Aman Healthcare —
                 one of South Asia's largest integrated health networks.
               </p>
-              <p className="text-gray text-xs sm:text-sm font-medium mt-4">
+              <p className="text-gray text-xs font-normal mt-4">
                 He built CareRCM because he has seen, firsthand, what happens
                 when the financial infrastructure fails physicians. He's spent
                 his career fixing it. Now he's bringing that capability
@@ -598,16 +601,16 @@ const HomePage = () => {
 
             <div className="space-y-3">
               {credentials.map((item, index) => (
-                <div key={index} className="bg-blue-50 rounded-2xl px-6 py-5">
+                <div key={index} className="bg-[#0AADE40D] rounded-2xl px-6 py-5">
                   <div className="flex items-center gap-4">
                     <div className="relative w-9 h-9 flex-shrink-0">
                       <Image src={item.icon} alt={item.title} fill className="object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-[24px] font-medium text-gray leading-tight">
+                      <h3 className="text-[20px] font-normal text-gray leading-tight">
                         {item.title}
                       </h3>
-                      <p className="text-[14px] font-semibold text-gray mt-1">
+                      <p className="text-xs font-semibold text-gray mt-1">
                         {item.subtitle}
                       </p>
                     </div>
@@ -618,10 +621,10 @@ const HomePage = () => {
           </div>
 
           <div className="mt-20 text-center">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
               Why it matters beyond your practice
             </h1>
-            <p className="max-w-4xl mx-auto mt-6 text-gray text-xs sm:text-sm font-medium">
+            <p className="max-w-4xl mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
               Independent private practices are the backbone of public health in
               America. When a practice faces financial difficulties — or cuts
               services because cash flow can't sustain it — real patients lose
