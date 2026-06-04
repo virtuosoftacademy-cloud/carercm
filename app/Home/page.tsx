@@ -631,7 +631,7 @@ const HomePage = () => {
               by a leader who spent years scaling healthcare access for
               underserved populations.
               That experience and instinct — that revenue is not just business,
-              it is healthcare infrastructure — is embedded in everything we do.
+              it is healthcare infrastructure — is embedded in everything we do. 
             </p>
           </div>
         </div>
