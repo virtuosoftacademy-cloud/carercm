@@ -92,7 +92,7 @@ const About = () => {
       id: 2,
       name: "Maleeha",
       role: "Head of RCM - Customer Fulfillment",
-      image: "/card-header (1).png",
+      image: "/et_profile-female.png",
       icon: "/linkedin.png"
     },
     {
@@ -122,11 +122,11 @@ const About = () => {
           </div>
 
           <div className="flex flex-col gap-4 px-2 sm:px-0">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+            <h1 className="text-[36px] font-semibold leading-tight text-[#00427F]">
               We Built CareRCM Because Independent Practices Deserve NO Dollar Left Behind.
             </h1>
 
-            <p className="text-gray text-xs leading-relaxed">
+            <p className="text-gray text-xs font-normal leading-relaxed">
               CareRCM is a specialized end-to-end Revenue Cycle Management firm built on certified trained RCM specialists so your revenue stops leaking through denied claims, slow AR, and coding errors. We handle the entire billing, coding, and collections process — No in-house billing team needed, no dollar left behind.
             </p>
 
@@ -145,7 +145,7 @@ const About = () => {
 
         <div className="hidden xl:block">
           <div className="relative w-full h-[450px]">
-            <div className="absolute top-0 right-0 w-[50%] h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px] rounded-r-2xl overflow-hidden">
+            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
               <Image
                 src="/mature-doctor-working-at-office-2026-03-18-15-46-20-utc 1.png"
                 alt="Doctor consulting with patient"
@@ -157,7 +157,7 @@ const About = () => {
             </div>
 
             <div
-              className="absolute flex flex-col gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[340px] md:h-[420px] lg:h-[480px] xl:h-[420px]"
+              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
               style={{
                 top: "40px",
                 left: "16px",
@@ -169,11 +169,11 @@ const About = () => {
                 border: "1px solid rgba(25, 169, 229, 0.15)"
               }}
             >
-              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] max-w-3xl">
+              <h1 className="text-[36px] font-semibold leading-tight text-[#00427F] max-w-3xl">
                 We Built CareRCM Because Independent Practices Deserve NO Dollar Left Behind.
               </h1>
 
-              <p className="text-gray text-xs leading-relaxed max-w-3xl">
+              <p className="text-gray text-xs font-normal leading-relaxed max-w-3xl">
                 CareRCM is a specialized end-to-end Revenue Cycle Management firm built on certified trained RCM specialists so your revenue stops leaking through denied claims, slow AR, and coding errors. We handle the entire billing, coding, and collections process — No in-house billing team needed, no dollar left behind.
               </p>
 
@@ -193,10 +193,10 @@ const About = () => {
       </div>
 
       {/* Mission Section - Only mobile padding fixed */}
-      <div className="w-full p-4 sm:p-12 bg-white flex justify-center">
+      <div className="w-full p-4 sm:p-12 bg-white flex justify-center mt-20">
         <div className="flex flex-col items-center justify-center max-w-4xl text-center">
-          <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a] mb-6">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
-          <p className="text-xs text-gray font-medium max-w-3xl">
+          <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
+          <p className="text-xs text-gray font-normal max-w-3xl">
             Private practices unknowingly surrender 20–30% of revenues to a system that's rigged against them — payers delaying, denying, and underpaying. We built CareRCM to fight back. Our mission is simple: handle every dollar of your revenue cycle with obsessive precision so you can focus entirely on what you do best – care for your patients. No billing stress. No lost revenue. No uncertainty. Just clean claims, recovered denials, and a practice that runs at its full financial potential.
           </p>
         </div>
@@ -207,10 +207,10 @@ const About = () => {
         <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
 
           <div className="text-center mb-10">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#003f7a] mb-2">
+            <h1 className="text-[44px] font-semibold text-[#00427F] mb-2">
               We Don't Advise. We Execute.
             </h1>
-            <p className="text-gray text-xs font-medium">
+            <p className="text-gray text-xs font-normal">
               From the moment a patient walks in to the day your payment posts,<br className="hidden sm:block" />
               CareRCM owns every stage of your revenue cycle.
             </p>
@@ -231,7 +231,7 @@ const About = () => {
                       }
                       className="w-full flex items-start justify-between py-5 text-left"
                     >
-                      <h3 className="text-[#00427F] text-[18px] md:text-[20px] font-semibold max-w-[85%]">
+                      <h3 className="text-[#00427F] text-[18px] font-semibold max-w-[85%]">
                         {item.title}
                       </h3>
 
@@ -258,7 +258,7 @@ const About = () => {
                         : "max-h-0 opacity-0"
                         }`}
                     >
-                      <p className="text-gray text-xs leading-relaxed pr-5">
+                      <p className="text-gray text-xs font-normal leading-relaxed pr-5">
                         {item.content}
                       </p>
                     </div>
@@ -292,7 +292,7 @@ const About = () => {
             />
           </div>
 
-          <p className="text-xs text-gray leading-relaxed mb-2">
+          <p className="text-xs text-gray font-normal leading-relaxed mb-2">
             "We started CareRCM because we watched excellent physicians leave money on the table every single month — not because they were bad at medicine, but because the billing system is designed to be confusing. Our job is to be the unfair advantage independent practices deserve."
           </p>
 
@@ -309,7 +309,7 @@ const About = () => {
         <div className="text-center mb-10 sm:mb-14">
 
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#00427F]">
               Real Practices. Real Recovered Revenue.
             </h1>
           </div>
@@ -337,10 +337,10 @@ const About = () => {
               </div>
 
               <div className="px-5 pb-5 pt-4 text-center bg-[#F2F5F8] transition-colors duration-300 group-hover:bg-[#00427F] flex-grow flex flex-col justify-center">
-                <h3 className="text-[#0F0F0F] font-semibold text-[16px] sm:text-[18px] mb-2 transition-colors duration-300 group-hover:text-white">
+                <h3 className="text-[#0F0F0F] font-semibold text-[24px] mb-2 transition-colors duration-300 group-hover:text-white">
                   {doctor.name}
                 </h3>
-                <p className="text-gray text-xs sm:text-sm transition-colors duration-300 group-hover:!text-white">
+                <p className="text-gray text-xs font-normal transition-colors duration-300 group-hover:!text-white">
                   {doctor.clinic}
                 </p>
               </div>
@@ -348,11 +348,11 @@ const About = () => {
           ))}
         </div>
 
-        <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
           <button className="btn w-full sm:w-[180px] px-12">
             See More
           </button>
-        </div>
+        </div> */}
 
       </div>
 
@@ -360,11 +360,11 @@ const About = () => {
       <div className="w-full bg-[#00aeef] p-4 sm:p-12">
         <div className="">
           <div className="text-center mb-12 md:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#fff] mb-2">
+            <h1 className="text-[44px] font-semibold text-[#fff] mb-2">
               Our Team
             </h1>
             <div className="max-w-4xl mx-auto">
-              <p className="text-xs md:text-base text-gray font-medium text-white">
+              <p className="text-xs text-gray font-normal text-white">
                 Our team is built around one mission — helping healthcare practices collect every dollar they earn.
                 With experts in billing, credentialing, compliance, and technical operations, CareRCM delivers
                 responsive support, faster resolutions, and data-driven RCM strategies that strengthen your financial performance.
@@ -389,7 +389,7 @@ const About = () => {
 
                 <div className="pb-6 pt-4 bg-white">
                   <div className="flex items-center justify-between gap-2">
-                    <h3 className="text-[#00427F] font-semibold text-[16px] sm:text-[18px] transition-colors duration-300">
+                    <h3 className="text-[#00427F] font-semibold text-[24px] transition-colors duration-300">
                       {member.name}
                     </h3>
                     <div className="relative w-5 h-5 flex-shrink-0">
@@ -402,7 +402,7 @@ const About = () => {
                     </div>
                   </div>
 
-                  <p className="text-gray-500 text-xs sm:text-sm transition-colors duration-300">
+                  <p className="text-gray text-xs font-normal transition-colors duration-300">
                     {member.role}
                   </p>
                 </div>
@@ -414,17 +414,17 @@ const About = () => {
       </div>
 
       {/* Why Private Practices Section - Mobile: full width, image below */}
-      <div className="min-h-screen bg-[#f9fafb] flex items-center justify-center p-4 sm:p-6">
+      <div className="min-h-screen bg-[#2166AF0D] flex items-center justify-center p-4 sm:p-6">
         <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
 
           <div className="text-center mb-10">
             <div className="flex items-center justify-center mb-4">
-              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-[#003f7a]">
+              <h1 className="text-[44px] font-semibold leading-tight text-[#00427F]">
                 Why Private Practices Choose <br className="hidden sm:block" /> CareRCM Over Every Other Option
               </h1>
             </div>
 
-            <p className="text-gray text-xs font-medium">
+            <p className="text-gray text-xs font-normal">
               Generic RCM gets you generic results. Here's what makes us different.
             </p>
           </div>
@@ -444,7 +444,7 @@ const About = () => {
                       }
                       className="w-full flex items-start justify-between py-5 text-left"
                     >
-                      <h3 className="text-[#00427F] text-[18px] md:text-[20px] font-semibold max-w-[85%]">
+                      <h3 className="text-[#00427F] text-[18px] font-semibold max-w-[85%]">
                         {item.title}
                       </h3>
 

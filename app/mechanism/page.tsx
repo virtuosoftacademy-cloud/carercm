@@ -220,11 +220,11 @@ const Mechanism = () => {
             </div>
           ))}
         </div>
-        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+        <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
           <button className="btn w-full sm:w-[180px] px-12">
             View All
           </button>
-        </div> */}
+        </div>
       </div>
 
 
