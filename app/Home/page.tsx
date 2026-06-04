@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 // import { useState } from "react";
 
-const Home = () => {
+const HomePage = () => {
 // const [isOpen, setIsOpen] = useState(false);
   const routter = useRouter();
     const navigate = (path: string) => {
@@ -640,4 +640,4 @@ const Home = () => {
   );
 }
 
-export default Home
+export default HomePage
