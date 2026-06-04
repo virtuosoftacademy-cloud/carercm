@@ -1,8 +1,8 @@
 export const NAVIGATION = [
   { name: "Home", href: "/" },
-  { name: "How It Works", href: "#" },
-  { name: "About Us", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "How It Works", href: "/mechanism" },
+  { name: "About Us", href: "/about" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export const HERO_CONTENT = {
