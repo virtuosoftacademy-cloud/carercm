@@ -1,9 +1,9 @@
-import HomeContent from "@/app/home/page";
+import Home from "./home/page";
 
-export default function Home() {
+export default function HomePage() {
   return(
       <main>
-        <HomeContent />
+        <Home />
       </main>
   )  
 }
