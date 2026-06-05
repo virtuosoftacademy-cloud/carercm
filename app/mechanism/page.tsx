@@ -330,7 +330,7 @@ const Mechanism = () => {
 
           <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
             <div className="flex gap-4">
-              <div className="text-[#004A8F] text-5xl font-bold leading-none mt-2">
+              <div className="text-[#004A8F] text-5xl font-bold leading-none">
                 <Image src="/cotection.png" alt="cotection icon" width={55} height={55} />
               </div>
               <div>
