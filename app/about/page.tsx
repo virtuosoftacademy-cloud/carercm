@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -86,21 +87,27 @@ const About = () => {
       name: "Ahmad Jalal Falaksar",
       role: "Founder, CareRCM",
       image: "/image 21.png",
-      icon: "/linkedin.png"
+      icon: "/linkedin.png",
+      linkedin: "https://www.linkedin.com/in/malikahmadjalal/"
+
     },
     {
       id: 2,
       name: "Maleeha",
       role: "Head of RCM - Customer Fulfillment",
       image: "/et_profile-female.png",
-      icon: "/linkedin.png"
+      icon: "/linkedin.png",
+      linkedin: "https://www.linkedin.com/in/maleeha-jawed-3a070a233/"
+
     },
     {
       id: 3,
       name: "Muhammad Wasif",
       role: "Director of Technical Success",
       image: "/card-header.png",
-      icon: "/linkedin.png"
+      icon: "/linkedin.png",
+      linkedin: "https://www.linkedin.com/in/mwasifshariq/"
+
     },
   ];
 
@@ -173,7 +180,7 @@ const About = () => {
                 We Built CareRCM Because Independent Practices Deserve NO Dollar Left Behind.
               </h1>
 
-              <p className="text-gray text-xs font-normal leading-relaxed max-w-3xl">
+              <p className="text-gray text-xs font-normal leading-relaxed max-w-[560px]">
                 CareRCM is a specialized end-to-end Revenue Cycle Management firm built on certified trained RCM specialists so your revenue stops leaking through denied claims, slow AR, and coding errors. We handle the entire billing, coding, and collections process — No in-house billing team needed, no dollar left behind.
               </p>
 
@@ -392,14 +399,20 @@ const About = () => {
                     <h3 className="text-[#00427F] font-semibold text-[24px] transition-colors duration-300">
                       {member.name}
                     </h3>
-                    <div className="relative w-5 h-5 flex-shrink-0">
-                      <Image
-                        src={member.icon}
-                        alt="LinkedIn"
-                        fill
-                        className="object-contain transition-all duration-300"
-                      />
-                    </div>
+                    <Link
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="relative w-5 h-5 flex-shrink-0 cursor-pointer">
+                          <Image
+                            src={member.icon}
+                            alt="LinkedIn"
+                            fill
+                            className="object-contain transition-all duration-300"
+                          />
+                        </div>
+                     </Link>
                   </div>
 
                   <p className="text-gray text-xs font-normal transition-colors duration-300">

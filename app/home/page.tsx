@@ -204,7 +204,7 @@ const HomePage = () => {
             </div>
 
             <div
-              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[500px]"
+              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
               style={{
                 top: "40px",
                 left: "16px",
@@ -224,7 +224,7 @@ const HomePage = () => {
                 Stop Leaving $100K–$250K on the Table Every Year
               </h1>
 
-              <p className="text-gray text-xs font-normal leading-relaxed max-w-2xl">
+              <p className="text-gray text-xs font-normal leading-relaxed max-w-[480px]">
                 Most private practices lose thousands monthly to claim denials,
                 slow AR and coding errors and never find out until it's too late.
                 We handle your entire revenue cycle so you collect every dollar
@@ -248,12 +248,12 @@ const HomePage = () => {
       {/* Mission/Vision Section - Only padding changed */}
       <div className="bg-white px-4 sm:px-4 lg:p-12">
         <div className="w-full">
-          <div className="text-center mx-auto max-w-5xl mt-20 mb-12">
-            <h1 className="text-[44px] leading-[1.2] font-semibold tracking-wide text-[#004275] mb-3 sm:mb-4">
+          <div className="text-center mx-auto max-w-4xl mt-20 mb-12">
+            <h1 className="text-[44px] leading-[1.2] font-semibold tracking-wide text-[#004275] mb-4 sm:mb-4">
               We built a financial infrastructure for independent physicians
             </h1>
-            <p className="text-gray text-xs font-normal max-w-3xl mx-auto">
-              Most RCM vendors run claims. We recover money. There's a critical difference — and it starts with who is sitting at the helm. Experience at the highest levels of global finance and healthcare administration.
+            <p className="text-gray text-xs font-normal">
+              Most RCM vendors run claims. We recover money. There's a critical difference — and it starts with who <br /> is sitting at the helm. Experience at the highest levels of global finance and healthcare administration.
             </p>
           </div>
 
@@ -274,7 +274,9 @@ const HomePage = () => {
                   Our Mission
                 </h2>
                 <p className="text-white text-[18px] font-normal leading-relaxed">
-                  Handle every dollar of the revenue cycle so you focus entirely on patient care.<br />
+                  Handle every dollar of the revenue cycle so you focus<br /> entirely on patient care.
+                </p>
+                <p className="text-white text-[18px] font-normal leading-relaxed">
                   No billing stress. No dollar lost. No guesswork.
                 </p>
               </div>

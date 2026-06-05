@@ -122,9 +122,9 @@ const Mechanism = () => {
               <button className="btn w-full sm:w-auto">
                 Get My Free RCM Audit
               </button>
-              <button className="btn2 w-full sm:w-auto">
+              {/* <button className="btn2 w-full sm:w-auto">
                 See How It Works
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@ const Mechanism = () => {
                 We Plug Into Your Practice and Own Every Stage of Your Revenue Cycle
               </h1>
 
-              <p className="text-gray text-xs font-normal max-w-3xl">
+              <p className="text-gray text-xs font-normal max-w-[570px]">
                 CareRCM takes over the billing, coding, and collections process from day one. Pre-registration to payment posting — every step executed by specialists who know your specialty's codes, your payers' quirks, and exactly where practices like yours are bleeding revenue. You practice medicine the best you can. And we collect every dollar you deserve.
               </p>
 
@@ -169,9 +169,9 @@ const Mechanism = () => {
                 <button className="btn">
                   Get My Free RCM Audit
                 </button>
-                <button className="btn2">
+                {/* <button className="btn2">
                   See How It Works
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -220,11 +220,11 @@ const Mechanism = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
           <button className="btn w-full sm:w-[180px] px-12">
             View All
           </button>
-        </div>
+        </div> */}
       </div>
 
 
