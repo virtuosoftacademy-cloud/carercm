@@ -232,7 +232,7 @@ export default function ContactForm() {
 
           </div>
 
-          <div className="mt-6 sm:mt-8 text-center">
+          <div className="mt-6 sm:mt-8 text-center mb-12">
             <p className="text-white text-[20px] font-600 mb-4 px-2 sm:px-0">
               See exactly how much revenue your practice is leaving on the table. <br className="hidden sm:block" /> We'll show you in black and white — free, in 48 hours.
             </p>
