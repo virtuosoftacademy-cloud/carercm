@@ -331,14 +331,14 @@ const Mechanism = () => {
           <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
             <div className="flex gap-4">
               <div className="text-[#004A8F] text-5xl font-bold leading-none mt-2">
-                <Image src="/cotection.png" alt="cotection icon" width={50} height={50} />
+                <Image src="/cotection.png" alt="cotection icon" width={55} height={55} />
               </div>
               <div>
                 <p className="text-gray text-xs font-normal leading-relaxed">
-                  "Private practice physicians deserve the same process
+                  Private practice physicians deserve the same process
                   orientation and systems that large hospitals pay billions for.
                   That's not a product gap — it's a justice gap. CareRCM was
-                  built to close it."
+                  built to close it.
                 </p>
                 <p className="mt-4 text-gray text-xs sm:text-sm font-semibold">
                   — Malik Ahmad Jalal,
