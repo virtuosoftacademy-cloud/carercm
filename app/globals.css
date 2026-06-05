@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-    font-family: "Poppins", arial !important;
+    font-family: "Poppins" !important;
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;

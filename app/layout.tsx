@@ -1,5 +1,5 @@
 'use client';
-
+import "@fontsource/poppins";
 import { Inter } from "next/font/google";
 import { usePathname } from 'next/navigation';
 import "./globals.css";
@@ -20,7 +20,7 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} style={{ fontFamily: 'Poppins, sans-serif' }}>
         <Header />
         <main>{children}</main>
         
