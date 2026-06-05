@@ -263,7 +263,7 @@ const HomePage = () => {
                 src="/Rectangle5.png"
                 alt="Medical team discussing patient care"
                 fill
-                className="object-cover"
+                className="object-center"
                 priority
               />
             </div>
@@ -300,7 +300,7 @@ const HomePage = () => {
                 src="/Rectangle5-1.png"
                 alt="Healthcare team analyzing data"
                 fill
-                className="object-cover"
+                className="object-center"
                 priority
               />
             </div>
