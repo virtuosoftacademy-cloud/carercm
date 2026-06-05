@@ -80,7 +80,7 @@ const Contact = () => {
                                 Your Revenue Is Waiting. Let's Talk.
                             </h1>
 
-                            <p className="text-gray text-xs font-normal leading-relaxed max-w-3xl">
+                            <p className="text-gray text-xs font-normal leading-relaxed max-w-[580px]">
                                 CareRCM helps medical practices recover lost revenue, reduce denials, and streamline billing operations with fast, accountable RCM support. Whether you need a full revenue cycle audit, credentialing assistance, compliance guidance, or ongoing billing support, our nationwide team is ready to respond quickly and help your practice maximize every dollar earned.
                             </p>
                         </div>
