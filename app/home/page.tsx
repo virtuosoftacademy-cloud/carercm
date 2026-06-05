@@ -23,7 +23,7 @@ const HomePage = () => {
       id: 2,
       title: "Charge Capture",
       description: "A clean claim submitted fast is the difference between 30-day payment and 90-day AR. We submit accurate claims the first time reducing rejections before they become denials.",
-      icon: "/vector.png",
+      icon: "/change-capture.png",
       link: "#"
     },
     {

@@ -115,7 +115,7 @@ const About = () => {
   return (
     <>
       {/* Hero Section - Only mobile padding fixed */}
-      <div className="card w-full p-4 sm:p-12 bg-gray-50">
+      <div className="w-full p-4 sm:p-12 bg-[#2166AF0D]">
         <div className="block xl:hidden">
           <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
             <Image
@@ -151,7 +151,7 @@ const About = () => {
         </div>
 
         <div className="hidden xl:block">
-          <div className="relative w-full h-[450px]">
+          <div className="relative w-full h-[570px]">
             <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
               <Image
                 src="/mature-doctor-working-at-office-2026-03-18-15-46-20-utc 1.png"

@@ -96,7 +96,7 @@ const Mechanism = () => {
   ];
   return (
     <>
-      <div className="bg-white p-4 sm:p-8">
+      <div className="p-4 sm:p-8 bg-[#2166AF0D] xl:min-h-[650px]">
         <div className="block xl:hidden">
           <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
             <Image
