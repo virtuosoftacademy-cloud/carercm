@@ -27,14 +27,14 @@ const Contact = () => {
         <>
             <div className="bg-[#2166AF0D] p-8 xl:min-h-[650px]">
                 <div className="block xl:hidden">
-                    <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
+                    <div className="w-full rounded-2xl overflow-hidden mb-6">
                         <Image
                             src="/ladies-doctor.png"
                             alt="Doctor consulting with patient"
-                            fill
+                            width={1200}
+                            height={400}
                             priority
-                            className="object-cover object-center"
-                            sizes="100vw"
+                            className="w-full h-auto"
                         />
                     </div>
 

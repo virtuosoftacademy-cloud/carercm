@@ -98,14 +98,14 @@ const Mechanism = () => {
     <>
       <div className="p-4 sm:p-8 bg-[#2166AF0D] xl:min-h-[650px]">
         <div className="block xl:hidden">
-          <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
+          <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
               src="/mature-doctor.png"
               alt="Doctor consulting with patient"
-              fill
+              width={1200}
+              height={400}
               priority
-              className="object-cover object-center"
-              sizes="100vw"
+              className="w-full h-auto"
             />
           </div>
 
@@ -398,7 +398,7 @@ const Mechanism = () => {
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
               Why it matters beyond your practice
             </h1>
-            <p className="max-w-4xl mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
+            <p className="mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
               Independent private practices are the backbone of public health in
               America. When a practice faces financial difficulties — or cuts
               services because cash flow can't sustain it — real patients lose
