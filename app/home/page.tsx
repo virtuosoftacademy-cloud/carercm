@@ -5,12 +5,12 @@ import { useRouter } from "next/navigation";
 // import { useState } from "react";
 
 const HomePage = () => {
-// const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const routter = useRouter();
-    const navigate = (path: string) => {
-      routter.push(path);
-      // setIsOpen(false);
-    }
+  const navigate = (path: string) => {
+    routter.push(path);
+    // setIsOpen(false);
+  }
   const services = [
     {
       id: 1,
@@ -258,18 +258,17 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden">
-            <div className="w-full lg:w-1/2 relative h-auto">
+            <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px]">
               <Image
                 src="/Rectangle5.png"
                 alt="Medical team discussing patient care"
-                width={1200}
-                height={400}
+                fill
                 priority
-                className="w-full h-auto"
+                className="object-center"
               />
             </div>
 
-            <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-start px-8 xl:px-20">
+            <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-start p-8 xl:p-20">
               <div className="max-w-xl">
                 <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
                   Our Mission
@@ -285,7 +284,7 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden">
-            <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start px-8 xl:px-20 order-2 lg:order-1">
+            <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start p-8 xl:p-20 order-2 lg:order-1">
               <div className="max-w-xl">
                 <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
                   Our Vision
@@ -296,14 +295,13 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 relative h-auto order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px] order-1 lg:order-2">
               <Image
                 src="/Rectangle5-1.png"
                 alt="Healthcare team analyzing data"
-                width={1200}
-                height={400}
+                fill
                 priority
-                className="w-full h-auto"
+                className="object-center"
               />
             </div>
           </div>
@@ -561,7 +559,7 @@ const HomePage = () => {
           <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
             <div className="flex gap-4">
               <div className="text-[#004A8F] text-5xl font-bold leading-none">
-                <Image src="/cotection.png" alt="cotection icon" width={55} height={55}/>
+                <Image src="/cotection.png" alt="cotection icon" width={55} height={55} />
               </div>
               <div>
                 <p className="text-gray text-xs font-normal leading-relaxed">
@@ -638,7 +636,7 @@ const HomePage = () => {
               by a leader who spent years scaling healthcare access for
               underserved populations.
               That experience and instinct — that revenue is not just business,
-              it is healthcare infrastructure — is embedded in everything we do. 
+              it is healthcare infrastructure — is embedded in everything we do.
             </p>
           </div>
         </div>
