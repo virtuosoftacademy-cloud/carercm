@@ -39,7 +39,7 @@ export default function Footer() {
               <div className="text-center md:text-left">
                 <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
                   <Image
-                    src="/CareRCM, Logo (Horizontal) 2 (2).png"
+                    src="/footer-logo.png"
                     alt="CareRCM Logo"
                     width={200}
                     height={200}

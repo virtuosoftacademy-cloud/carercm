@@ -36,7 +36,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image  
-                src="/CareRCM, Logo.png" 
+                src="/header-logo.png" 
                 alt="CareRCM Logo" 
                 width={200} 
                 height={60}
