@@ -151,14 +151,14 @@ const HomePage = () => {
       {/* Home Section - Only padding and button width changed */}
       <div className="bg-white p-4 sm:p-8">
         <div className="block xl:hidden">
-          <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
+          <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
               src="/mask-group-1.png"
               alt="Doctor consulting with patient"
-              fill
+              width={1200}
+              height={400}
               priority
-              className="object-cover object-center"
-              sizes="100vw"
+              className="w-full h-auto"
             />
           </div>
 
@@ -224,7 +224,7 @@ const HomePage = () => {
                 Stop Leaving $100K–$250K on the Table Every Year
               </h1>
 
-              <p className="text-gray text-xs font-normal leading-relaxed max-w-[480px]">
+              <p className="text-gray text-xs font-normal leading-relaxed max-w-[570px]">
                 Most private practices lose thousands monthly to claim denials,
                 slow AR and coding errors and never find out until it's too late.
                 We handle your entire revenue cycle so you collect every dollar
@@ -258,17 +258,18 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden">
-            <div className="w-full lg:w-1/2 relative h-[250px] xs:h-[270px] sm:h-[320px] md:h-[350px] lg:h-[370px] xl:h-[400px] bg-gradient-to-br from-blue-100 to-cyan-100">
+            <div className="w-full lg:w-1/2 relative h-auto">
               <Image
                 src="/Rectangle5.png"
                 alt="Medical team discussing patient care"
-                fill
-                className="object-center"
+                width={1200}
+                height={400}
                 priority
+                className="w-full h-auto"
               />
             </div>
 
-            <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-start px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10">
+            <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-start px-8 xl:px-20">
               <div className="max-w-xl">
                 <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
                   Our Mission
@@ -284,7 +285,7 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden">
-            <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10 order-2 lg:order-1">
+            <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start px-8 xl:px-20 order-2 lg:order-1">
               <div className="max-w-xl">
                 <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
                   Our Vision
@@ -295,13 +296,14 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 relative h-[250px] xs:h-[270px] sm:h-[320px] md:h-[350px] lg:h-[370px] xl:h-[400px] bg-gradient-to-br from-green-100 to-teal-100 order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 relative h-auto order-1 lg:order-2">
               <Image
                 src="/Rectangle5-1.png"
                 alt="Healthcare team analyzing data"
-                fill
-                className="object-center"
+                width={1200}
+                height={400}
                 priority
+                className="w-full h-auto"
               />
             </div>
           </div>
@@ -352,7 +354,7 @@ const HomePage = () => {
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-4">
               Nothing You Have to Figure Out Alone.
             </h1>
-            <p className="text-gray text-xs max-w-3xl mx-auto">
+            <p className="text-gray text-xs max-w-[800px] mx-auto">
               Most practices lose money at every step of the revenue cycle without realizing it.
               We plug into your existing setup and own every stage from the moment a patient
               walks in to when you get paid.
@@ -416,7 +418,7 @@ const HomePage = () => {
           <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
             Real Practices. Real Recovered Revenue.
           </h1>
-          <p className="text-gray text-xs font-normal max-w-4xl mx-auto mt-4">
+          <p className="text-gray text-xs font-normal max-w-[1000px] mx-auto mt-4">
             We don't just promise to find your missing money—we prove it. Discover how physicians
             across the country rely on our end-to-end billing execution to eliminate AR bottlenecks
             and consistently add tens of thousands to their monthly collections.
@@ -626,7 +628,7 @@ const HomePage = () => {
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
               Why it matters beyond your practice
             </h1>
-            <p className="max-w-4xl mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
+            <p className="mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
               Independent private practices are the backbone of public health in
               America. When a practice faces financial difficulties — or cuts
               services because cash flow can't sustain it — real patients lose

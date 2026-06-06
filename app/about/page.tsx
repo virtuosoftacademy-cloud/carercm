@@ -117,14 +117,15 @@ const About = () => {
       {/* Hero Section - Only mobile padding fixed */}
       <div className="w-full p-4 sm:p-12 bg-[#2166AF0D]">
         <div className="block xl:hidden">
-          <div className="relative w-full h-[280px] rounded-2xl overflow-hidden mb-6">
+          <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
               src="/mature-doctor-working-at-office-2026-03-18-15-46-20-utc 1.png"
               alt="Doctor consulting with patient"
-              fill
+              // fill
+              width={1200}
+              height={400}
               priority
-              className="object-cover object-center"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
+              className="w-full h-auto"
             />
           </div>
 
@@ -159,7 +160,6 @@ const About = () => {
                 fill
                 priority
                 className="object-cover object-center"
-                sizes="50vw"
               />
             </div>
 
@@ -201,9 +201,9 @@ const About = () => {
 
       {/* Mission Section - Only mobile padding fixed */}
       <div className="w-full p-4 sm:p-12 bg-white flex justify-center mt-20">
-        <div className="flex flex-col items-center justify-center max-w-4xl text-center">
+        <div className="flex flex-col items-center justify-center max-w-5xl text-center">
           <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
-          <p className="text-xs text-gray font-normal max-w-3xl">
+          <p className="text-xs text-gray font-normal max-w-[1000px">
             Private practices unknowingly surrender 20–30% of revenues to a system that's rigged against them — payers delaying, denying, and underpaying. We built CareRCM to fight back. Our mission is simple: handle every dollar of your revenue cycle with obsessive precision so you can focus entirely on what you do best – care for your patients. No billing stress. No lost revenue. No uncertainty. Just clean claims, recovered denials, and a practice that runs at its full financial potential.
           </p>
         </div>
@@ -321,7 +321,7 @@ const About = () => {
             </h1>
           </div>
 
-          <p className="text-gray text-xs max-w-4xl mx-auto">
+          <p className="text-gray text-xs max-w-5xl mx-auto">
             We don't just promise to find your missing money—we prove it. Discover how physicians
             across the country rely on our end-to-end billing execution to eliminate AR bottlenecks
             and consistently add tens of thousands to their monthly collections.
