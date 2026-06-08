@@ -30,95 +30,108 @@ export default function Header() {
 
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
-      <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          
-          <div className="flex-shrink-0">
-            <Link href="/">
-              <Image  
-                src="/header-logo.png" 
-                alt="CareRCM Logo" 
-                width={200} 
-                height={60}
-                className="object-contain"
-                priority
-              />
-            </Link>
-          </div>
-
-          <nav className="hidden md:flex md:items-center md:gap-6 lg:gap-8">
-            {navItems.map((item) => (
-              <Link 
-                key={item.name}
-                href={item.path} 
-                className={`text-xs font-normal transition-all duration-300 hover:!text-[#00427F] ${
-                  isActiveLink(item.path) 
-                    ? "text-[#00427F] font-normal underline underline-offset-12" 
-                    : "text-gray hover:text-[#00427F]"
-                }`}
-              >
-                {item.name}
+      {/* Centered container with max-width */}
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Fixed height hata di, padding use kiya */}
+        <div className="py-3 md:py-4">
+          <div className="flex items-center justify-between gap-4">
+            
+            {/* Logo - responsive clamp width */}
+            <div className="flex-shrink-0">
+              <Link href="/">
+                <Image  
+                  src="/header-logo.png" 
+                  alt="CareRCM Logo" 
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 140px, 200px"
+                  style={{
+                    width: "clamp(120px, 15vw, 200px)",
+                    height: "auto"
+                  }}
+                  className="object-contain"
+                  priority
+                />
               </Link>
-            ))}
-            <button 
-              className="btn"
-              onClick={() => navigate("/contact")}
-            >
-              Contact Us
-            </button>
-          </nav>
+            </div>
 
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 focus:outline-none"
-              aria-label="Toggle menu"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {isOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {isOpen && (
-          <div className="md:hidden py-4">
-            <nav className="flex flex-col space-y-3">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex md:items-center md:gap-x-6 lg:gap-x-8">
               {navItems.map((item) => (
-                <Link
+                <Link 
                   key={item.name}
-                  href={item.path}
-                  className={`text-sm font-light transition-all duration-300 hover:text-![#00427F] ${
-                    isActiveLink(item.path)
-                      ? "text-[#00427F] font-normal underline underline-offset-12" 
-                      : "text-black hover:text-[#00427F]"
+                  href={item.path} 
+                  className={`text-xs whitespace-nowrap font-normal transition-all duration-300 hover:!text-[#00427F] ${
+                    isActiveLink(item.path) 
+                      ? "text-[#00427F] font-normal underline underline-offset-8" 
+                      : "text-gray hover:text-[#00427F]"
                   }`}
-                  onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
               <button 
-                className="btn"
+                className="btn whitespace-nowrap"
                 onClick={() => navigate("/contact")}
               >
                 Contact Us
               </button>
             </nav>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-700 focus:outline-none p-1"
+                aria-label="Toggle menu"
+              >
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {isOpen ? (
+                    <path d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
+            </div>
           </div>
-        )}
+
+          {/* Mobile menu dropdown */}
+          {isOpen && (
+            <div className="md:hidden py-4">
+              <nav className="flex flex-col space-y-3">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.path}
+                    className={`text-sm font-light transition-all duration-300 hover:text-[#00427F] py-1 ${
+                      isActiveLink(item.path)
+                        ? "text-[#00427F] font-normal underline underline-offset-4" 
+                        : "text-black hover:text-[#00427F]"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                <button 
+                  className="btn"
+                  onClick={() => navigate("/contact")}
+                >
+                  Contact Us
+                </button>
+              </nav>
+            </div>
+          )}
+        </div>
       </div>
     </header>
   );

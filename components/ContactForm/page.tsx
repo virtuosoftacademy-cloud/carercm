@@ -118,7 +118,7 @@ export default function ContactForm() {
     <section className="w-full bg-[#0AADE4] px-4 py-8 sm:p-12">
       <div className="max-w-7xl mx-auto">
 
-        <div className="text-center mb-6 sm:mb-8 md:mb-12">
+        <div className="text-center my-12">
           <h1 className="text-[44px] font-semibold leading-tight text-white mb-3 sm:mb-4">
             Find out exactly how much your practice is <br className="hidden sm:block" />leaving on the table
           </h1>

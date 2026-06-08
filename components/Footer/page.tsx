@@ -28,14 +28,14 @@ export default function Footer() {
       </div> */}
 
       <div className="px-4 sm:px-6 lg:px-16 py-10 sm:py-12 pb-4">
-        <div className="max-w-[1600px]">
+        <div className="max-w-[1600px] mx-auto w-full">
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 relative">
             
             <div className="hidden md:block absolute left-1/3 top-0 bottom-0 w-px bg-white/40" />
             <div className="hidden md:block absolute left-2/3 top-0 bottom-0 w-px bg-white/40" />
 
-            <div className="flex justify-center md:justify-start md:pr-8 lg:pr-12 xl:pr-16">
+            <div className="flex justify-center md:px-8 lg:pr-12 xl:pr-16">
               <div className="text-center md:text-left">
                 <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
                   <Image
@@ -92,7 +92,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex justify-center md:justify-end md:pl-8 lg:pl-12 xl:pl-16">
+            <div className="flex justify-center md:px-8 lg:pl-12 xl:pl-16">
               <div className="text-center md:text-left">
                 <h2 className="text-[24px] font-semibold leading-tight !text-white mb-3">
                   Follow Us:
