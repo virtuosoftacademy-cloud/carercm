@@ -29,9 +29,9 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <header className="backdrop-blur-md bg-white/85 border-b border-gray-100 sticky top-0 z-50 shadow-sm opacity-100">
       {/* Centered container with max-width */}
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Fixed height hata di, padding use kiya */}
         <div className="py-3 md:py-4">
           <div className="flex items-center justify-between gap-4">

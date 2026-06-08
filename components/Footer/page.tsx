@@ -28,7 +28,7 @@ export default function Footer() {
       </div> */}
 
       <div className="px-4 sm:px-6 lg:px-16 py-10 sm:py-12 pb-4">
-        <div className="max-w-[1600px] mx-auto w-full">
+        <div className="max-w-[2000px] mx-auto w-full">
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 relative">
             
