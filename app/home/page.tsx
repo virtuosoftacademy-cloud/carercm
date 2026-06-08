@@ -56,26 +56,26 @@ const HomePage = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Dr. John Martin",
-      clinic: "Manhattan Endocrinologist, PLLC",
-      image: "/Mask group.png",
-    },
-    {
-      id: 2,
-      name: "Dr. Alex Parker",
-      clinic: "Rose Dermatology P.C",
-      image: "/image 2.png",
-    },
-    {
-      id: 3,
-      name: "Dr. Steven Sherwin",
-      clinic: "Manhattan Endocrinologist, PLLC",
-      image: "/image 2 (1).png",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     id: 1,
+  //     name: "Dr. John Martin",
+  //     clinic: "Manhattan Endocrinologist, PLLC",
+  //     image: "/Mask group.png",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Dr. Alex Parker",
+  //     clinic: "Rose Dermatology P.C",
+  //     image: "/image 2.png",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Dr. Steven Sherwin",
+  //     clinic: "Manhattan Endocrinologist, PLLC",
+  //     image: "/image 2 (1).png",
+  //   },
+  // ];
 
   const leadershipData = [
     {
@@ -411,7 +411,7 @@ const HomePage = () => {
       </div>
 
       {/* Testimonials Section - Only padding changed */}
-      <div className="w-full bg-white p-4 sm:p-12">
+      {/* <div className="w-full bg-white p-4 sm:p-12">
         <div className="text-center mb-10 sm:mb-14">
           <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
             Real Practices. Real Recovered Revenue.
@@ -448,13 +448,7 @@ const HomePage = () => {
             </div>
           ))}
         </div>
-
-        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
-          <button className="btn w-full sm:w-[180px] px-12">
-            See More
-          </button>
-        </div> */}
-      </div>
+      </div> */}
 
       {/* Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
