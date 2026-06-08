@@ -96,7 +96,7 @@ const Mechanism = () => {
   ];
   return (
     <>
-      <div className="p-4 sm:p-8 bg-[#2166AF0D] xl:min-h-[650px]">
+      <div className="p-12 bg-[#2166AF0D] xl:min-h-[650px]">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -128,50 +128,52 @@ const Mechanism = () => {
             </div>
           </div>
         </div>
+        <div className="max-w-[2000px] mx-auto">
+          <div className="hidden xl:block">
+            {/* Desktop version unchanged */}
+            <div className="relative w-full h-[450px]">
+              <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
+                <Image
+                  src="/mature-doctor.png"
+                  alt="Doctor consulting with patient"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                  sizes="50vw"
+                />
+              </div>
 
-        <div className="hidden xl:block">
-          {/* Desktop version unchanged */}
-          <div className="relative w-full h-[450px]">
-            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
-              <Image
-                src="/mature-doctor.png"
-                alt="Doctor consulting with patient"
-                fill
-                priority
-                className="object-cover object-center"
-                sizes="50vw"
-              />
-            </div>
+              <div
+                className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
+                style={{
+                  top: "40px",
+                  left: "16px",
+                  width: "60%",
+                  backgroundColor: "rgba(33,102,175,0.04)",
+                  backdropFilter: "blur(10px)",
+                  WebkitBackdropFilter: "blur(10px)",
+                  // boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
+                  // border: "1px solid rgba(25, 169, 229, 0.15)"
+                  opacity: 4
+                }}
+              >
 
-            <div
-              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
-              style={{
-                top: "40px",
-                left: "16px",
-                width: "60%",
-                background: "rgba(180,220,245,0.15)",
-                backdropFilter: "blur(8px)",
-                WebkitBackdropFilter: "blur(8px)",
-                boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
-                border: "1px solid rgba(25, 169, 229, 0.15)"
-              }}
-            >
+                <h1 className="text-[36px] font-semibold leading-tight text-[#003f7a] max-w-2xl">
+                  We Plug Into Your Practice and Own Every Stage of Your Revenue Cycle
+                </h1>
 
-              <h1 className="text-[36px] font-semibold leading-tight text-[#003f7a] max-w-2xl">
-                We Plug Into Your Practice and Own Every Stage of Your Revenue Cycle
-              </h1>
+                <p className="text-gray text-xs font-normal max-w-[570px]">
+                  CareRCM takes over the billing, coding, and collections process from day one. Pre-registration to payment posting — every step executed by specialists who know your specialty's codes, your payers' quirks, and exactly where practices like yours are bleeding revenue. You practice medicine the best you can. And we collect every dollar you deserve.
+                </p>
 
-              <p className="text-gray text-xs font-normal max-w-[570px]">
-                CareRCM takes over the billing, coding, and collections process from day one. Pre-registration to payment posting — every step executed by specialists who know your specialty's codes, your payers' quirks, and exactly where practices like yours are bleeding revenue. You practice medicine the best you can. And we collect every dollar you deserve.
-              </p>
-
-              <div className="flex flex-row gap-3 mt-2">
-                <button className="btn">
-                  Get My Free RCM Audit
-                </button>
-                {/* <button className="btn2">
-                  See How It Works
-                </button> */}
+                <div className="flex flex-row gap-3 mt-2">
+                  <button className="btn">
+                    Get My Free RCM Audit
+                  </button>
+                  {/* <button className="btn2">
+                      See How It Works
+                    </button> */}
+                </div>
               </div>
             </div>
           </div>
@@ -195,43 +197,45 @@ const Mechanism = () => {
         </div>
       </div>
 
-
-      <div className="bg-white p-4 sm:p-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
-            >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 transition-transform duration-300 relative">
-                <Image
-                  src={service.icon}
-                  alt={service.title}
-                  fill
-                  className="object-contain"
-                />
+      <div className="max-w-[2000px] mx-auto">
+        <div className="bg-white p-4 sm:p-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 transition-transform duration-300 relative">
+                  <Image
+                    src={service.icon}
+                    alt={service.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
+                  {service.title}
+                </h2>
+                <p className="text-gray text-xs font-normal mb-12">
+                  {service.description}
+                </p>
               </div>
-              <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
-                {service.title}
-              </h2>
-              <p className="text-gray text-xs font-normal mb-12">
-                {service.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
+          {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+            <button className="btn w-full sm:w-[180px] px-12">
+              View All
+            </button>
+          </div> */}
         </div>
-        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
-          <button className="btn w-full sm:w-[180px] px-12">
-            View All
-          </button>
-        </div> */}
       </div>
 
 
       {/* Leadership Section - Only padding and flex direction changed */}
+      {/* Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
-        <div className="relative py-16 lg:py-24 bg-[#F2FBFDF0] overflow-hidden">
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative py-16 lg:py-20 bg-[#F2FBFDF0] overflow-hidden">
+          <div className="relative max-w-[2000px] mx-auto p-12">
             <div className="text-center mb-14">
               <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
                 Institutional-Grade Financial Rigor. Built by
@@ -246,19 +250,37 @@ const Mechanism = () => {
 
             <div className="grid md:grid-cols-2 gap-5">
               {leadershipData.map((item) => (
-                <div key={item.id} className="bg-white border border-[#19A9E5] rounded-[18px] p-6 md:p-7">
+                <div
+                  key={item.id}
+                  className="group hover:bg-[#19A9E5] border border-[#19A9E5] rounded-[18px] p-6 transition-all duration-300"
+                >
                   <div className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 relative mt-1">
-                      <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        fill
+                        className="object-contain transition-opacity duration-300 group-hover:opacity-0"
+                      />
+
+                      <Image
+                        src={item.whiteicon}
+                        alt={item.title}
+                        fill
+                        className="object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      />
                     </div>
+
                     <div>
-                      <h3 className="text-[20px] font-normal text-gray leading-tight">
+                      <h3 className="text-[20px] font-normal text-gray leading-tight group-hover:!text-white transition-colors duration-300">
                         {item.title}
                       </h3>
-                      <p className="text-xs font-semibold text-gray mt-1">
+
+                      <p className="text-xs font-semibold text-gray mt-1 group-hover:!text-white transition-colors duration-300">
                         {item.subtitle}
                       </p>
-                      <p className="text-xs text-gray leading-relaxed mt-3">
+
+                      <p className="text-xs text-gray leading-relaxed mt-3 group-hover:!text-white transition-colors duration-300">
                         {item.description}
                       </p>
                     </div>
@@ -294,16 +316,19 @@ const Mechanism = () => {
               }}
             >
               <div className="absolute inset-0 bg-[#004A8F]/90"></div>
-              <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-6xl mx-auto">
+              <div className="relative z-10 max-w-[2000px] mx-auto p-12">
+                <div className="flex flex-wrap justify-center items-center gap-5">
                   {statsData.map((item, index) => (
-                    <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 text-center shadow-lg">
-                      <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
-                        {item.value}
-                      </h2>
-                      <p className="mt-4 text-gray text-xs sm:text-base leading-relaxed">
-                        {item.description}
-                      </p>
+                    <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 shadow-lg flex-1">
+                      {/* Heading and description in same row - NO WRAP */}
+                      <div className="flex flex-row items-center justify-center gap-4 whitespace-nowrap">
+                        <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
+                          {item.value}
+                        </h2>
+                        <span className="text-gray text-xs text-wrap font-normal">
+                          {item.description}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -314,11 +339,11 @@ const Mechanism = () => {
       </div>
 
       {/* Footer Leadership Section - Only padding and flex direction changed */}
-      <div className="bg-[#F7F9FB] py-16 md:py-24">
+      <div className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6">
-              Institutional-grade financial rigor. In your corner.
+              Institutional-grade Financial Rigor. In Your Corner.
             </h1>
             <p className="max-w-4xl mx-auto text-gray text-xs font-normal">
               CareRCM was built by a leader who developed healthcare workforce
@@ -328,7 +353,7 @@ const Mechanism = () => {
             </p>
           </div>
 
-          <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
+          <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-6">
             <div className="flex gap-4">
               <div className="text-[#004A8F] text-5xl font-bold leading-none">
                 <Image src="/cotection.png" alt="cotection icon" width={55} height={55} />
@@ -348,7 +373,7 @@ const Mechanism = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-6 mt-6">
+          <div className="grid lg:grid-cols-2 gap-6 my-6">
             <div className="bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
               <h3 className="text-[#19A9E5] font-semibold text-[24px]">
                 Malik Ahmad Jalal
@@ -373,30 +398,39 @@ const Mechanism = () => {
               </p>
             </div>
 
-            <div className="space-y-3">
-              {credentials.map((item, index) => (
-                <div key={index} className="bg-[#0AADE40D] rounded-2xl px-6 py-5">
-                  <div className="flex items-center gap-4">
-                    <div className="relative w-9 h-9 flex-shrink-0">
-                      <Image src={item.icon} alt={item.title} fill className="object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-[20px] font-normal text-gray leading-tight">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs font-semibold text-gray mt-1">
-                        {item.subtitle}
-                      </p>
-                    </div>
+            <div>
+              <Image
+                alt="Malik Ahmad Jalal"
+                src="/Malik Ahmad Jalal.png"
+                width={1000}
+                height={100}
+              />
+            </div>
+          </div>
+
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-6">
+            {credentials.map((item, index) => (
+              <div key={index} className="bg-[#0AADE40D] rounded-2xl px-6 py-5">
+                <div className="flex items-center gap-4">
+                  <div className="relative w-9 h-9 flex-shrink-0">
+                    <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                  </div>
+                  <div>
+                    <h3 className="text-[20px] font-normal text-gray leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs font-semibold text-gray mt-1">
+                      {item.subtitle}
+                    </p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           <div className="mt-20 text-center">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
-              Why it matters beyond your practice
+              Why It Matters Beyond Your Practice
             </h1>
             <p className="mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
               Independent private practices are the backbone of public health in

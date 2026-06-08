@@ -64,7 +64,7 @@ export default function Header() {
                   className={`text-xs whitespace-nowrap font-normal transition-all duration-300 hover:!text-[#00427F] ${
                     isActiveLink(item.path) 
                       ? "text-[#00427F] font-normal underline underline-offset-8" 
-                      : "text-gray hover:text-[#00427F]"
+                      : "text-gray hover:text-[#00427F] hover:underline underline-offset-8"
                   }`}
                 >
                   {item.name}
