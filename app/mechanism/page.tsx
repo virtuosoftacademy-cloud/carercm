@@ -1,7 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 const Mechanism = () => {
+  const [startIndex, setStartIndex] = useState(0);
+  const visibleCards = 3;
   const services = [
     {
       id: 1,
@@ -32,28 +35,32 @@ const Mechanism = () => {
       title: "Harvard Kennedy School",
       subtitle: "Emerging Global Leader",
       description: "World-class training in large-scale institutional transformation — applied directly to hospital systems, healthcare networks, and independent practice revenue cycles.",
-      icon: "/Vector (2).png"
+      icon: "/Vector (2).png",
+      whiteicon: '/white icon 2.png'
     },
     {
       id: 2,
       title: "Eisenhower Fellowships",
       subtitle: "Global Eisenhower Fellow",
       description: "Part of an elite international network of healthcare innovators — with deep expertise in scalability, care delivery efficiency, and medical billing operations.",
-      icon: "/Vector (3).png"
+      icon: "/Vector (3).png",
+      whiteicon: '/white icon 1.png'
     },
     {
       id: 3,
       title: "Schwab Foundation / WEF",
       subtitle: "Social Entrepreneur of the Year",
       description: "Globally recognised for healthcare workforce development and network restructuring — the same operational rigor applied to every practice we serve.",
-      icon: "/Vector (4).png"
+      icon: "/Vector (4).png",
+      whiteicon: '/white icon 4.png'
     },
     {
       id: 4,
       title: "Goldman Sachs · Deloitte · FCA",
       subtitle: "Institutional Grade Financial Leadership",
       description: "UK Chartered Accountant with Goldman Sachs and Deloitte experience — delivering Fortune 500 financial discipline, audit-grade controls, and revenue protection for independent physicians.",
-      icon: "/Vector (5).png"
+      icon: "/Vector (5).png",
+      whiteicon: '/white icon 3.png'
     }
   ];
 
@@ -94,9 +101,58 @@ const Mechanism = () => {
       subtitle: "Institutional Grade Financial Leadership",
     },
   ];
+  // Carousel ke liye data array - RENAME KAR DIYA
+  const servicesData = [
+    {
+      id: 1,
+      title: "Pre-registration / Registration",
+      description: "A wrong insurance ID at intake can unravel an entire claim downstream. We verify eligibility before the appointment so nothing gets denied for a reason that could’ve been caught on day one.",
+      icon: "/Group.png",
+      link: "#"
+    },
+    {
+      id: 2,
+      title: "Charge Capture",
+      description: "Undocumented or delayed charges are revenue that simply vanishes. We ensure every service rendered is captured, coded correctly and submitted, so nothing falls through the cracks.",
+      icon: "/change-capture.png",
+      link: "#"
+    },
+    {
+      id: 3,
+      title: "Claims Submission",
+      description: "A clean claim submitted fast is the difference between 20-day payment and 90-day AR. We submit accurate claims the first time, reducing rejections before they ever become denials.",
+      icon: "/fluent_document-24-light.png",
+      link: "#"
+    },
+    {
+      id: 4,
+      title: "Denial Management",
+      description: "65% of denied claims are never reworked. We chase every one. Our denial management workflow identifies the root cause, appeals aggressively and recovers revenue most practices simply write off.",
+      icon: "/material-symbols-light_shield-outline-rounded.png",
+      link: "#"
+    },
+    {
+      id: 5,
+      title: "Payment Posting",
+      description: "Payers routinely underpay contracted rates and most practices never catch it. We post and audit payments against your fee schedule so underpayments get flagged and recovered.",
+      icon: "/teenyicons_tick-circle-outline.png",
+      link: "#"
+    },
+    {
+      id: 6,
+      title: "Reporting",
+      description: "Payers routinely underpay contracted rates and most practices never catch it. We post and audit payments against your fee schedule so underpayments get flagged and recovered.",
+      icon: "/Vector (1).png",
+      link: "#"
+    }
+  ];
+
+  const visibleServices = servicesData.slice(startIndex, startIndex + visibleCards);
+
+
   return (
     <>
-      <div className="p-12 bg-[#2166AF0D] xl:min-h-[650px]">
+      <div className="p-4 sm:p-12 bg-[#2166AF0D] xl:min-h-[650px]">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -180,11 +236,56 @@ const Mechanism = () => {
         </div>
       </div>
 
-      <div className="w-full p-12 mt-20 bg-white flex justify-center">
-        <div className="flex flex-col items-center justify-center max-w-4xl text-center">
-          <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Six Stages. No Dollars Left Behind.</h1>
-          <p className="text-xs text-gray font-normal max-w-3xl">
-            Most practices lose 20–30% of their revenue somewhere between the patient visit and the payment hitting their account. CareRCM locks down every one of those leakage points — so the money you've earned actually makes it to you.          </p>
+      <div className="w-full p-4 sm:p-12 flex justify-center bg-[#0aade4]">
+        <div className="max-w-[2000px] mx-auto my-20">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-[44px] font-semibold text-[#ffffff] mb-6 text-center">Six Stages. No Dollars Left Behind.</h1>
+            <p className="text-xs text-center text-white font-normal max-w-5xl">
+              Most practices lose 20–30% of their revenue somewhere between the patient visit and the payment hitting their account. CareRCM locks down every one of those leakage points — so the money you've earned actually makes it to you.
+            </p>
+          </div>
+
+          {/* Carousel - No Arrow Buttons */}
+          <div className="relative mt-12">
+            {/* Cards Grid - 3 in row */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
+              {visibleServices.map((service) => (
+                <div
+                  key={service.id}
+                  className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
+                >
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 transition-transform duration-300 relative">
+                    <Image
+                      src={service.icon}
+                      alt={service.title}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <h2 className="text-[20px] sm:text-[22px] md:text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
+                    {service.title}
+                  </h2>
+                  <p className="text-gray text-xs font-normal mb-6 line-clamp-4">
+                    {service.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Dots Indicator Only - Click to change slides */}
+          <div className="flex justify-center gap-2 mt-8">
+            {Array.from({ length: Math.ceil(servicesData.length / visibleCards) }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setStartIndex(index * visibleCards)}
+                className={`h-4 w-4 rounded-full transition-all duration-300 ${Math.floor(startIndex / visibleCards) === index
+                    ? "w-4 bg-[#00427F]"
+                    : "w-4 bg-gray-300 hover:bg-gray-400"
+                  }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -232,10 +333,9 @@ const Mechanism = () => {
 
 
       {/* Leadership Section - Only padding and flex direction changed */}
-      {/* Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
         <div className="relative py-16 lg:py-20 bg-[#F2FBFDF0] overflow-hidden">
-          <div className="relative max-w-[2000px] mx-auto p-12">
+          <div className="relative max-w-[2000px] mx-auto p-4 sm:p-12">
             <div className="text-center mb-14">
               <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
                 Institutional-Grade Financial Rigor. Built by
@@ -316,12 +416,12 @@ const Mechanism = () => {
               }}
             >
               <div className="absolute inset-0 bg-[#004A8F]/90"></div>
-              <div className="relative z-10 max-w-[2000px] mx-auto p-12">
+              <div className="relative z-10 max-w-[2000px] mx-auto p-4 sm:p-12">
                 <div className="flex flex-wrap justify-center items-center gap-5">
                   {statsData.map((item, index) => (
                     <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 shadow-lg flex-1">
                       {/* Heading and description in same row - NO WRAP */}
-                      <div className="flex flex-row items-center justify-center gap-4 whitespace-nowrap">
+                      <div className="flex flex-col sm:flex-row text-center items-center justify-center gap-4 whitespace-nowrap">
                         <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
                           {item.value}
                         </h2>

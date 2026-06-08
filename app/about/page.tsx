@@ -4,26 +4,26 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Dr. John Martin",
-    clinic: "Manhattan Endocrinologist, PLLC",
-    image: "/Mask group.png",
-  },
-  {
-    id: 2,
-    name: "Dr. Alex Parker",
-    clinic: "Rose Dermatology P.C",
-    image: "/image 2.png",
-  },
-  {
-    id: 3,
-    name: "Dr. Steven Sherwin",
-    clinic: "Manhattan Endocrinologist, PLLC",
-    image: "/image 2 (1).png",
-  },
-];
+// const testimonials = [
+//   {
+//     id: 1,
+//     name: "Dr. John Martin",
+//     clinic: "Manhattan Endocrinologist, PLLC",
+//     image: "/Mask group.png",
+//   },
+//   {
+//     id: 2,
+//     name: "Dr. Alex Parker",
+//     clinic: "Rose Dermatology P.C",
+//     image: "/image 2.png",
+//   },
+//   {
+//     id: 3,
+//     name: "Dr. Steven Sherwin",
+//     clinic: "Manhattan Endocrinologist, PLLC",
+//     image: "/image 2 (1).png",
+//   },
+// ];
 
 
 const About = () => {
@@ -151,48 +151,51 @@ const About = () => {
           </div>
         </div>
 
-        <div className="hidden xl:block">
-          <div className="relative w-full h-[570px]">
-            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
-              <Image
-                src="/mature-doctor-working-at-office-2026-03-18-15-46-20-utc 1.png"
-                alt="Doctor consulting with patient"
-                fill
-                priority
-                className="object-cover object-center"
-              />
-            </div>
+        <div className="max-w-[2000px] mx-auto">
+          <div className="hidden xl:block">
+            <div className="relative w-full h-[570px]">
+              <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
+                <Image
+                  src="/mature-doctor-working-at-office-2026-03-18-15-46-20-utc 1.png"
+                  alt="Doctor consulting with patient"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                />
+              </div>
 
-            <div
-              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
-              style={{
-                top: "40px",
-                left: "16px",
-                width: "60%",
-                background: "rgba(180,220,245,0.15)",
-                backdropFilter: "blur(8px)",
-                WebkitBackdropFilter: "blur(8px)",
-                boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
-                border: "1px solid rgba(25, 169, 229, 0.15)"
-              }}
-            >
-              <h1 className="text-[36px] font-semibold leading-tight text-[#00427F] max-w-3xl">
-                We Built CareRCM Because Independent Practices Deserve NO Dollar Left Behind.
-              </h1>
+              <div
+                className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
+                style={{
+                  top: "40px",
+                  left: "16px",
+                  width: "60%",
+                  backgroundColor: "rgba(33,102,175,0.04)",
+                  backdropFilter: "blur(10px)",
+                  WebkitBackdropFilter: "blur(10px)",
+                  // boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
+                  // border: "1px solid rgba(25, 169, 229, 0.15)"
+                  opacity: 4
+                }}
+              >
+                <h1 className="text-[36px] font-semibold leading-tight text-[#00427F] max-w-3xl">
+                  We Built CareRCM Because Independent Practices Deserve NO Dollar Left Behind.
+                </h1>
 
-              <p className="text-gray text-xs font-normal leading-relaxed max-w-[560px]">
-                CareRCM is a specialized end-to-end Revenue Cycle Management firm built on certified trained RCM specialists so your revenue stops leaking through denied claims, slow AR, and coding errors. We handle the entire billing, coding, and collections process — No in-house billing team needed, no dollar left behind.
-              </p>
+                <p className="text-gray text-xs font-normal leading-relaxed max-w-[560px]">
+                  CareRCM is a specialized end-to-end Revenue Cycle Management firm built on certified trained RCM specialists so your revenue stops leaking through denied claims, slow AR, and coding errors. We handle the entire billing, coding, and collections process — No in-house billing team needed, no dollar left behind.
+                </p>
 
-              <div className="flex flex-row gap-3 mt-2">
-                <button className="btn">
-                  Get My Free RCM Audit
-                </button>
-                <button className="btn2"
-                  onClick={() => navigate("/mechanism")}
-                >
-                  See How It Works
-                </button>
+                <div className="flex flex-row gap-3 mt-2">
+                  <button className="btn">
+                    Get My Free RCM Audit
+                  </button>
+                  <button className="btn2"
+                    onClick={() => navigate("/mechanism")}
+                  >
+                    See How It Works
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -200,7 +203,7 @@ const About = () => {
       </div>
 
       {/* Mission Section - Only mobile padding fixed */}
-      <div className="w-full p-4 sm:p-12 bg-white flex justify-center mt-20">
+      <div className="w-full p-4 sm:p-12 bg-white flex justify-center my-20">
         <div className="flex flex-col items-center justify-center max-w-5xl text-center">
           <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
           <p className="text-xs text-gray font-normal max-w-[1000px">
@@ -210,76 +213,78 @@ const About = () => {
       </div>
 
       {/* We Don't Advise Section - Mobile: full width, image below */}
-      <div className="min-h-screen bg-[#f9fafb] flex items-center justify-center p-4 sm:p-6">
-        <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
+      <div className="max-w-[2000px] mx-auto">
+        <div className="bg-[#f9fafb] flex items-center justify-center">
+          <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] my-20">
 
-          <div className="text-center mb-10">
-            <h1 className="text-[44px] font-semibold text-[#00427F] mb-2">
-              We Don't Advise. We Execute.
-            </h1>
-            <p className="text-gray text-xs font-normal">
-              From the moment a patient walks in to the day your payment posts,<br className="hidden sm:block" />
-              CareRCM owns every stage of your revenue cycle.
-            </p>
-          </div>
+            <div className="text-center mb-10">
+              <h1 className="text-[44px] font-semibold text-[#00427F] mb-2">
+                We Don't Advise. We Execute.
+              </h1>
+              <p className="text-gray text-xs font-normal">
+                From the moment a patient walks in to the day your payment posts,<br className="hidden sm:block" />
+                CareRCM owns every stage of your revenue cycle.
+              </p>
+            </div>
 
-          <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
-            <div className="flex flex-col lg:grid lg:grid-cols-2">
-              <div className="p-6 sm:p-8 lg:p-12">
-                {workflows.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`border-b border-[#D8E0EA] ${openIndex === index ? "border-l-4 border-l-[#00AEEF] bg-white pl-4" : ""
-                      } transition-all duration-300`}
-                  >
-                    <button
-                      onClick={() =>
-                        setOpenIndex(openIndex === index ? -1 : index)
-                      }
-                      className="w-full flex items-start justify-between py-5 text-left"
+            <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
+              <div className="flex flex-col lg:grid lg:grid-cols-2">
+                <div className="p-4 sm:p-12">
+                  {workflows.map((item, index) => (
+                    <div
+                      key={index}
+                      className={`border-b border-[#D8E0EA] ${openIndex === index ? "border-l-4 border-l-[#00AEEF] bg-white pl-4" : ""
+                        } transition-all duration-300`}
                     >
-                      <h3 className="text-[#00427F] text-[18px] font-semibold max-w-[85%]">
-                        {item.title}
-                      </h3>
+                      <button
+                        onClick={() =>
+                          setOpenIndex(openIndex === index ? -1 : index)
+                        }
+                        className="w-full flex items-start justify-between py-5 text-left"
+                      >
+                        <h3 className="text-[#00427F] text-[18px] font-semibold max-w-[85%]">
+                          {item.title}
+                        </h3>
 
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                        className={`w-5 h-5 text-[#00427F] mt-1 transition-transform duration-300 me-4 ${openIndex === index ? "rotate-180" : ""
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={2}
+                          stroke="currentColor"
+                          className={`w-5 h-5 text-[#00427F] mt-1 transition-transform duration-300 me-4 ${openIndex === index ? "rotate-180" : ""
+                            }`}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </button>
+
+                      <div
+                        className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
+                          ? "max-h-[300px] opacity-100 pb-6"
+                          : "max-h-0 opacity-0"
                           }`}
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                        />
-                      </svg>
-                    </button>
-
-                    <div
-                      className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
-                        ? "max-h-[300px] opacity-100 pb-6"
-                        : "max-h-0 opacity-0"
-                        }`}
-                    >
-                      <p className="text-gray text-xs font-normal leading-relaxed pr-5">
-                        {item.content}
-                      </p>
+                        <p className="text-gray text-xs font-normal leading-relaxed pr-5">
+                          {item.content}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
-                <Image
-                  src="/Frame 115.png"
-                  alt="frame 115"
-                  fill
-                  className="object-cover"
-                />
+                <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
+                  <Image
+                    src="/Frame 115.png"
+                    alt="frame 115"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -287,7 +292,7 @@ const About = () => {
       </div>
 
       {/* Quote Section - Only mobile padding fixed */}
-      <div className="max-w-[94%] mx-auto bg-blue-50 rounded-xl my-12 p-6 sm:p-12">
+      <div className="max-w-[94%] mx-auto bg-blue-50 rounded-xl my-20 p-4 sm:p-12">
         <div className="flex flex-col items-center text-center justify-center max-w-4xl mx-auto">
           <div className="mb-8">
             <Image
@@ -311,9 +316,9 @@ const About = () => {
       </div>
 
       {/* Real Practices Section - Only mobile padding fixed */}
-      <div className="w-full bg-white p-4 sm:p-12">
+      {/* <div className="w-full bg-white p-4 sm:p-12"> */}
 
-        <div className="text-center mb-10 sm:mb-14">
+        {/* <div className="text-center mb-10 sm:mb-14">
 
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
             <h1 className="text-[44px] font-semibold leading-tight text-[#00427F]">
@@ -326,9 +331,9 @@ const About = () => {
             across the country rely on our end-to-end billing execution to eliminate AR bottlenecks
             and consistently add tens of thousands to their monthly collections.
           </p>
-        </div>
+        </div> */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 mb-10 sm:mb-12">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 mb-10 sm:mb-12">
           {testimonials.map((doctor) => (
             <div
               key={doctor.id}
@@ -353,7 +358,7 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
           <button className="btn w-full sm:w-[180px] px-12">
@@ -361,144 +366,148 @@ const About = () => {
           </button>
         </div> */}
 
-      </div>
+      {/* </div> */}
 
       {/* Our Team Section - Only mobile padding and image size fixed */}
-      <div className="w-full bg-[#00aeef] p-4 sm:p-12">
-        <div className="">
-          <div className="text-center mb-12 md:mb-16">
-            <h1 className="text-[44px] font-semibold text-[#fff] mb-2">
-              Our Team
-            </h1>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-xs text-gray font-normal text-white">
-                Our team is built around one mission — helping healthcare practices collect every dollar they earn.
-                With experts in billing, credentialing, compliance, and technical operations, CareRCM delivers
-                responsive support, faster resolutions, and data-driven RCM strategies that strengthen your financial performance.
-              </p>
+      <div className="max-w-[2000px] mx-auto">
+        <div className="w-full bg-[#00aeef] my-20 p-4 sm:p-12">
+          <div className="">
+            <div className="text-center mb-12 md:mb-16">
+              <h1 className="text-[44px] font-semibold text-[#fff] mb-2">
+                Our Team
+              </h1>
+              <div className="max-w-4xl mx-auto">
+                <p className="text-xs text-gray font-normal text-white">
+                  Our team is built around one mission — helping healthcare practices collect every dollar they earn.
+                  With experts in billing, credentialing, compliance, and technical operations, CareRCM delivers
+                  responsive support, faster resolutions, and data-driven RCM strategies that strengthen your financial performance.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 mb-10 sm:mb-12">
-            {teamMembers.map((member) => (
-              <div
-                key={member.id}
-                className="group bg-white rounded-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 flex flex-col h-full p-4 sm:p-6"
-              >
-                <div className="relative w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[4/3] lg:aspect-[4/3] overflow-hidden flex-shrink-0 rounded-md">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover object-top scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                <div className="pb-6 pt-4 bg-white">
-                  <div className="flex items-center justify-between gap-2">
-                    <h3 className="text-[#00427F] font-semibold text-[24px] transition-colors duration-300">
-                      {member.name}
-                    </h3>
-                    <Link
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="relative w-5 h-5 flex-shrink-0 cursor-pointer">
-                          <Image
-                            src={member.icon}
-                            alt="LinkedIn"
-                            fill
-                            className="object-contain transition-all duration-300"
-                          />
-                        </div>
-                     </Link>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 mb-10 sm:mb-12">
+              {teamMembers.map((member) => (
+                <div
+                  key={member.id}
+                  className="group bg-white rounded-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 flex flex-col h-full p-4 sm:p-6"
+                >
+                  <div className="relative w-full aspect-[4/3] sm:aspect-[4/3] md:aspect-[4/3] lg:aspect-[4/3] overflow-hidden flex-shrink-0 rounded-md">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover object-top scale-105 transition-transform duration-500"
+                    />
                   </div>
 
-                  <p className="text-gray text-xs font-normal transition-colors duration-300">
-                    {member.role}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+                  <div className="pb-6 pt-4 bg-white">
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="text-[#00427F] font-semibold text-[24px] transition-colors duration-300">
+                        {member.name}
+                      </h3>
+                      <Link
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="relative w-5 h-5 flex-shrink-0 cursor-pointer">
+                            <Image
+                              src={member.icon}
+                              alt="LinkedIn"
+                              fill
+                              className="object-contain transition-all duration-300"
+                            />
+                          </div>
+                      </Link>
+                    </div>
 
+                    <p className="text-gray text-xs font-normal transition-colors duration-300">
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
         </div>
       </div>
 
       {/* Why Private Practices Section - Mobile: full width, image below */}
-      <div className="min-h-screen bg-[#2166AF0D] flex items-center justify-center p-4 sm:p-6">
-        <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
+      <div className="max-w-[2000px] mx-auto">
+        <div className="flex items-center justify-center">
+          <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] py-20">
 
-          <div className="text-center mb-10">
-            <div className="flex items-center justify-center mb-4">
-              <h1 className="text-[44px] font-semibold leading-tight text-[#00427F]">
-                Why Private Practices Choose <br className="hidden sm:block" /> CareRCM Over Every Other Option
-              </h1>
-            </div>
-
-            <p className="text-gray text-xs font-normal">
-              Generic RCM gets you generic results. Here's what makes us different.
-            </p>
-          </div>
-
-          <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
-            <div className="flex flex-col lg:grid lg:grid-cols-2">
-              <div className="p-6 sm:p-8 lg:p-12">
-                {workflowstitle.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`border-b border-[#D8E0EA] ${openIndex === index ? "border-l-4 border-l-[#00AEEF] bg-white pl-4" : ""
-                      } transition-all duration-300`}
-                  >
-                    <button
-                      onClick={() =>
-                        setOpenIndex(openIndex === index ? -1 : index)
-                      }
-                      className="w-full flex items-start justify-between py-5 text-left"
-                    >
-                      <h3 className="text-[#00427F] text-[18px] font-semibold max-w-[85%]">
-                        {item.title}
-                      </h3>
-
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                        className={`w-5 h-5 text-[#00427F] mt-1 transition-transform duration-300 me-4 ${openIndex === index ? "rotate-180" : ""
-                          }`}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                        />
-                      </svg>
-                    </button>
-
-                    <div
-                      className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
-                        ? "max-h-[300px] opacity-100 pb-6"
-                        : "max-h-0 opacity-0"
-                        }`}
-                    >
-                      <p className="text-gray text-xs leading-relaxed pr-5">
-                        {item.content}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+            <div className="text-center mb-10">
+              <div className="flex items-center justify-center mb-4">
+                <h1 className="text-[44px] font-semibold leading-tight text-[#00427F]">
+                  Why Private Practices Choose <br className="hidden sm:block" /> CareRCM Over Every Other Option
+                </h1>
               </div>
 
-              <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
-                <Image
-                  src="/Frame 115 (1).png"
-                  alt="frame 115"
-                  fill
-                  className="object-cover"
-                />
+              <p className="text-gray text-xs font-normal">
+                Generic RCM gets you generic results. Here's what makes us different.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
+              <div className="flex flex-col lg:grid lg:grid-cols-2">
+                <div className="p-4 sm:p-12">
+                  {workflowstitle.map((item, index) => (
+                    <div
+                      key={index}
+                      className={`border-b border-[#D8E0EA] ${openIndex === index ? "border-l-4 border-l-[#00AEEF] bg-white pl-4" : ""
+                        } transition-all duration-300`}
+                    >
+                      <button
+                        onClick={() =>
+                          setOpenIndex(openIndex === index ? -1 : index)
+                        }
+                        className="w-full flex items-start justify-between py-5 text-left"
+                      >
+                        <h3 className="text-[#00427F] text-[18px] font-semibold max-w-[85%]">
+                          {item.title}
+                        </h3>
+
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={2}
+                          stroke="currentColor"
+                          className={`w-5 h-5 text-[#00427F] mt-1 transition-transform duration-300 me-4 ${openIndex === index ? "rotate-180" : ""
+                            }`}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </button>
+
+                      <div
+                        className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
+                          ? "max-h-[300px] opacity-100 pb-6"
+                          : "max-h-0 opacity-0"
+                          }`}
+                      >
+                        <p className="text-gray text-xs leading-relaxed pr-5">
+                          {item.content}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
+                  <Image
+                    src="/Frame 115 (1).png"
+                    alt="frame 115"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>

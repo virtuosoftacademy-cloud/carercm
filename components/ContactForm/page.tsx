@@ -128,7 +128,7 @@ export default function ContactForm() {
       <div className="max-w-5xl mx-auto py-20">
         <div className="mb-8 sm:mb-10">
           <div className="mb-4 flex justify-center">
-            <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1">
+            <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2">
               <p className="text-white text-xs font-medium">Only 8 audit slots left this week</p>
             </div>
           </div>
@@ -226,7 +226,7 @@ export default function ContactForm() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="w-full">
+        <form onSubmit={handleSubmit} className="w-full p-4 sm-p-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
 
             <div>

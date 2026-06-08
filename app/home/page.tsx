@@ -153,7 +153,7 @@ const HomePage = () => {
   return (
     <>
       {/* Home Section - Only padding and button width changed */}
-      <div className="bg-white p-12">
+      <div className="bg-white p-4 lg:p-12">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -162,7 +162,7 @@ const HomePage = () => {
               width={1200}
               height={400}
               priority
-              className="w-full h-auto"
+              className="w-full h-auto" 
             />
           </div>
 
@@ -252,7 +252,7 @@ const HomePage = () => {
       </div>
 
       {/* Mission/Vision Section - Only padding changed */}
-      <div className="bg-white p-12">
+      <div className="bg-white p-4 lg:p-12">
         <div className="w-full">
           <div className="text-center mx-auto max-w-4xl my-20">
             <h1 className="text-[44px] leading-[1.2] font-semibold tracking-wide text-[#004275] mb-4 sm:mb-4">
@@ -320,7 +320,7 @@ const HomePage = () => {
         <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="flex-2 flex items-center py-12 sm:py-16 lg:py-20">
-              <div>
+              <div className="text-center lg:text-left">
                 <h1 className="text-[44px] font-semibold !text-white mb-4">
                   We Understand Your Specialty
                 </h1>
@@ -461,7 +461,7 @@ const HomePage = () => {
       {/* Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
         <div className="relative py-16 lg:py-20 bg-[#F2FBFDF0] overflow-hidden">
-          <div className="relative max-w-[2000px] mx-auto p-12">
+          <div className="relative max-w-[2000px] mx-auto p-4 sm:p-12">
             <div className="text-center mb-14">
               <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
                 Institutional-Grade Financial Rigor. Built by
@@ -542,12 +542,12 @@ const HomePage = () => {
               }}
             >
               <div className="absolute inset-0 bg-[#004A8F]/90"></div>
-              <div className="relative z-10 max-w-[2000px] mx-auto p-12">
+              <div className="relative z-10 max-w-[2000px] mx-auto p-4 sm:p-12">
                 <div className="flex flex-wrap justify-center items-center gap-5">
                   {statsData.map((item, index) => (
                     <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 shadow-lg flex-1">
                       {/* Heading and description in same row - NO WRAP */}
-                      <div className="flex flex-row items-center justify-center gap-4 whitespace-nowrap">
+                      <div className="flex flex-col sm:flex-row text-center items-center justify-center gap-4 whitespace-nowrap">
                         <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
                           {item.value}
                         </h2>

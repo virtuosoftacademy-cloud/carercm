@@ -25,7 +25,7 @@ const Contact = () => {
     ];
     return (
         <>
-            <div className="bg-[#2166AF0D] p-12 xl:min-h-[650px]">
+            <div className="bg-[#2166AF0D] p-4 sm:p-12 xl:min-h-[650px]">
                 <div className="block xl:hidden">
                     <div className="w-full rounded-2xl overflow-hidden mb-6">
                         <Image
@@ -92,7 +92,7 @@ const Contact = () => {
             </div>
 
 
-            <div className="bg-[#fff] px-0 sm:px-8 lg:p-12 my-20">
+            <div className="bg-[#fff] p-4 sm:p-12 my-20">
                 <div className="max-w-[2000px] mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                         {contactInfo.map((item) => (
