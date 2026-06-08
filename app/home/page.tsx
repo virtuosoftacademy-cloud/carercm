@@ -83,28 +83,32 @@ const HomePage = () => {
       title: "Harvard Kennedy School",
       subtitle: "Emerging Global Leader",
       description: "World-class training in large-scale institutional transformation — applied directly to hospital systems, healthcare networks, and independent practice revenue cycles.",
-      icon: "/Vector (2).png"
+      icon: "/Vector (2).png",
+      whiteicon: '/white icon 2.png'
     },
     {
       id: 2,
       title: "Eisenhower Fellowships",
       subtitle: "Global Eisenhower Fellow",
       description: "Part of an elite international network of healthcare innovators — with deep expertise in scalability, care delivery efficiency, and medical billing operations.",
-      icon: "/Vector (3).png"
+      icon: "/Vector (3).png",
+      whiteicon: '/white icon 1.png'
     },
     {
       id: 3,
       title: "Schwab Foundation / WEF",
       subtitle: "Social Entrepreneur of the Year",
       description: "Globally recognised for healthcare workforce development and network restructuring — the same operational rigor applied to every practice we serve.",
-      icon: "/Vector (4).png"
+      icon: "/Vector (4).png",
+      whiteicon: '/white icon 4.png'
     },
     {
       id: 4,
       title: "Goldman Sachs · Deloitte · FCA",
       subtitle: "Institutional Grade Financial Leadership",
       description: "UK Chartered Accountant with Goldman Sachs and Deloitte experience — delivering Fortune 500 financial discipline, audit-grade controls, and revenue protection for independent physicians.",
-      icon: "/Vector (5).png"
+      icon: "/Vector (5).png",
+      whiteicon: '/white icon 3.png'
     }
   ];
 
@@ -149,7 +153,7 @@ const HomePage = () => {
   return (
     <>
       {/* Home Section - Only padding and button width changed */}
-      <div className="bg-white p-4 sm:p-8">
+      <div className="bg-white p-4 lg:p-12">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -158,7 +162,7 @@ const HomePage = () => {
               width={1200}
               height={400}
               priority
-              className="w-full h-auto"
+              className="w-full h-auto" 
             />
           </div>
 
@@ -189,56 +193,58 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        <div className="max-w-[2000px] mx-auto">
+          <div className="hidden xl:block">
+            {/* Desktop version unchanged */}
+            <div className="relative w-full h-[450px]">
+              <div className="absolute top-0 right-0 w-[55%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
+                <Image
+                  src="/mask-group-1.png"
+                  alt="Doctor consulting with patient"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                />
+              </div>
 
-        <div className="hidden xl:block">
-          {/* Desktop version unchanged */}
-          <div className="relative w-full h-[450px]">
-            <div className="absolute top-0 right-0 w-[50%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
-              <Image
-                src="/mask-group-1.png"
-                alt="Doctor consulting with patient"
-                fill
-                priority
-                className="object-cover object-center"
-              />
-            </div>
+              <div
+                className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
+                style={{
+                  top: "40px",
+                  left: "16px",
+                  width: "60%",
+                  backgroundColor: "rgba(33,102,175,0.04)",
+                  backdropFilter: "blur(10px)",
+                  WebkitBackdropFilter: "blur(10px)",
+                  // boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
+                  // border: "1px solid rgba(25, 169, 229, 0.15)"
+                  opacity: 4
+                }}
+              >
+                <p className="text-[#4E4E4E] text-sm font-normal leading-snug tracking-wide">
+                  Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
+                </p>
 
-            <div
-              className="absolute flex flex-col justify-center gap-3 md:gap-4 rounded-2xl px-6 md:px-7 lg:px-8 py-5 md:py-6 lg:py-7 h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px]"
-              style={{
-                top: "40px",
-                left: "16px",
-                width: "60%",
-                background: "rgba(180,220,245,0.15)",
-                backdropFilter: "blur(8px)",
-                WebkitBackdropFilter: "blur(8px)",
-                boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
-                border: "1px solid rgba(25, 169, 229, 0.15)"
-              }}
-            >
-              <p className="text-[#4E4E4E] text-sm font-normal leading-snug tracking-wide">
-                Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
-              </p>
+                <h1 className="text-[54px] leading-[1.2] font-semibold tracking-wide text-[#00427F] max-w-3xl">
+                  Stop Leaving $100K–$250K on the Table Every Year
+                </h1>
 
-              <h1 className="text-[54px] leading-[1.2] font-semibold tracking-wide text-[#00427F] max-w-3xl">
-                Stop Leaving $100K–$250K on the Table Every Year
-              </h1>
+                <p className="text-gray text-xs font-normal leading-relaxed max-w-[570px]">
+                  Most private practices lose thousands monthly to claim denials,
+                  slow AR and coding errors and never find out until it's too late.
+                  We handle your entire revenue cycle so you collect every dollar
+                  you've earned, faster, with zero billing headaches.
+                </p>
 
-              <p className="text-gray text-xs font-normal leading-relaxed max-w-[570px]">
-                Most private practices lose thousands monthly to claim denials,
-                slow AR and coding errors and never find out until it's too late.
-                We handle your entire revenue cycle so you collect every dollar
-                you've earned, faster, with zero billing headaches.
-              </p>
-
-              <div className="flex flex-row gap-3 mt-2">
-                <button className="btn">
-                  Get My Free RCM Audit
-                </button>
-                <button className="btn2"
-                  onClick={() => navigate("/mechanism")}>
-                  See How It Works
-                </button>
+                <div className="flex flex-row gap-3 mt-2">
+                  <button className="btn">
+                    Get My Free RCM Audit
+                  </button>
+                  <button className="btn2"
+                    onClick={() => navigate("/mechanism")}>
+                    See How It Works
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -246,63 +252,64 @@ const HomePage = () => {
       </div>
 
       {/* Mission/Vision Section - Only padding changed */}
-      <div className="bg-white px-4 sm:px-4 lg:p-12">
+      <div className="bg-white p-4 lg:p-12">
         <div className="w-full">
-          <div className="text-center mx-auto max-w-4xl mt-20 mb-12">
+          <div className="text-center mx-auto max-w-4xl my-20">
             <h1 className="text-[44px] leading-[1.2] font-semibold tracking-wide text-[#004275] mb-4 sm:mb-4">
-              We built a financial infrastructure for independent physicians
+              We Built a Financial Infrastructure for Independent Physicians
             </h1>
             <p className="text-gray text-xs font-normal">
               Most RCM vendors run claims. We recover money. There's a critical difference — and it starts with who <br /> is sitting at the helm. Experience at the highest levels of global finance and healthcare administration.
             </p>
           </div>
-
-          <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden">
-            <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px]">
-              <Image
-                src="/Rectangle5.png"
-                alt="Medical team discussing patient care"
-                fill
-                priority
-                className="object-center"
-              />
-            </div>
-
-            <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-start p-8 xl:p-20">
-              <div className="max-w-xl">
-                <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
-                  Our Mission
-                </h2>
-                <p className="text-white text-[18px] font-normal leading-relaxed">
-                  Handle every dollar of the revenue cycle so you focus<br /> entirely on patient care.
-                </p>
-                <p className="text-white text-[18px] font-normal leading-relaxed">
-                  No billing stress. No dollar lost. No guesswork.
-                </p>
+          <div className="max-w-[2000px] mx-auto">
+            <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden">
+              <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px]">
+                <Image
+                  src="/Rectangle5.png"
+                  alt="Medical team discussing patient care"
+                  fill
+                  priority
+                  className="object-center"
+                />
               </div>
-            </div>
-          </div>
 
-          <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden">
-            <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start p-8 xl:p-20 order-2 lg:order-1">
-              <div className="max-w-xl">
-                <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
-                  Our Vision
-                </h2>
-                <p className="text-white text-[18px] font-normal leading-relaxed">
-                  Every independent practice runs at its full potential of quality care and achieves its financial objectives — where no physician loses sleep over cash flow, and no earned dollar goes uncollected.
-                </p>
+              <div className="w-full lg:w-1/2 bg-[#19a9e5] flex items-center justify-start p-8 xl:p-20">
+                <div className="max-w-xl">
+                  <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
+                    Our Mission
+                  </h2>
+                  <p className="text-white text-[18px] font-normal leading-relaxed">
+                    Handle every dollar of the revenue cycle so you focus<br /> entirely on patient care.
+                  </p>
+                  <p className="text-white text-[18px] font-normal leading-relaxed">
+                    No billing stress. No dollar lost. No guesswork.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px] order-1 lg:order-2">
-              <Image
-                src="/Rectangle5-1.png"
-                alt="Healthcare team analyzing data"
-                fill
-                priority
-                className="object-center"
-              />
+            <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden">
+              <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start p-8 xl:p-20 order-2 lg:order-1">
+                <div className="max-w-xl">
+                  <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
+                    Our Vision
+                  </h2>
+                  <p className="text-white text-[18px] font-normal leading-relaxed">
+                    Every independent practice runs at its full potential of quality care and achieves its financial objectives — where no physician loses sleep over cash flow, and no earned dollar goes uncollected.
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px] order-1 lg:order-2">
+                <Image
+                  src="/Rectangle5-1.png"
+                  alt="Healthcare team analyzing data"
+                  fill
+                  priority
+                  className="object-center"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -310,10 +317,10 @@ const HomePage = () => {
 
       {/* We Understand Your Specialty Section - Only image size adjusted */}
       <div className="relative bg-[#17A9DF] overflow-hidden mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="flex-2 flex items-center py-12 sm:py-16 lg:py-20">
-              <div>
+              <div className="text-center lg:text-left">
                 <h1 className="text-[44px] font-semibold !text-white mb-4">
                   We Understand Your Specialty
                 </h1>
@@ -344,7 +351,7 @@ const HomePage = () => {
 
       {/* Services Section - Only padding changed */}
       <div className="bg-white p-4 sm:p-12">
-        <div>
+        <div className="my-20">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
               All That Your Practice Needs.
@@ -358,48 +365,49 @@ const HomePage = () => {
               walks in to when you get paid.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
-            {services.map((service) => (
-              <div
-                key={service.id}
-                className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
-              >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 transition-transform duration-300 relative">
-                  <Image
-                    src={service.icon}
-                    alt={service.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
-                  {service.title}
-                </h2>
-                <p className="text-gray text-xs font-normal mb-12">
-                  {service.description}
-                </p>
-                {/* <a
-                  href={service.link}
-                  className="inline-flex items-center gap-2 text-[#4e4e4e] font-normal text-xs transition-colors group/link"
+          <div className="max-w-[2000px] mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
+              {services.map((service) => (
+                <div
+                  key={service.id}
+                  className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
                 >
-                  Explore More
-                  <svg
-                    className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 transition-transform duration-300 relative">
+                    <Image
+                      src={service.icon}
+                      alt={service.title}
+                      fill
+                      className="object-contain"
                     />
-                  </svg>
-                </a> */}
-              </div>
-            ))}
+                  </div>
+                  <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
+                    {service.title}
+                  </h2>
+                  <p className="text-gray text-xs font-normal mb-12">
+                    {service.description}
+                  </p>
+                  {/* <a
+                    href={service.link}
+                    className="inline-flex items-center gap-2 text-[#4e4e4e] font-normal text-xs transition-colors group/link"
+                  >
+                    Explore More
+                    <svg
+                      className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </a> */}
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
@@ -452,8 +460,8 @@ const HomePage = () => {
 
       {/* Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
-        <div className="relative py-16 lg:py-24 bg-[#F2FBFDF0] overflow-hidden">
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative py-16 lg:py-20 bg-[#F2FBFDF0] overflow-hidden">
+          <div className="relative max-w-[2000px] mx-auto p-4 sm:p-12">
             <div className="text-center mb-14">
               <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
                 Institutional-Grade Financial Rigor. Built by
@@ -468,19 +476,37 @@ const HomePage = () => {
 
             <div className="grid md:grid-cols-2 gap-5">
               {leadershipData.map((item) => (
-                <div key={item.id} className="bg-white border border-[#19A9E5] rounded-[18px] p-6 md:p-7">
+                <div
+                  key={item.id}
+                  className="group hover:bg-[#19A9E5] border border-[#19A9E5] rounded-[18px] p-6 transition-all duration-300"
+                >
                   <div className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 relative mt-1">
-                      <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        fill
+                        className="object-contain transition-opacity duration-300 group-hover:opacity-0"
+                      />
+
+                      <Image
+                        src={item.whiteicon}
+                        alt={item.title}
+                        fill
+                        className="object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      />
                     </div>
+
                     <div>
-                      <h3 className="text-[20px] font-normal text-gray leading-tight">
+                      <h3 className="text-[20px] font-normal text-gray leading-tight group-hover:!text-white transition-colors duration-300">
                         {item.title}
                       </h3>
-                      <p className="text-xs font-semibold text-gray mt-1">
+
+                      <p className="text-xs font-semibold text-gray mt-1 group-hover:!text-white transition-colors duration-300">
                         {item.subtitle}
                       </p>
-                      <p className="text-xs text-gray leading-relaxed mt-3">
+
+                      <p className="text-xs text-gray leading-relaxed mt-3 group-hover:!text-white transition-colors duration-300">
                         {item.description}
                       </p>
                     </div>
@@ -516,16 +542,19 @@ const HomePage = () => {
               }}
             >
               <div className="absolute inset-0 bg-[#004A8F]/90"></div>
-              <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-6xl mx-auto">
+              <div className="relative z-10 max-w-[2000px] mx-auto p-4 sm:p-12">
+                <div className="flex flex-wrap justify-center items-center gap-5">
                   {statsData.map((item, index) => (
-                    <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 text-center shadow-lg">
-                      <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
-                        {item.value}
-                      </h2>
-                      <p className="mt-4 text-gray text-xs sm:text-base leading-relaxed">
-                        {item.description}
-                      </p>
+                    <div key={index} className="bg-white rounded-3xl px-6 py-8 sm:px-8 sm:py-10 shadow-lg flex-1">
+                      {/* Heading and description in same row - NO WRAP */}
+                      <div className="flex flex-col sm:flex-row text-center items-center justify-center gap-4 whitespace-nowrap">
+                        <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
+                          {item.value}
+                        </h2>
+                        <span className="text-gray text-xs text-wrap font-normal">
+                          {item.description}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -536,11 +565,11 @@ const HomePage = () => {
       </div>
 
       {/* Footer Leadership Section - Only padding and flex direction changed */}
-      <div className="bg-[#F7F9FB] py-16 md:py-24">
+      <div className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6">
-              Institutional-grade financial rigor. In your corner.
+              Institutional-grade Financial Rigor. In Your Corner.
             </h1>
             <p className="max-w-4xl mx-auto text-gray text-xs font-normal">
               CareRCM was built by a leader who developed healthcare workforce
@@ -550,7 +579,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
+          <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-6">
             <div className="flex gap-4">
               <div className="text-[#004A8F] text-5xl font-bold leading-none">
                 <Image src="/cotection.png" alt="cotection icon" width={55} height={55} />
@@ -570,7 +599,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-6 mt-6">
+          <div className="grid lg:grid-cols-2 gap-6 my-6">
             <div className="bg-[#0AADE40D] rounded-2xl p-6 md:p-8">
               <h3 className="text-[#19A9E5] font-semibold text-[24px]">
                 Malik Ahmad Jalal
@@ -595,30 +624,39 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div className="space-y-3">
-              {credentials.map((item, index) => (
-                <div key={index} className="bg-[#0AADE40D] rounded-2xl px-6 py-5">
-                  <div className="flex items-center gap-4">
-                    <div className="relative w-9 h-9 flex-shrink-0">
-                      <Image src={item.icon} alt={item.title} fill className="object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-[20px] font-normal text-gray leading-tight">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs font-semibold text-gray mt-1">
-                        {item.subtitle}
-                      </p>
-                    </div>
+            <div>
+              <Image
+                alt="Malik Ahmad Jalal"
+                src="/Malik Ahmad Jalal.png"
+                width={1000}
+                height={100}
+              />
+            </div>
+          </div>
+
+          <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-6">
+            {credentials.map((item, index) => (
+              <div key={index} className="bg-[#0AADE40D] rounded-2xl px-6 py-5">
+                <div className="flex items-center gap-4">
+                  <div className="relative w-9 h-9 flex-shrink-0">
+                    <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                  </div>
+                  <div>
+                    <h3 className="text-[20px] font-normal text-gray leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs font-semibold text-gray mt-1">
+                      {item.subtitle}
+                    </p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           <div className="mt-20 text-center">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
-              Why it matters beyond your practice
+              Why It Matters Beyond Your Practice
             </h1>
             <p className="mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
               Independent private practices are the backbone of public health in
