@@ -134,14 +134,14 @@ const Mechanism = () => {
     {
       id: 5,
       title: "Payment Posting",
-      description: "Payers routinely underpay contracted rates and most practices never catch it. We post and audit payments against your fee schedule so underpayments get flagged and recovered.",
+      description: "Payers routinely underpay contracted rates and most practices never catch it. We post and audit every payment against your fee schedule so underpayments get flagged and recovered.",
       icon: "/teenyicons_tick-circle-outline.png",
       link: "#"
     },
     {
       id: 6,
       title: "Reporting",
-      description: "Payers routinely underpay contracted rates and most practices never catch it. We post and audit payments against your fee schedule so underpayments get flagged and recovered.",
+      description: "You can't fix what you can't see. We give you a real-time dashboard of denial rates, AR aging, collection rates and clean claim percentage so you're managing proactively, not reacting to cash crunches.",
       icon: "/Vector (1).png",
       link: "#"
     }
