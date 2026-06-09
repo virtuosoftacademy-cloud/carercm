@@ -85,42 +85,56 @@ export default function ContactForm() {
 
   const specialties = [
     "Select specialty",
-    "Cardiology",
-    "Dermatology",
-    "Emergency Medicine",
-    "Family Medicine",
-    "Gastroenterology",
+    "Denial Management",
+    "Payment Posting",
+    "Reporting",
+    "In-house dedicated billing team",
+    "Front-desk / admin staff doing billing",
+    "Physician handling billing personally",
+    "Outsourced to a US billing company",
+    "Outsourced offshore (non-US)",
+    "Using billing software only (no dedicated person)",
+    "Combination of in-house + software",
+    "Primary Care / Family Medicine",
     "Internal Medicine",
-    "Neurology",
-    "Obstetrics & Gynecology",
-    "Ophthalmology",
     "Orthopedics",
+    "Dermatology",
+    "Mental Health / Behavioral Health",
+    "Cardiology",
+    "Neurology",
+    "OB/GYN",
     "Pediatrics",
-    "Psychiatry",
+    "Urgent Care",
+    "Physical Therapy / Rehab",
+    "Chiropractic",
+    "Pain Management",
+    "Gastroenterology",
+    "Ophthalmology",
+    "ENT",
     "Radiology",
-    "Surgery",
     "Urology",
-    "Other"
+    "Oncology",
+    "Other Specialty"
   ];
 
   const claimsVolumes = [
     "Select range",
-    "0 - 500 claims/month",
-    "501 - 1,000 claims/month",
-    "1,001 - 2,500 claims/month",
-    "2,501 - 5,000 claims/month",
-    "5,001 - 10,000 claims/month",
+    "Under 100 claims/month",
+    "100 - 300 claims/month",
+    "300 - 500 claims/month",
+    "500 - 1,000 claims/month",
     "10,000+ claims/month"
   ];
 
   const billingSetups = [
     "How are you currently handling billing?",
-    "In-house billing team",
-    "External billing company",
-    "Mix of both",
-    "Solo biller",
-    "Looking to switch",
-    "Not sure yet"
+    "In-house dedicated billing team",
+    "Front-desk / admin staff doing billing",
+    "Physician handling billing personally",
+    "Outsourced to a US billing company",
+    "Outsourced offshore (non-US)",
+    "Using billing software only (no dedicated person)",
+    "Combination of in-house + software"
   ];
 
   return (
