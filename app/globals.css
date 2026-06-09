@@ -183,3 +183,7 @@ body {
   height: 16px;
   background: #00427f;
 }
+
+.swiper-slide:hover {
+  border-radius: 16px !important;
+}

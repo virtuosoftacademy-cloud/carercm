@@ -260,7 +260,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="max-w-[2000px] mx-auto">
-            <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden gap-20">
+            <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden">
               <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px]">
                 <Image
                   src="/Rectangle5.png"
@@ -286,7 +286,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden gap-20">
+            <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden">
               <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start p-8 xl:p-20 order-2 lg:order-1">
                 <div className="max-w-xl">
                   <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">

@@ -225,7 +225,7 @@ const Mechanism = () => {
                   We Plug Into Your Practice and Own Every Stage of Your Revenue Cycle
                 </h1>
 
-                <p className="text-gray text-xs font-normal max-w-[570px]">
+                <p className="text-gray text-xs font-normal leading-relaxed max-w-[570px]">
                   CareRCM takes over the billing, coding, and collections process from day one. Pre-registration to payment posting — every step executed by specialists who know your specialty's codes, your payers' quirks, and exactly where practices like yours are bleeding revenue. You practice medicine the best you can. And we collect every dollar you deserve.
                 </p>
 
@@ -240,7 +240,7 @@ const Mechanism = () => {
         </div>
       </div>
 
-      <div className="w-full p-4 sm:p-12 flex justify-center bg-[#0aade4] mb-10">
+      <div className="w-full px-4 sm:px-16 flex justify-center bg-[#0aade4] mb-20">
         <div className="max-w-[2000px] mx-auto my-20 w-full">
           <div className="flex flex-col items-center justify-center mb-8">
             <h1 className="text-[44px] font-semibold text-white mb-4 text-center">
@@ -273,11 +273,11 @@ const Mechanism = () => {
           >
             {serviceGroups.map((group, index) => (
               <SwiperSlide key={index}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {group.map((service) => (
                     <div
                       key={service.id}
-                      className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:bg-[#00427f] hover:-translate-y-1 group min-h-[320px]"
+                      className="bg-[#f5fcfe] rounded-2xl border border-transparent transition-all duration-300 p-6 sm:p-7 md:p-8 hover:bg-[#00427f] hover:border-blue-300 group items-center justify-center"
                     >
                       <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 relative">
                         {/* Normal Icon */}
@@ -305,7 +305,7 @@ const Mechanism = () => {
                         {service.title}
                       </h2>
 
-                      <p className="text-gray text-xs font-normal mb-6 line-clamp-4 group-hover:!text-white transition-colors duration-300">
+                      <p className="text-gray text-xs font-normal line-clamp-4 group-hover:!text-white transition-colors duration-300">
                         {service.description}
                       </p>
                     </div>
@@ -360,8 +360,8 @@ const Mechanism = () => {
       {/* Section 5 - Leadership Section */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
         <div className="relative py-16 lg:py-20 bg-[#F2FBFDF0] overflow-hidden">
-          <div className="relative max-w-[2000px] mx-auto p-4 sm:p-12">
-            <div className="text-center mb-14">
+          <div className="relative max-w-[2000px] mx-auto px-4 sm:px-12">
+            <div className="text-center mb-8">
               <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
                 Institutional-Grade Financial Rigor. Built by
                 Globally Recognized Healthcare Leaders.
@@ -377,7 +377,7 @@ const Mechanism = () => {
               {leadershipData.map((item) => (
                 <div
                   key={item.id}
-                  className="group hover:bg-[#19A9E5] border border-[#19A9E5] rounded-[18px] p-6 transition-all duration-300"
+                  className="group hover:bg-[#19A9E5] border border-[#19A9E5] rounded-[18px] bg-[#fff] p-6 transition-all duration-300"
                 >
                   <div className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 relative mt-1">
@@ -429,11 +429,11 @@ const Mechanism = () => {
       </div>
 
       {/* Section 6 - Stats Section */}
-      <div className="bg-white mb-10">
+      <div className="bg-white">
         <div className="bg-[url('/bg-image-2.png')] bg-no-repeat bg-right-top bg-cover">
           <div className="relative overflow-hidden">
             <div
-              className="relative py-16 sm:py-20 lg:py-28"
+              className="relative py-20"
               style={{
                 backgroundImage: "url('/bg-room.png')",
                 backgroundSize: "cover",
@@ -464,7 +464,7 @@ const Mechanism = () => {
       </div>
 
       {/* Section 7 - Footer Leadership Section */}
-      <div className="py-20 mb-10">
+      <div className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6">

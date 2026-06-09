@@ -29,10 +29,10 @@ import Link from "next/link";
 const About = () => {
 
   const [openIndex, setOpenIndex] = useState(0);
-    const routter = useRouter();
-    const navigate = (path: string) => {
-      routter.push(path);
-    }
+  const routter = useRouter();
+  const navigate = (path: string) => {
+    routter.push(path);
+  }
 
   const workflows = [
     {
@@ -227,18 +227,23 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
-              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20">
+            <div className="bg-[#2166AF0D] rounded-[28px] overflow-hidden shadow-sm">
+
+              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20 items-start">
+
                 <div className="p-4 sm:p-12">
                   {workflows.map((item, index) => (
                     <div
                       key={index}
-                      className={`border-b border-[#D8E0EA] ${openIndex === index ? "border-l-4 border-l-[#00AEEF] bg-white pl-4" : ""
-                        } transition-all duration-300`}
+                      className={`border-b border-[#D8E0EA] transition-all duration-300 ${openIndex === index
+                        ? "border-l-4 border-l-[#00AEEF] bg-white pl-4"
+                        : ""
+                        }`}
                     >
+
                       <button
                         onClick={() =>
-                          setOpenIndex(openIndex === index ? -1 : index)
+                          setOpenIndex((prev) => (prev === index ? -1 : index))
                         }
                         className="w-full flex items-start justify-between py-5 text-left"
                       >
@@ -263,13 +268,14 @@ const About = () => {
                         </svg>
                       </button>
 
+                      {/* CONTENT (SMOOTH FIX WITHOUT GLITCH) */}
                       <div
-                        className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
-                          ? "max-h-[300px] opacity-100 pb-6"
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index
+                          ? "opacity-100 pb-4"
                           : "max-h-0 opacity-0"
                           }`}
                       >
-                        <p className="text-gray text-xs font-normal leading-relaxed pr-5">
+                        <p className="text-gray text-xs font-normal pr-3">
                           {item.content}
                         </p>
                       </div>
@@ -277,7 +283,8 @@ const About = () => {
                   ))}
                 </div>
 
-                <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
+                {/* RIGHT SIDE IMAGE (FIXED POSITION) */}
+                <div className="relative h-[550px] w-full">
                   <Image
                     src="/Frame 115.png"
                     alt="frame 115"
@@ -285,6 +292,7 @@ const About = () => {
                     className="object-cover"
                   />
                 </div>
+
               </div>
             </div>
           </div>
@@ -309,7 +317,7 @@ const About = () => {
           </p>
 
           <div className="flex flex-col">
-            <p className="text-sm font-semibold text-black">Malik Ahmed Jalal</p>
+            <p className="text-sm font-semibold text-[#00427f]">Malik Ahmed Jalal</p>
             <p className="text-xs text-gray font-light">Founder & CEO, CareRCM</p>
           </div>
         </div>
@@ -318,7 +326,7 @@ const About = () => {
       {/* Real Practices Section - Only mobile padding fixed */}
       {/* <div className="w-full bg-white p-4 sm:p-12"> */}
 
-        {/* <div className="text-center mb-10 sm:mb-14">
+      {/* <div className="text-center mb-10 sm:mb-14">
 
           <div className="flex items-center justify-center gap-3 sm:gap-5 mb-4">
             <h1 className="text-[44px] font-semibold leading-tight text-[#00427F]">
@@ -333,7 +341,7 @@ const About = () => {
           </p>
         </div> */}
 
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 mb-10 sm:mb-12">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7 mb-10 sm:mb-12">
           {testimonials.map((doctor) => (
             <div
               key={doctor.id}
@@ -360,7 +368,7 @@ const About = () => {
           ))}
         </div> */}
 
-        {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
+      {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
           <button className="btn w-full sm:w-[180px] px-12">
             See More
           </button>
@@ -400,24 +408,24 @@ const About = () => {
                     />
                   </div>
 
-                  <div className="pb-6 pt-4 bg-white">
+                  <div className="pt-4 bg-white">
                     <div className="flex items-center justify-between gap-2">
                       <h3 className="text-[#00427F] font-semibold text-[24px] transition-colors duration-300">
                         {member.name}
                       </h3>
                       <Link
-                          href={member.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <div className="relative w-5 h-5 flex-shrink-0 cursor-pointer">
-                            <Image
-                              src={member.icon}
-                              alt="LinkedIn"
-                              fill
-                              className="object-contain transition-all duration-300"
-                            />
-                          </div>
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="relative w-5 h-5 flex-shrink-0 cursor-pointer">
+                          <Image
+                            src={member.icon}
+                            alt="LinkedIn"
+                            fill
+                            className="object-contain transition-all duration-300"
+                          />
+                        </div>
                       </Link>
                     </div>
 
@@ -451,17 +459,22 @@ const About = () => {
             </div>
 
             <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
-              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20">
+
+              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20 items-start">
+
+                {/* LEFT SIDE */}
                 <div className="p-4 sm:p-12">
                   {workflowstitle.map((item, index) => (
                     <div
                       key={index}
-                      className={`border-b border-[#D8E0EA] ${openIndex === index ? "border-l-4 border-l-[#00AEEF] bg-white pl-4" : ""
-                        } transition-all duration-300`}
+                      className={`border-b border-[#D8E0EA] transition-all duration-300 ${openIndex === index
+                          ? "border-l-4 border-l-[#00AEEF] bg-white pl-4"
+                          : ""
+                        }`}
                     >
                       <button
                         onClick={() =>
-                          setOpenIndex(openIndex === index ? -1 : index)
+                          setOpenIndex((prev) => (prev === index ? -1 : index))
                         }
                         className="w-full flex items-start justify-between py-5 text-left"
                       >
@@ -487,9 +500,9 @@ const About = () => {
                       </button>
 
                       <div
-                        className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
-                          ? "max-h-[300px] opacity-100 pb-6"
-                          : "max-h-0 opacity-0"
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index
+                            ? "opacity-100 pb-6"
+                            : "max-h-0 opacity-0"
                           }`}
                       >
                         <p className="text-gray text-xs leading-relaxed pr-5">
@@ -500,7 +513,8 @@ const About = () => {
                   ))}
                 </div>
 
-                <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
+                {/* RIGHT SIDE IMAGE (FIXED LIKE FIRST CODE) */}
+                <div className="relative h-[550px] w-full">
                   <Image
                     src="/Frame 115 (1).png"
                     alt="frame 115"
@@ -508,6 +522,7 @@ const About = () => {
                     className="object-cover"
                   />
                 </div>
+
               </div>
             </div>
           </div>
