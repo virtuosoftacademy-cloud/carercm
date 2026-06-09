@@ -3,7 +3,7 @@
 import Image from "next/image";
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#0a3d8f]">
+    <footer className="w-full bg-[#00427F]">
       {/* <div className="bg-[#19a9e5] py-8 sm:py-10 px-4 sm:px-6 lg:px-16">
         <div className="max-w-[1600px]">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -28,29 +28,29 @@ export default function Footer() {
       </div> */}
 
       <div className="px-4 sm:px-6 lg:px-16 py-10 sm:py-12 pb-4">
-        <div className="max-w-[1600px]">
+        <div className="max-w-[2000px] mx-auto w-full">
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 relative">
             
             <div className="hidden md:block absolute left-1/3 top-0 bottom-0 w-px bg-white/40" />
             <div className="hidden md:block absolute left-2/3 top-0 bottom-0 w-px bg-white/40" />
 
-            <div className="flex justify-center md:justify-start md:pr-8 lg:pr-12 xl:pr-16">
+            <div className="flex justify-center md:px-8 lg:pr-12 xl:pr-16">
               <div className="text-center md:text-left">
                 <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
                   <Image
-                    src="/CareRCM, Logo (Horizontal) 2 (2).png"
+                    src="/footer-logo.png"
                     alt="CareRCM Logo"
                     width={200}
                     height={200}
                   />
                 </div>
 
-                <p className="text-white text-xs max-w-md mx-auto md:mx-0">
+                <p className="text-white text-xs font-normal max-w-md mx-auto md:mx-0">
                   End-to-end RCM. Zero revenue left behind.
                 </p>
 
-                <p className="text-white text-xs mt-3">
+                <p className="text-white text-[20px] font-normal mt-3">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -73,7 +73,7 @@ export default function Footer() {
 
             <div className="flex justify-center md:px-8 lg:px-12 xl:px-16">
               <div className="text-center md:text-left">
-                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight !text-white mb-3">
+                <h2 className="text-[24px] font-semibold leading-tight !text-white mb-3">
                   Quick Links
                 </h2>
 
@@ -82,7 +82,7 @@ export default function Footer() {
                     <li key={link}>
                       <a
                         href="#"
-                        className="text-white text-xs transition-colors"
+                        className="text-white text-xs font-normal transition-colors"
                       >
                         {link}
                       </a>
@@ -92,9 +92,9 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex justify-center md:justify-end md:pl-8 lg:pl-12 xl:pl-16">
+            <div className="flex justify-center md:px-8 lg:pl-12 xl:pl-16">
               <div className="text-center md:text-left">
-                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold leading-tight !text-white mb-3">
+                <h2 className="text-[24px] font-semibold leading-tight !text-white mb-3">
                   Follow Us:
                 </h2>
 
@@ -147,7 +147,7 @@ export default function Footer() {
               EIN Number: 12 – 3456789
             </p> */}
 
-            <p className="text-white text-xs text-center leading-none m-0">
+            <p className="text-white font-normal text-xs text-center leading-none m-0">
               Copyright © 2026 CareRCM All rights reserved.
             </p>
 

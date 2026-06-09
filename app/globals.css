@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
 body {
-    font-family: sans-serif !important;
+    font-family: "Poppins" !important;
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
-    /* background-color: #ffffff !important; */
 }
 
 .text-xs {
@@ -13,7 +12,7 @@ body {
 }
 
 .text-sm {
-    font-size: 20px !important;
+    font-size: 24px !important;
 }
 
 .text-md {
@@ -38,6 +37,10 @@ body {
 
 .font-normal {
     font-weight: 400 !important;
+}
+
+.font-600 {
+    font-weight: 600 !important;
 }
 
 .font-medium {
@@ -107,7 +110,18 @@ body {
 .btn {
     background-color: #0AADE4 !important;
     color: #ffffff !important;
-    padding: 10px 30px !important;
+    padding: 10px 50px !important;
+    border-radius: 9999px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    transition: background-color 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.btn:hover {
+    background-color:  #00427F!important;
+    color: #ffffff !important;
+    padding: 10px 50px !important;
     border-radius: 9999px !important;
     font-size: 16px !important;
     font-weight: 400 !important;
@@ -118,11 +132,22 @@ body {
 .btn2 {
     background-color: #ffffff !important;
     color: #0AADE4 !important;
-    padding: 10px 20px !important;
+    padding: 10px 40px !important;
     border-radius: 9999px !important;
     font-size: 16px !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     transition: background-color 0.3s ease !important;
     cursor: pointer !important;
     border: 1px solid #0AADE4 !important;
+}
+
+.btn2:hover {
+    background-color:  #00427F!important;
+    color: #ffffff !important;
+    padding: 10px 40px !important;
+    border-radius: 9999px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    transition: background-color 0.3s ease !important;
+    cursor: pointer !important;
 }
