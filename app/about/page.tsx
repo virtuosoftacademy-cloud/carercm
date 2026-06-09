@@ -115,7 +115,7 @@ const About = () => {
   return (
     <>
       {/* Hero Section - Only mobile padding fixed */}
-      <div className="w-full p-4 sm:p-12 bg-[#2166AF0D]">
+      <div className="w-full p-4 sm:p-12 bg-[#2166AF0D] mb-10">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -203,22 +203,22 @@ const About = () => {
       </div>
 
       {/* Mission Section - Only mobile padding fixed */}
-      <div className="w-full p-4 sm:p-12 bg-white flex justify-center my-20">
+      <div className="w-full p-4 sm:p-12 bg-white flex justify-center mb-10">
         <div className="flex flex-col items-center justify-center max-w-5xl text-center">
-          <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
-          <p className="text-xs text-gray font-normal max-w-[1000px">
+          <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-4">Every Dollar You Earn Should Make It Into Your Account. That's the Only Standard We Work To.</h1>
+          <p className="text-xs text-gray font-normal max-w-[1000px]">
             Private practices unknowingly surrender 20–30% of revenues to a system that's rigged against them — payers delaying, denying, and underpaying. We built CareRCM to fight back. Our mission is simple: handle every dollar of your revenue cycle with obsessive precision so you can focus entirely on what you do best – care for your patients. No billing stress. No lost revenue. No uncertainty. Just clean claims, recovered denials, and a practice that runs at its full financial potential.
           </p>
         </div>
       </div>
 
       {/* We Don't Advise Section - Mobile: full width, image below */}
-      <div className="max-w-[2000px] mx-auto">
+      <div className="max-w-[2000px] mx-auto mb-10">
         <div className="bg-[#f9fafb] flex items-center justify-center">
           <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] my-20">
 
-            <div className="text-center mb-10">
-              <h1 className="text-[44px] font-semibold text-[#00427F] mb-2">
+            <div className="text-center mb-8">
+              <h1 className="text-[44px] font-semibold text-[#00427F] mb-4">
                 We Don't Advise. We Execute.
               </h1>
               <p className="text-gray text-xs font-normal">
@@ -228,7 +228,7 @@ const About = () => {
             </div>
 
             <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
-              <div className="flex flex-col lg:grid lg:grid-cols-2">
+              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20">
                 <div className="p-4 sm:p-12">
                   {workflows.map((item, index) => (
                     <div
@@ -292,7 +292,7 @@ const About = () => {
       </div>
 
       {/* Quote Section - Only mobile padding fixed */}
-      <div className="max-w-[94%] mx-auto bg-blue-50 rounded-xl my-20 p-4 sm:p-12">
+      <div className="max-w-[94%] mx-auto bg-blue-50 rounded-xl mb-10 p-4 sm:p-12">
         <div className="flex flex-col items-center text-center justify-center max-w-4xl mx-auto">
           <div className="mb-8">
             <Image
@@ -369,11 +369,11 @@ const About = () => {
       {/* </div> */}
 
       {/* Our Team Section - Only mobile padding and image size fixed */}
-      <div className="max-w-[2000px] mx-auto">
+      <div className="max-w-[2000px] mx-auto mb-10">
         <div className="w-full bg-[#00aeef] my-20 p-4 sm:p-12">
-          <div className="">
-            <div className="text-center mb-12 md:mb-16">
-              <h1 className="text-[44px] font-semibold text-[#fff] mb-2">
+          <div className="py-20">
+            <div className="text-center mb-8">
+              <h1 className="text-[44px] font-semibold text-[#fff] mb-4">
                 Our Team
               </h1>
               <div className="max-w-4xl mx-auto">
@@ -434,11 +434,11 @@ const About = () => {
       </div>
 
       {/* Why Private Practices Section - Mobile: full width, image below */}
-      <div className="max-w-[2000px] mx-auto">
+      <div className="max-w-[2000px] mx-auto mb-10">
         <div className="flex items-center justify-center">
           <div className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] py-20">
 
-            <div className="text-center mb-10">
+            <div className="text-center mb-8">
               <div className="flex items-center justify-center mb-4">
                 <h1 className="text-[44px] font-semibold leading-tight text-[#00427F]">
                   Why Private Practices Choose <br className="hidden sm:block" /> CareRCM Over Every Other Option
@@ -451,7 +451,7 @@ const About = () => {
             </div>
 
             <div className="bg-blue-50 rounded-[28px] overflow-hidden shadow-sm">
-              <div className="flex flex-col lg:grid lg:grid-cols-2">
+              <div className="flex flex-col lg:grid lg:grid-cols-2 gap-20">
                 <div className="p-4 sm:p-12">
                   {workflowstitle.map((item, index) => (
                     <div

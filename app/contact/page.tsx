@@ -1,28 +1,5 @@
 import Image from "next/image";
 const Contact = () => {
-    const contactInfo = [
-        {
-            id: 1,
-            icon: "/call.png",
-            alt: "Phone Icon",
-            label: "Business Inquiry:",
-            value: "+1 812 991 8056",
-        },
-        {
-            id: 2,
-            icon: "/sms.png",
-            alt: "SMS Icon",
-            label: "Official Email:",
-            value: "connect@carercm.com",
-        },
-        {
-            id: 3,
-            icon: "/map.png",
-            alt: "Map Icon",
-            label: "Official Address:",
-            value: "3 Rockaway St., Ny 1080",
-        },
-    ];
     return (
         <>
             <div className="bg-[#2166AF0D] p-4 sm:p-12 xl:min-h-[650px]">
@@ -92,29 +69,59 @@ const Contact = () => {
             </div>
 
 
-            <div className="bg-[#fff] p-4 sm:p-12 my-20">
+            <div className="bg-white p-4 sm:p-12 my-20">
                 <div className="max-w-[2000px] mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                        {contactInfo.map((item) => (
-                            <div
-                                key={item.id}
-                                className="rounded-2xl p-6 md:p-8 lg:p-10 bg-[#0AADE40A] w-full"
-                            >
-                                <Image
-                                    src={item.icon}
-                                    alt={item.alt}
-                                    width={40}
-                                    height={40}
-                                    className="mb-8"
-                                />
-                                <p className="text-gray text-xs font-normal leading-relaxed mb-2">
-                                    {item.label}
-                                </p>
-                                <p className="text-gray text-sm leading-relaxed font-semibold">
-                                    {item.value}
-                                </p>
-                            </div>
-                        ))}
+                        {/* Card 1 - Phone */}
+                        <div className="rounded-2xl p-8 bg-[#0AADE40A] justify-center itens-center w-full flex flex-col items-start text-left h-[270px]">
+                            <Image
+                                src="/call.png"
+                                alt="Phone Icon"
+                                width={40}
+                                height={40}
+                                className="mb-8"
+                            />
+                            <p className="text-gray text-xs font-normal mb-2">
+                                Business Inquiry:
+                            </p>
+                            <p className="text-gray text-sm font-semibold">
+                                +1 812 991 8056
+                            </p>
+                        </div>
+
+                        {/* Card 2 - Email */}
+                        <div className="rounded-2xl p-8 bg-[#0AADE40A] w-full flex flex-col justify-center itens-center items-start text-left h-[270px]">
+                            <Image
+                                src="/sms.png"
+                                alt="SMS Icon"
+                                width={40}
+                                height={40}
+                                className="mb-8"
+                            />
+                            <p className="text-gray text-xs font-normal mb-2">
+                                Official Email:
+                            </p>
+                            <p className="text-gray text-sm font-semibold">
+                                connect@carercm.ai
+                            </p>
+                        </div>
+
+                        {/* Card 3 - Address */}
+                        <div className="rounded-2xl p-8 bg-[#0AADE40A] w-full flex flex-col justify-center itens-center items-start text-left h-[270px]">
+                            <Image
+                                src="/map.png"
+                                alt="Map Icon"
+                                width={30}
+                                height={30}
+                                className="mb-8"
+                            />
+                            <p className="text-gray text-xs font-normal mb-2">
+                                Official Address:
+                            </p>
+                            <p className="text-gray text-sm font-semibold">
+                                3 Rockaway St., Ny 1080
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

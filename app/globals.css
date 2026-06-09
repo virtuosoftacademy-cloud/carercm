@@ -130,7 +130,7 @@ body {
 }
 
 .btn2 {
-    background-color: #ffffff !important;
+    /* background-color: #ffffff !important; */
     color: #0AADE4 !important;
     padding: 10px 40px !important;
     border-radius: 9999px !important;
@@ -150,4 +150,36 @@ body {
     font-weight: 400 !important;
     transition: background-color 0.3s ease !important;
     cursor: pointer !important;
+    border: none !important;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.custom-pagination.swiper-pagination {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100%;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  opacity: 1;
+  margin: 0 !important;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  width: 16px;
+  height: 16px;
+  background: #00427f;
 }

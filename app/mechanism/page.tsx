@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+// import { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Mousewheel } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 const Mechanism = () => {
-  const [startIndex, setStartIndex] = useState(0);
-  const visibleCards = 3;
   const services = [
     {
       id: 1,
@@ -106,53 +108,63 @@ const Mechanism = () => {
     {
       id: 1,
       title: "Pre-registration / Registration",
-      description: "A wrong insurance ID at intake can unravel an entire claim downstream. We verify eligibility before the appointment so nothing gets denied for a reason that could’ve been caught on day one.",
-      icon: "/Group.png",
-      link: "#"
+      description: "A wrong insurance ID at intake can unravel an entire claim downstream. We verify eligibility before the appointment so nothing gets denied for a reason that could've been caught on day one.",
+      icon: "/icon1.png",
+      link: "#",
+      icon2: "/icon21.png"
     },
     {
       id: 2,
       title: "Charge Capture",
       description: "Undocumented or delayed charges are revenue that simply vanishes. We ensure every service rendered is captured, coded correctly and submitted, so nothing falls through the cracks.",
-      icon: "/change-capture.png",
-      link: "#"
+      icon: "/icon2.png",
+      link: "#",
+      icon2: "/icon22.png"
     },
     {
       id: 3,
       title: "Claims Submission",
       description: "A clean claim submitted fast is the difference between 20-day payment and 90-day AR. We submit accurate claims the first time, reducing rejections before they ever become denials.",
-      icon: "/fluent_document-24-light.png",
-      link: "#"
+      icon: "/icon3.png",
+      link: "#",
+      icon2: "/icon23.png"
     },
     {
       id: 4,
       title: "Denial Management",
       description: "65% of denied claims are never reworked. We chase every one. Our denial management workflow identifies the root cause, appeals aggressively and recovers revenue most practices simply write off.",
-      icon: "/material-symbols-light_shield-outline-rounded.png",
-      link: "#"
+      icon: "/icon4.png",
+      link: "#",
+      icon2: "/icon24.png"
     },
     {
       id: 5,
       title: "Payment Posting",
       description: "Payers routinely underpay contracted rates and most practices never catch it. We post and audit every payment against your fee schedule so underpayments get flagged and recovered.",
-      icon: "/teenyicons_tick-circle-outline.png",
-      link: "#"
+      icon: "/icon5.png",
+      link: "#",
+      icon2: "/icon25.png"
     },
     {
       id: 6,
       title: "Reporting",
       description: "You can't fix what you can't see. We give you a real-time dashboard of denial rates, AR aging, collection rates and clean claim percentage so you're managing proactively, not reacting to cash crunches.",
-      icon: "/Vector (1).png",
-      link: "#"
+      icon: "/icon66.png",
+      link: "#",
+      icon2: "/icon26.png"
     }
   ];
+  const serviceGroups = [];
 
-  const visibleServices = servicesData.slice(startIndex, startIndex + visibleCards);
+  for (let i = 0; i < servicesData.length; i += 3) {
+    serviceGroups.push(servicesData.slice(i, i + 3));
+  }
+  // const visibleServices = servicesData.slice(startIndex, startIndex + visibleCards);
 
 
   return (
     <>
-      <div className="p-4 sm:p-12 bg-[#2166AF0D] xl:min-h-[650px]">
+      <div className="p-4 sm:p-12 bg-[#2166AF0D] xl:min-h-[650px] mb-10">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -178,9 +190,6 @@ const Mechanism = () => {
               <button className="btn w-full sm:w-auto">
                 Get My Free RCM Audit
               </button>
-              {/* <button className="btn2 w-full sm:w-auto">
-                See How It Works
-              </button> */}
             </div>
           </div>
         </div>
@@ -208,8 +217,6 @@ const Mechanism = () => {
                   backgroundColor: "rgba(33,102,175,0.04)",
                   backdropFilter: "blur(10px)",
                   WebkitBackdropFilter: "blur(10px)",
-                  // boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
-                  // border: "1px solid rgba(25, 169, 229, 0.15)"
                   opacity: 4
                 }}
               >
@@ -226,9 +233,6 @@ const Mechanism = () => {
                   <button className="btn">
                     Get My Free RCM Audit
                   </button>
-                  {/* <button className="btn2">
-                      See How It Works
-                    </button> */}
                 </div>
               </div>
             </div>
@@ -236,20 +240,99 @@ const Mechanism = () => {
         </div>
       </div>
 
-      <div className="w-full p-4 sm:p-12 flex justify-center bg-[#0aade4]">
-        <div className="max-w-[2000px] mx-auto my-20">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-[44px] font-semibold text-[#ffffff] mb-6 text-center">Six Stages. No Dollars Left Behind.</h1>
+      <div className="w-full p-4 sm:p-12 flex justify-center bg-[#0aade4] mb-10">
+        <div className="max-w-[2000px] mx-auto my-20 w-full">
+          <div className="flex flex-col items-center justify-center mb-8">
+            <h1 className="text-[44px] font-semibold text-white mb-4 text-center">
+              Six Stages. No Dollars Left Behind.
+            </h1>
+
             <p className="text-xs text-center text-white font-normal max-w-5xl">
-              Most practices lose 20–30% of their revenue somewhere between the patient visit and the payment hitting their account. CareRCM locks down every one of those leakage points — so the money you've earned actually makes it to you.
+              Most practices lose 20–30% of their revenue somewhere between the
+              patient visit and the payment hitting their account. CareRCM locks
+              down every one of those leakage points — so the money you've earned
+              actually makes it to you.
             </p>
           </div>
 
-          {/* Carousel - No Arrow Buttons */}
-          <div className="relative mt-12">
-            {/* Cards Grid - 3 in row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
-              {visibleServices.map((service) => (
+          <Swiper
+            modules={[Pagination, Mousewheel]}
+            slidesPerView={1}
+            spaceBetween={20}
+            speed={800}
+            grabCursor={true}
+            mousewheel={{
+              forceToAxis: true,
+              sensitivity: 1,
+              releaseOnEdges: true,
+            }}
+            pagination={{
+              clickable: true,
+              el: ".custom-pagination",
+            }}
+          >
+            {serviceGroups.map((group, index) => (
+              <SwiperSlide key={index}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {group.map((service) => (
+                    <div
+                      key={service.id}
+                      className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:bg-[#00427f] hover:-translate-y-1 group min-h-[320px]"
+                    >
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 relative">
+                        {/* Normal Icon */}
+                        <div className="absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                          <Image
+                            src={service.icon}
+                            alt={service.title}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+
+                        {/* Hover Icon */}
+                        <div className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                          <Image
+                            src={service.icon2}
+                            alt={service.title}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      </div>
+
+                      <h2 className="text-[20px] sm:text-[22px] md:text-[24px] font-semibold leading-tight text-[#003f7a] mb-4 group-hover:text-white transition-colors duration-300">
+                        {service.title}
+                      </h2>
+
+                      <p className="text-gray text-xs font-normal mb-6 line-clamp-4 group-hover:!text-white transition-colors duration-300">
+                        {service.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <div className="custom-pagination"></div>
+        </div>
+      </div>
+
+      <div className="mb-20">
+        <div className="w-full px-4 sm:px-12 bg-white flex justify-center">
+          <div className="flex flex-col items-center justify-center max-w-4xl text-center mb-8">
+            <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-4">Where Other Billing Services Stop, CareRCM Starts.</h1>
+            <p className="text-xs text-gray font-normal max-w-4xl">
+              Most practices lose money at every step of the revenue cycle without realizing it. We plug into your existing setup and own every stage from the moment a patient walks in to when you get paid.
+            </p>
+          </div>
+        </div>
+
+        <div className="max-w-[2000px] mx-auto">
+          <div className="bg-white px-4 sm:px-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((service) => (
                 <div
                   key={service.id}
                   className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
@@ -262,77 +345,19 @@ const Mechanism = () => {
                       className="object-contain"
                     />
                   </div>
-                  <h2 className="text-[20px] sm:text-[22px] md:text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
+                  <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
                     {service.title}
                   </h2>
-                  <p className="text-gray text-xs font-normal mb-6 line-clamp-4">
+                  <p className="text-gray text-xs font-normal mb-12">
                     {service.description}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Dots Indicator Only - Click to change slides */}
-          <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: Math.ceil(servicesData.length / visibleCards) }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setStartIndex(index * visibleCards)}
-                className={`h-4 w-4 rounded-full transition-all duration-300 ${Math.floor(startIndex / visibleCards) === index
-                    ? "w-4 bg-[#00427F]"
-                    : "w-4 bg-gray-300 hover:bg-gray-400"
-                  }`}
-              />
-            ))}
-          </div>
         </div>
       </div>
-
-      <div className="w-full p-4 sm:p-12 bg-white flex justify-center">
-        <div className="flex flex-col items-center justify-center max-w-4xl text-center">
-          <h1 className="text-[44px] font-semibold leading-tight text-[#00427F] mb-6">Where Other Billing Services Stop, CareRCM Starts.</h1>
-          <p className="text-xs text-gray font-normal max-w-3xl">
-            Most practices lose money at every step of the revenue cycle without realizing it. We plug into your existing setup and own every stage from the moment a patient walks in to when you get paid.
-          </p>
-        </div>
-      </div>
-
-      <div className="max-w-[2000px] mx-auto">
-        <div className="bg-white p-4 sm:p-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
-            {services.map((service) => (
-              <div
-                key={service.id}
-                className="bg-[#f5fcfe] rounded-2xl shadow transition-all duration-300 p-6 sm:p-7 md:p-8 hover:border border-blue-300 hover:-translate-y-1"
-              >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 sm:mb-5 transition-transform duration-300 relative">
-                  <Image
-                    src={service.icon}
-                    alt={service.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <h2 className="text-[24px] font-semibold leading-tight text-[#003f7a] mb-4">
-                  {service.title}
-                </h2>
-                <p className="text-gray text-xs font-normal mb-12">
-                  {service.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          {/* <div className="flex justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-14">
-            <button className="btn w-full sm:w-[180px] px-12">
-              View All
-            </button>
-          </div> */}
-        </div>
-      </div>
-
-
-      {/* Leadership Section - Only padding and flex direction changed */}
+      {/* Section 5 - Leadership Section */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
         <div className="relative py-16 lg:py-20 bg-[#F2FBFDF0] overflow-hidden">
           <div className="relative max-w-[2000px] mx-auto p-4 sm:p-12">
@@ -403,8 +428,8 @@ const Mechanism = () => {
         </div>
       </div>
 
-      {/* Stats Section - Grid is already responsive */}
-      <div className="bg-white py-20">
+      {/* Section 6 - Stats Section */}
+      <div className="bg-white mb-10">
         <div className="bg-[url('/bg-image-2.png')] bg-no-repeat bg-right-top bg-cover">
           <div className="relative overflow-hidden">
             <div
@@ -425,7 +450,7 @@ const Mechanism = () => {
                         <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
                           {item.value}
                         </h2>
-                        <span className="text-gray text-xs text-wrap font-normal">
+                        <span className="text-gray text-xs text-wrap font-normal text-start">
                           {item.description}
                         </span>
                       </div>
@@ -438,8 +463,8 @@ const Mechanism = () => {
         </div>
       </div>
 
-      {/* Footer Leadership Section - Only padding and flex direction changed */}
-      <div className="py-20">
+      {/* Section 7 - Footer Leadership Section */}
+      <div className="py-20 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6">

@@ -152,8 +152,8 @@ const HomePage = () => {
 
   return (
     <>
-      {/* Home Section - Only padding and button width changed */}
-      <div className="bg-white p-4 lg:p-12">
+      {/* Section 1 - Hero Section */}
+      <div className="bg-white p-4 lg:p-12 pt-20 pb-20 mb-20">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -162,16 +162,16 @@ const HomePage = () => {
               width={1200}
               height={400}
               priority
-              className="w-full h-auto" 
+              className="w-full h-auto"
             />
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="text-[#4E4E4E] text-sm font-normal leading-snug">
+            <p className="text-[#4E4E4E] text-sm font-normal leading-snug mb-2">
               Your Practice Is Losing Up to 30% of Revenue. We Get It Back.
             </p>
 
-            <h1 className="text-[54px] font-semibold leading-tight text-[#00427F]">
+            <h1 className="text-[54px] font-semibold leading-tight text-[#00427F] mb-4">
               Stop Leaving $100K–$250K on the Table Every Year
             </h1>
 
@@ -195,7 +195,6 @@ const HomePage = () => {
         </div>
         <div className="max-w-[2000px] mx-auto">
           <div className="hidden xl:block">
-            {/* Desktop version unchanged */}
             <div className="relative w-full h-[450px]">
               <div className="absolute top-0 right-0 w-[55%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
                 <Image
@@ -216,8 +215,6 @@ const HomePage = () => {
                   backgroundColor: "rgba(33,102,175,0.04)",
                   backdropFilter: "blur(10px)",
                   WebkitBackdropFilter: "blur(10px)",
-                  // boxShadow: "0 20px 35px -10px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(255,255,255,0.5)",
-                  // border: "1px solid rgba(25, 169, 229, 0.15)"
                   opacity: 4
                 }}
               >
@@ -236,7 +233,7 @@ const HomePage = () => {
                   you've earned, faster, with zero billing headaches.
                 </p>
 
-                <div className="flex flex-row gap-3 mt-2">
+                <div className="flex flex-row gap-3">
                   <button className="btn">
                     Get My Free RCM Audit
                   </button>
@@ -251,10 +248,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Mission/Vision Section - Only padding changed */}
-      <div className="bg-white p-4 lg:p-12">
+      {/* Section 2 - Mission & Vision with gap-20 inside */}
+      <div className="bg-white p-4 lg:p-12 py-20 mb-10">
         <div className="w-full">
-          <div className="text-center mx-auto max-w-4xl my-20">
+          <div className="text-center mx-auto max-w-4xl mb-8">
             <h1 className="text-[44px] leading-[1.2] font-semibold tracking-wide text-[#004275] mb-4 sm:mb-4">
               We Built a Financial Infrastructure for Independent Physicians
             </h1>
@@ -263,7 +260,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="max-w-[2000px] mx-auto">
-            <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden">
+            <div className="flex flex-col lg:flex-row w-full rounded-t-2xl overflow-hidden gap-20">
               <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-[400px]">
                 <Image
                   src="/Rectangle5.png"
@@ -279,7 +276,7 @@ const HomePage = () => {
                   <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
                     Our Mission
                   </h2>
-                  <p className="text-white text-[18px] font-normal leading-relaxed">
+                  <p className="text-white text-[18px] font-normal leading-relaxed mb-2">
                     Handle every dollar of the revenue cycle so you focus<br /> entirely on patient care.
                   </p>
                   <p className="text-white text-[18px] font-normal leading-relaxed">
@@ -289,7 +286,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden">
+            <div className="flex flex-col lg:flex-row w-full rounded-b-2xl overflow-hidden gap-20">
               <div className="w-full lg:w-1/2 bg-[#0a3d8f] flex items-center justify-start p-8 xl:p-20 order-2 lg:order-1">
                 <div className="max-w-xl">
                   <h2 className="text-[44px] font-semibold leading-tight !text-white mb-4">
@@ -315,11 +312,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* We Understand Your Specialty Section - Only image size adjusted */}
-      <div className="relative bg-[#17A9DF] overflow-hidden mt-16">
-        <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative bg-[#17A9DF] overflow-hidden">
+        <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row justify-between">
-            <div className="flex-2 flex items-center py-12 sm:py-16 lg:py-20">
+            <div className="flex-2 flex items-center py-12 sm:py-16">
               <div className="text-center lg:text-left">
                 <h1 className="text-[44px] font-semibold !text-white mb-4">
                   We Understand Your Specialty
@@ -352,7 +348,7 @@ const HomePage = () => {
       {/* Services Section - Only padding changed */}
       <div className="bg-white p-4 sm:p-12">
         <div className="my-20">
-          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
               All That Your Practice Needs.
             </h1>
@@ -460,9 +456,9 @@ const HomePage = () => {
 
       {/* Leadership Section - Only padding and flex direction changed */}
       <div className="bg-[url('/bg-image-1.png')] bg-no-repeat bg-right-top bg-cover">
-        <div className="relative py-16 lg:py-20 bg-[#F2FBFDF0] overflow-hidden">
+        <div className="relative py-12 lg:py-16 bg-[#F2FBFDF0] overflow-hidden">
           <div className="relative max-w-[2000px] mx-auto p-4 sm:p-12">
-            <div className="text-center mb-14">
+            <div className="text-center mb-8">
               <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a] mb-6 max-w-5xl mx-auto leading-[1.2]">
                 Institutional-Grade Financial Rigor. Built by
                 Globally Recognized Healthcare Leaders.
@@ -478,7 +474,7 @@ const HomePage = () => {
               {leadershipData.map((item) => (
                 <div
                   key={item.id}
-                  className="group hover:bg-[#19A9E5] border border-[#19A9E5] rounded-[18px] p-6 transition-all duration-300"
+                  className="group hover:bg-[#19A9E5] border border-[#19A9E5] rounded-[18px] p-6 transition-all duration-300 bg-[#ffffff]"
                 >
                   <div className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 relative mt-1">
@@ -515,7 +511,7 @@ const HomePage = () => {
               ))}
             </div>
 
-            <div className="max-w-5xl mx-auto text-center mt-12">
+            <div className="max-w-5xl mx-auto text-center mt-8">
               <p className="text-xs text-gray font-normal leading-relaxed">
                 Former <strong>CEO of Aman Healthcare</strong> — Pakistan's largest
                 telehealth provider, with 700+ trained paramedics — and founding
@@ -530,11 +526,11 @@ const HomePage = () => {
       </div>
 
       {/* Stats Section - Grid is already responsive */}
-      <div className="bg-white py-20">
+      <div className="bg-white">
         <div className="bg-[url('/bg-image-2.png')] bg-no-repeat bg-right-top bg-cover">
           <div className="relative overflow-hidden">
             <div
-              className="relative py-16 sm:py-20 lg:py-28"
+              className="relative py-20"
               style={{
                 backgroundImage: "url('/bg-room.png')",
                 backgroundSize: "cover",
@@ -551,7 +547,7 @@ const HomePage = () => {
                         <h2 className="text-[#17A9E6] text-[60px] font-semibold leading-tight">
                           {item.value}
                         </h2>
-                        <span className="text-gray text-xs text-wrap font-normal">
+                        <span className="text-gray text-xs text-wrap font-normal text-start">
                           {item.description}
                         </span>
                       </div>
@@ -579,7 +575,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="mt-10 bg-[#0AADE40D] rounded-2xl p-6 md:p-6">
+          <div className="mt-4 bg-[#0AADE40D] rounded-2xl p-6 md:p-6">
             <div className="flex gap-4">
               <div className="text-[#004A8F] text-5xl font-bold leading-none">
                 <Image src="/cotection.png" alt="cotection icon" width={55} height={55} />
@@ -653,25 +649,25 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-
-          <div className="mt-20 text-center">
-            <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
-              Why It Matters Beyond Your Practice
-            </h1>
-            <p className="mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
-              Independent private practices are the backbone of public health in
-              America. When a practice faces financial difficulties — or cuts
-              services because cash flow can't sustain it — real patients lose
-              access to care.
-              Every dollar we recover keeps an independent physician viable, in
-              their community, serving the patients who need them. We were built
-              by a leader who spent years scaling healthcare access for
-              underserved populations.
-              That experience and instinct — that revenue is not just business,
-              it is healthcare infrastructure — is embedded in everything we do.
-            </p>
-          </div>
         </div>
+      </div>
+
+      <div className="mb-20 text-center max-w-6xl mx-auto">
+        <h1 className="text-[44px] font-semibold leading-tight text-[#003f7a]">
+          Why It Matters Beyond Your Practice
+        </h1>
+        <p className="mx-auto mt-6 text-gray text-xs font-normal leading-relaxed">
+          Independent private practices are the backbone of public health in
+          America. When a practice faces financial difficulties — or cuts
+          services because cash flow can't sustain it — real patients lose
+          access to care.
+          Every dollar we recover keeps an independent physician viable, in
+          their community, serving the patients who need them. We were built
+          by a leader who spent years scaling healthcare access for
+          underserved populations.
+          That experience and instinct — that revenue is not just business,
+          it is healthcare infrastructure — is embedded in everything we do.
+        </p>
       </div>
     </>
   );
