@@ -532,7 +532,7 @@ const HomePage = () => {
             <div
               className="relative py-20"
               style={{
-                backgroundImage: "url('/bg-room.png')",
+                // backgroundImage: "url('/bg-room.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
