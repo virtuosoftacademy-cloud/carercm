@@ -153,7 +153,7 @@ const HomePage = () => {
   return (
     <>
       {/* Section 1 - Hero Section */}
-      <div className="bg-white p-4 lg:p-12 pt-20 pb-20 mb-20">
+      <div className="bg-white p-4 lg:p-12 ">
         <div className="block xl:hidden">
           <div className="relative w-full h-auto rounded-2xl overflow-hidden mb-6">
             <Image
@@ -193,7 +193,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[2000px] mx-auto">
+        <div className="max-w-[2000px] mx-auto mb-20">
           <div className="hidden xl:block">
             <div className="relative w-full h-[450px]">
               <div className="absolute top-0 right-0 w-[55%] h-[400px] md:h-[450px] lg:h-[480px] xl:h-[520px] rounded-2xl overflow-hidden">
