@@ -244,7 +244,7 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
 
             <div>
-              <label className="block text-white text-xs font-normal mb-1">YOUR FIRST NAME</label>
+              <label className="block text-white text-xs font-normal mb-1">Your First Name</label>
               <input
                 type="text"
                 name="firstName"
@@ -257,7 +257,7 @@ export default function ContactForm() {
             </div>
 
             <div>
-              <label className="block text-white text-xs font-normal mb-1">WORK EMAIL</label>
+              <label className="block text-white text-xs font-normal mb-1">Work Email</label>
               <input
                 type="email"
                 name="workEmail"
@@ -270,7 +270,7 @@ export default function ContactForm() {
             </div>
 
             <div>
-              <label className="block text-white text-xs font-normal mb-1">MEDICAL SPECIALTY</label>
+              <label className="block text-white text-xs font-normal mb-1">Medical Specialty</label>
               <select
                 name="medicalSpecialty"
                 value={formData.medicalSpecialty}
@@ -293,7 +293,7 @@ export default function ContactForm() {
             </div>
 
             <div>
-              <label className="block text-white text-xs font-normal mb-1">MONTHLY CLAIMS VOLUME</label>
+              <label className="block text-white text-xs font-normal mb-1">Monthly Claims Vollme</label>
               <select
                 name="monthlyClaimsVolume"
                 value={formData.monthlyClaimsVolume}
@@ -317,7 +317,7 @@ export default function ContactForm() {
           </div>
 
           <div className="mt-4 sm:mt-5 md:mt-6">
-            <label className="block text-white text-xs font-normal mb-1">CURRENT BILLING SETUP</label>
+            <label className="block text-white text-xs font-normal mb-1">Current Billing Setup</label>
             <select
               name="currentBillingSetup"
               value={formData.currentBillingSetup}
