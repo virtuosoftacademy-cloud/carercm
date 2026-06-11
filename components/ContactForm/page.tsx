@@ -253,7 +253,7 @@ export default function ContactForm() {
                 className={`w-full px-4 py-3 border rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-[#19a9e5] transition text-gray-700 ${errors.firstName ? "border-red-500" : "border-gray-300"}`}
                 placeholder="Dr. Sarah"
               />
-              {errors.firstName && <p className="text-red-300 text-xs mt-1">{errors.firstName}</p>}
+              {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>}
             </div>
 
             <div>
@@ -266,7 +266,7 @@ export default function ContactForm() {
                 className={`w-full px-4 py-3 border rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-[#19a9e5] transition text-gray-700 ${errors.workEmail ? "border-red-500" : "border-gray-300"}`}
                 placeholder="sarah@yourpractice.com"
               />
-              {errors.workEmail && <p className="text-red-300 text-xs mt-1">{errors.workEmail}</p>}
+              {errors.workEmail && <p className="text-red-500 text-xs mt-1">{errors.workEmail}</p>}
             </div>
 
             <div>
@@ -289,7 +289,7 @@ export default function ContactForm() {
                   </option>
                 ))}
               </select>
-              {errors.medicalSpecialty && <p className="text-red-300 text-xs mt-1">{errors.medicalSpecialty}</p>}
+              {errors.medicalSpecialty && <p className="text-red-500 text-xs mt-1">{errors.medicalSpecialty}</p>}
             </div>
 
             <div>
@@ -312,7 +312,7 @@ export default function ContactForm() {
                   </option>
                 ))}
               </select>
-              {errors.monthlyClaimsVolume && <p className="text-red-300 text-xs mt-1">{errors.monthlyClaimsVolume}</p>}
+              {errors.monthlyClaimsVolume && <p className="text-red-500 text-xs mt-1">{errors.monthlyClaimsVolume}</p>}
             </div>
           </div>
 
@@ -336,7 +336,7 @@ export default function ContactForm() {
                 </option>
               ))}
             </select>
-            {errors.currentBillingSetup && <p className="text-red-300 text-xs mt-1">{errors.currentBillingSetup}</p>}
+            {errors.currentBillingSetup && <p className="text-red-500 text-xs mt-1">{errors.currentBillingSetup}</p>}
           </div>
 
           <div className="mt-8 sm:mt-10 text-center">

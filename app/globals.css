@@ -181,3 +181,13 @@ body {
 .swiper-slide:hover {
   border-radius: 16px !important;
 }
+
+select {
+    background-color: white;
+    color: #000;
+}
+
+select option {
+    background-color: #00427f !important;
+    color: #fff !important;
+}
